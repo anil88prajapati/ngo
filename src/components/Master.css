@@ -1,0 +1,38 @@
+.mainContainer{
+    border:2px soid red;
+    position: relative;
+}
+.mainContainerInner{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+}
+.hiddenArea{
+    position: absolute;
+    display: none;
+    box-shadow: 3px 4px 22px -4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    background-color: white;
+    width: 268px;
+    height: fit-content;
+    top: 30px;
+    left: 0px;
+    color: black;
+}
+
+.hiddenArea::after{
+  content: "";
+  position: absolute;
+ width: 90%;
+  left: 0%;
+  top: -13px;
+	border-bottom: 13px solid transparent;
+}
+.mainContainer:hover .hiddenArea{
+    display: flex;
+}
+.mainContainer:hover .iconExpand{
+    transition: all 0.50s ease;
+    color: #ffc400;
+    transform: rotate(-180deg);
+}

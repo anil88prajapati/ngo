@@ -1,0 +1,127 @@
+.carousel-container {
+  padding-bottom: 20px;
+  overflow: hidden; 
+}
+.imageBox{
+  position: relative;
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: transparent;
+  z-index: 1;
+  cursor: pointer;
+}
+.slick-prev::before,
+.slick-next::before {
+  font-size: 36px; 
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+.btnReadMore{
+  display: flex;
+}
+.slick-next {
+  right: 40px;
+}
+
+.carousel-slide {
+  position: relative; 
+  text-align: center;
+}
+
+.carousel-slideMain{
+    position: relative;
+    padding-top: 50px;
+}
+.carousel-slide{
+position: absolute;
+top:200px; 
+left: 60px;
+}
+@media only screen and (max-width: 927px) {
+ .carousel-slide{
+top:150px; 
+}
+}
+@media only screen and (max-width: 599px) {
+  .slick-prev,
+.slick-next {
+  top: 60%;
+}
+ .carousel-slide{
+top:230px; 
+}
+.btnReadMore{
+  margin-left: 20px;
+}
+}
+@media only screen and (max-width: 587px) {
+ .carousel-slide{
+top:220px; 
+}
+.btnReadMore{
+  margin-left: 20px;
+}
+}
+@media only screen and (max-width: 560px) {
+ .carousel-slide{
+top:200px; 
+}
+.btnReadMore{
+  margin-left: 20px;
+}
+}
+@media only screen and (max-width: 500px) {
+ .carousel-slide{
+top:190px; 
+}
+.btnReadMore{
+  margin-left: 20px;
+}
+}
+@media only screen and (max-width: 470px) {
+ .carousel-slide{
+top:180px; 
+}
+.btnReadMore{
+  margin-left: 20px;
+}
+}
+@media only screen and (max-width: 540px) {
+ .carousel-slide{
+top:160px; 
+}
+.btnReadMore{
+  margin-left: 20px;
+}
+}
+@media only screen and (max-width: 387px) {
+ .carousel-slide{
+top:140px; 
+}
+.btnReadMore{
+  margin-left: 20px;
+}
+}
+@media only screen and (max-width: 319px) {
+ .carousel-slide{
+top:120px; 
+}
+.btnReadMore{
+  margin-left: 20px;
+}
+}
+@media only screen and (max-width: 267px) {
+.headingMore{
+  display: none;
+}
+.btnReadMore{
+  display: none;
+}
+}

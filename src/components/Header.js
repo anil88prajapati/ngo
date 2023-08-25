@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import './Master.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import useScreenSize from "../utils/useScreenSize";
+import { useNavigate } from "react-router-dom";
 
 const navData = [
     {
@@ -30,7 +31,8 @@ const navData = [
     }
 ]
 
-const MegaMenu = ({ nav, expanded }) => {
+const MegaMenu = ({ nav, expanded, pageState }) => {
+    const navigate = useNavigate()
 
     if (expanded) {
         return <div className="mainContainer" >
@@ -68,22 +70,23 @@ const MegaMenu = ({ nav, expanded }) => {
             </div>
         </div>
     } else {
-        return <Typography sx={{ fontWeight: 700, fontSize: '15px', transition: 'all 0.50s ease', color: HEADER_TEXT_COLOR, cursor: 'pointer', '&:hover': { color: HEADER_HOVER_COLOR } }}>{nav}</Typography>
+        return <Typography onClick={() => navigate('/contact')} sx={{ fontWeight: 700, fontSize: '15px', transition: 'all 0.50s ease', color: pageState === 'contact' ? HEADER_HOVER_COLOR : HEADER_TEXT_COLOR, cursor: 'pointer', '&:hover': { color: HEADER_HOVER_COLOR } }}>{nav}</Typography>
     }
 }
 
-const Header = () => {
+const Header = ({ pageState }) => {
     const { state } = useScreenSize()
-    return (
+    const navigate = useNavigate()
+    return (<>
         <AppBar>
             <Toolbar sx={{ bgcolor: HEADER_BG_COLOR, display: 'flex', justifyContent: state.currentScreenSize > 990 ? 'space-evenly' : 'space-between', alignItems: 'center' }}>
-                <img src={LOGO_IMG} alt='logoImage' />
+                <img onClick={() => navigate('/')} src={LOGO_IMG} alt='logoImage' style={{ cursor: 'pointer' }} />
                 {state.currentScreenSize > 990 && <div style={{ display: 'flex', padding: '10px', alignItems: 'center', justifyContent: 'space-evenly', width: '53%' }}>
-                    <MegaMenu nav="ABOUT US" expanded={true} />
-                    <MegaMenu nav="PROGRAMS" expanded={true} />
-                    <MegaMenu nav="GET INVOLVED" expanded={true} />
-                    <MegaMenu nav="RESOURCES" expanded={true} />
-                    <MegaMenu nav="CONTACT" expanded={false} />
+                    <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} />
+                    <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} />
+                    <MegaMenu nav="GET INVOLVED" expanded={true} pageState={pageState} />
+                    <MegaMenu nav="RESOURCES" expanded={true} pageState={pageState} />
+                    <MegaMenu nav="CONTACT" expanded={false} pageState={pageState} />
                 </div>}
 
                 {state.currentScreenSize > 990 && <Box sx={{ borderRadius: '50%', p: '5px 6px', border: '1px solid lightgray', display: 'flex', alignItems: 'center' }}>
@@ -94,6 +97,8 @@ const Header = () => {
                 </Box>}
             </Toolbar>
         </AppBar>
+        <Toolbar />
+    </>
     )
 }
 

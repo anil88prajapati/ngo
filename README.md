@@ -1,5 +1,5 @@
 # NGO PROJECT
 
-This project was is using MATERIAL MUI CSS LIBRARY.
+This project is using MATERIAL MUI CSS LIBRARY.
 
 ## BY: ROHIT AMBAWATA

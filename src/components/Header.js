@@ -31,13 +31,13 @@ const navData = [
     }
 ]
 
-const MegaMenu = ({ nav, expanded, pageState }) => {
-    const navigate = useNavigate()
+const MegaMenu = ({ nav, expanded, pageState, navRouteHandler }) => {
+// const navigate = useNavigate()
 
     if (expanded) {
         return <div className="mainContainer" >
-            <div className="mainContainerInner" >
-                <Typography sx={{ fontWeight: 700, fontSize: '15px', transition: 'all 0.50s ease', color: HEADER_TEXT_COLOR, '&:hover': { color: HEADER_HOVER_COLOR } }}>{nav}</Typography>
+            <div className="mainContainerInner" onClick={navRouteHandler}  >
+                <Typography sx={{ fontWeight: 700, fontSize: '15px', transition: 'all 0.50s ease', color: pageState === nav ? HEADER_HOVER_COLOR : HEADER_TEXT_COLOR, '&:hover': { color: HEADER_HOVER_COLOR } }}>{nav}</Typography>
                 <ExpandMoreIcon className="iconExpand" sx={{ color: HEADER_TEXT_COLOR }} />
             </div>
 
@@ -59,18 +59,17 @@ const MegaMenu = ({ nav, expanded, pageState }) => {
                                 <Typography sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px', '&:hover': { color: HEADER_HOVER_COLOR } }}>{navs.title}</Typography>
                                 {navs.data.map((ele) => {
                                     return <Box key={ele} sx={{ p: '10px', pl: '20px', pb: '0px', width: '100%' }}>
-                                        <Typography sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px', '&:hover': { color: HEADER_HOVER_COLOR } }}>{ele}</Typography>
+                                        <Typography onClick={navRouteHandler} sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px', '&:hover': { color: HEADER_HOVER_COLOR } }}>{ele}</Typography>
                                     </Box>
                                 })}
                             </Box>
                         })
                     }
-
                 </Box>
             </div>
         </div>
     } else {
-        return <Typography onClick={() => navigate('/contact')} sx={{ fontWeight: 700, fontSize: '15px', transition: 'all 0.50s ease', color: pageState === 'contact' ? HEADER_HOVER_COLOR : HEADER_TEXT_COLOR, cursor: 'pointer', '&:hover': { color: HEADER_HOVER_COLOR } }}>{nav}</Typography>
+        return <Typography onClick={navRouteHandler} sx={{ fontWeight: 700, fontSize: '15px', transition: 'all 0.50s ease', color: pageState === 'contact' ? HEADER_HOVER_COLOR : HEADER_TEXT_COLOR, cursor: 'pointer', '&:hover': { color: HEADER_HOVER_COLOR } }}>{nav}</Typography>
     }
 }
 
@@ -82,11 +81,11 @@ const Header = ({ pageState }) => {
             <Toolbar sx={{ bgcolor: HEADER_BG_COLOR, display: 'flex', justifyContent: state.currentScreenSize > 990 ? 'space-evenly' : 'space-between', alignItems: 'center' }}>
                 <img onClick={() => navigate('/')} src={LOGO_IMG} alt='logoImage' style={{ cursor: 'pointer' }} />
                 {state.currentScreenSize > 990 && <div style={{ display: 'flex', padding: '10px', alignItems: 'center', justifyContent: 'space-evenly', width: '53%' }}>
-                    <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} />
-                    <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} />
-                    <MegaMenu nav="GET INVOLVED" expanded={true} pageState={pageState} />
+                    <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/about')} />
+                    <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/programs')} />
+                    <MegaMenu nav="GET INVOLVED" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/get-involved')} />
                     <MegaMenu nav="RESOURCES" expanded={true} pageState={pageState} />
-                    <MegaMenu nav="CONTACT" expanded={false} pageState={pageState} />
+                    <MegaMenu nav="CONTACT" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/contact')} />
                 </div>}
 
                 {state.currentScreenSize > 990 && <Box sx={{ borderRadius: '50%', p: '5px 6px', border: '1px solid lightgray', display: 'flex', alignItems: 'center' }}>

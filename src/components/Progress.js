@@ -10,14 +10,14 @@ import { HEADER_HOVER_COLOR } from '../constant'
 const Progress = () => {
     return (
         <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' } }}>
-            <HeadingGlobal title="PROGRESS-O-METER 2020-21" />
+            <HeadingGlobal title="OUR PROGRESS" />
             <Grid container sx={{ mt: '20px', boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '30px 0px 50px 0px', mb: '20px' }}>
                 <Grid item lg={3} xs={12} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Box style={{ width: '100%' }}>
-                        <Typography textAlign={'center'} sx={{ bgcolor: { xs: HEADER_HOVER_COLOR, lg: 'white' }, fontSize: '16px', fontWeight: 900, }}>Activities in</Typography>
+                        <Typography textAlign={'center'} sx={{ bgcolor: { xs: HEADER_HOVER_COLOR, lg: 'white' }, fontSize: '16px', fontWeight: 900, }}>Activities</Typography>
                     </Box>
                     <img src={two} alt="numberPic" />
-                    <Typography textAlign={'center'} sx={{ fontSize: '16px', fontWeight: 300, opacity: 0.3 }}>States & Union Territories</Typography>
+                    {/* <Typography textAlign={'center'} sx={{ fontSize: '16px', fontWeight: 300, opacity: 0.3 }}>States & Union Territories</Typography> */}
                 </Grid>
                 <Grid item lg={3} xs={12} sx={{ mt: { xs: '20px', lg: '0px' }, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Box style={{ width: '100%' }}>
@@ -28,18 +28,18 @@ const Progress = () => {
                 </Grid>
                 <Grid item lg={3} xs={12} sx={{ mt: { xs: '20px', lg: '0px' }, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Box style={{ width: '100%' }}>
-                        <Typography textAlign={'center'} sx={{ bgcolor: { xs: HEADER_HOVER_COLOR, lg: 'white' }, fontSize: '16px', fontWeight: 900, }}>Activities engaged</Typography>
+                        <Typography textAlign={'center'} sx={{ bgcolor: { xs: HEADER_HOVER_COLOR, lg: 'white' }, fontSize: '16px', fontWeight: 900, }}>Students Enrolled</Typography>
                     </Box>
                     <img src={five} alt="numberPic" />
-                    <Typography textAlign={'center'} sx={{ fontSize: '16px', fontWeight: 300, opacity: 0.3 }}>Thousand Parents & Volunteers</Typography>
+                    {/* <Typography textAlign={'center'} sx={{ fontSize: '16px', fontWeight: 300, opacity: 0.3 }}>Thousand Parents & Volunteers</Typography> */}
                 </Grid>
-                <Grid item lg={3} xs={12} sx={{ mt: { xs: '20px', lg: '0px' }, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                {/* <Grid item lg={3} xs={12} sx={{ mt: { xs: '20px', lg: '0px' }, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Box style={{ width: '100%' }}>
                         <Typography textAlign={'center'} sx={{ bgcolor: { xs: HEADER_HOVER_COLOR, lg: 'white' }, fontSize: '16px', fontWeight: 900, }}>Programs reached</Typography>
                     </Box>
                     <img src={one} alt="numberPic" />
                     <Typography textAlign={'center'} sx={{ fontSize: '16px', fontWeight: 300, opacity: 0.3 }}>Million Children & Youth</Typography>
-                </Grid>
+                </Grid> */}
             </Grid>
         </Box>
     )

@@ -1,9 +1,9 @@
 import Header from "../../components/Header"
 import ImageCarousel from "../../global/ImageCarousel"
-import camp from '../../assets/camp.jpg'
-import childhood from '../../assets/childhood.jpg'
-import skills from '../../assets/skills.jpg'
-import secondchance from '../../assets/secondchance.jpg'
+import slide1 from '../../assets/Slide1.JPG'
+import slide2 from '../../assets/Slide2.jpg'
+import slide3 from '../../assets/Slide3.jpg'
+import slide4 from '../../assets/Slide4.jpg'
 import AboutUs from "../../components/AboutUs"
 import Programs from "../../components/Programs"
 import Progress from "../../components/Progress"
@@ -15,26 +15,26 @@ import Footer from "../../global/Footer"
 const Homepage = () => {
     const slides = [
         {
-            image: camp,
-            heading: 'Slide 1 Heading',
+            image: slide1,
+            heading: 'HOPE',
             description: 'Description for Slide 1...',
             path: '/'
         },
         {
-            image: childhood,
-            heading: 'Slide 2 Heading',
+            image: slide2,
+            heading: 'HELP',
             description: 'Description for Slide 2...',
             path: '/'
         },
         {
-            image: skills,
-            heading: 'Slide 3 Heading',
+            image: slide3,
+            heading: 'HUMANITY',
             description: 'Description for Slide 2...',
             path: '/'
         },
         {
-            image: secondchance,
-            heading: 'Slide 4 Heading',
+            image: slide4,
+            heading: 'Smile',
             description: 'Description for Slide 2...',
             path: '/'
         },

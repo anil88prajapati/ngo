@@ -4,10 +4,10 @@ import HeadingGlobal from '../global/HeadingGlobal'
 import school from '../assets/schoolDreams.png'
 
 const data = [
-    { pic: school, title: 'The school of my dreams', para: 'No longer can you see desks and benches in rows facing the blackboard. Now there are rooms with open space where teachers and children can organise themselves in whatever way they want.', path: '/' },
+    { pic: school, title: 'The school of my dreams', para: 'No longer can you see desks and benches in rows facing the blackboard. Now there are rooms with open space where teachers and children can organise themselves in whatever way they want.', path: '/about' },
     { pic: school, title: 'Dr. Rukmini Banerji, CEO of Pratham Education Foundation, about the success of ASER and more', para: 'No longer can you see desks and benches in rows facing the blackboard. Now there are rooms with open space where teachers and children can organise themselves in whatever way they want.', path: '/' },
     { pic: school, title: 'Nationwide summer campaigns can plug school education gaps', para: 'No longer can you see desks and benches in rows facing the blackboard. Now there are rooms with open space where teachers and children can organise themselves in whatever way they want.', path: '/' },
-    { pic: school, title: "‘सही समय पर उपयोगी आंकड़े मिलें तो दिशा दिखने लगती है’", para: 'निपुण भारत के लक्ष्य को हासिल करना है तो अगले 3-4 वर्षों में हर वर्ष बड़े और ठोस कदम लेने होंगे', path: '/' },
+    { pic: school, title: "‘सही समय पर उपयोगी आंकड़े मिलें तो दिशा दिखने लगती है’", para: 'निपुण भारत के लक्ष्य को हासिल करना है तो अगले 3-4 वर्षों में हर वर्ष बड़े और ठोस कदम लेने होंगे', path: '/about' },
 ]
 
 const WhatsNew = () => {
@@ -23,7 +23,7 @@ const WhatsNew = () => {
                         <Grid item lg={10} xs={12} sx={{ p: '0px 15px' }}>
                             <Typography sx={{ textAlign: { lg: 'left', xs: 'center' }, mt: '10px', fontWeight: 900 }}>{item.title}</Typography>
                             <Typography sx={{ fontSize: '13px', mt: '20px', color: 'gray', fontWeight: 500 }}>{item.para}</Typography>
-                            <Button disableRipple variant='text' sx={{ textTransform: 'unset' }} size='small'>Know More</Button>
+                            <Button disableRipple variant='text' sx={{ textTransform: 'unset' }} size='small' LinkComponent={item.path}>Know More</Button>
                         </Grid>
                     </Grid>
                 })}

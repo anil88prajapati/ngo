@@ -11,14 +11,14 @@ const navData = [
     {
         navItem: 'ABOUT US', data: [
             { title: 'Board', path: '/' }, { title: 'Leadership', path: '/' }, { title: 'Partners', path: '/' },
-            { title: 'Teaching at the Right Level', path: '/' }, { title: 'Hamara Gaon', path: '/' },
+            //{ title: 'Teaching at the Right Level', path: '/' }, { title: 'Hamara Gaon', path: '/' },
             { title: 'Recognition', path: '/' }, { title: "What's New", path: '/' }, { title: 'Legal & Financial Information', path: '/' },
             { title: 'FAQ', path: '/' }]
     },
     {
         navItem: 'PROGRAMS', data: [
-            { title: 'Education', path: '/', data: ["Early Childhood Education", "Elementary", "Beyond Elementary", "Digital Initiatives"] }, { title: 'Vocational Training', path: '/', data: [] }, { title: 'Research and Advocacy', path: '/', data: [] },
-            { title: 'Vulnerable Children', path: '/', data: [] }, { title: 'COVID-19 Response', path: '/', data: ["HOME", "Learning Readiness & Catch Up", "Lessons from the Pandemic"] },]
+            { title: 'Good Citizenship Programme', path: '/', data: [] }, { title: 'Juvenile Aftercare Programme', path: '/', data: [] }, { title: 'Skill Development', path: '/', data: [] },
+            { title: 'Talent Bank Development', path: '/', data: [] }]//, { title: 'COVID-19 Response', path: '/', data: ["HOME", "Learning Readiness & Catch Up", "Lessons from the Pandemic"] },]
     },
     {
         navItem: 'GET INVOLVED', data: [
@@ -26,8 +26,8 @@ const navData = [
     },
     {
         navItem: 'RESOURCES', data: [
-            { title: 'Pratham Digital', path: '/' }, { title: 'Glimpses', path: '/' }, { title: 'Media', path: '/' },
-            { title: 'Publications', path: '/' }, { title: 'Annual Reports', path: '/' },]
+            { title: 'Events', path: '/' }, { title: 'Photos', path: '/' }, { title: 'Videos', path: '/' },]
+    //        { title: 'Publications', path: '/' }, { title: 'Annual Reports', path: '/' },]
     }
 ]
 
@@ -79,7 +79,7 @@ const Header = ({ pageState }) => {
     return (<>
         <AppBar>
             <Toolbar sx={{ bgcolor: HEADER_BG_COLOR, display: 'flex', justifyContent: state.currentScreenSize > 990 ? 'space-evenly' : 'space-between', alignItems: 'center' }}>
-                <img onClick={() => navigate('/')} src={LOGO_IMG} alt='logoImage' style={{ cursor: 'pointer' }} />
+                <img onClick={() => navigate('/')} src={LOGO_IMG} alt='logoImage' style={{ cursor: 'pointer' }} width={100} />
                 {state.currentScreenSize > 990 && <div style={{ display: 'flex', padding: '10px', alignItems: 'center', justifyContent: 'space-evenly', width: '53%' }}>
                     <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/about')} />
                     <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/programs')} />

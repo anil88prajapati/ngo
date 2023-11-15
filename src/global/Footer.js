@@ -12,7 +12,7 @@ const Footer = () => {
                         <Typography sx={{ fontWeight: 600 }}>About Us</Typography>
                     </Grid>
                     <Grid item >
-                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>About Pratham</Typography>
+                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>About Seva Srijan Foundation</Typography>
                         <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>History</Typography>
                         <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Board</Typography>
                         <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Leadership</Typography>
@@ -27,10 +27,10 @@ const Footer = () => {
                         <Typography sx={{ fontWeight: 600 }}>Programs</Typography>
                     </Grid>
                     <Grid item>
-                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Education</Typography>
-                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Vocational Training</Typography>
-                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Research & Advocacy</Typography>
-                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Vulnerable Children</Typography>
+                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Good Citizenship Programme</Typography>
+                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Juvenile Aftercare Programme</Typography>
+                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Skill Development</Typography>
+                        <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Talent Bank Development</Typography>
                     </Grid>
                 </Grid>
             </Grid>
@@ -59,7 +59,7 @@ const Footer = () => {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item lg={2.4} xs={12} sx={{ mb: '20px' }}>
+            {/* <Grid item lg={2.4} xs={12} sx={{ mb: '20px' }}>
                 <Grid container sx={{ display: 'flex', flexDirection: 'column' }}>
                     <Grid item sx={{ mb: '10px' }}>
                         <Typography sx={{ fontWeight: 600 }}>Mumbai Office</Typography>
@@ -70,7 +70,7 @@ const Footer = () => {
                         <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, }}>{MOBILE_NUMBERS_MUMBAI}</Typography>
                     </Grid>
                 </Grid>
-            </Grid>
+            </Grid> */}
         </Grid>
     </Grid>
     )

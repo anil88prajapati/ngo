@@ -7,8 +7,8 @@ import slide4 from '../../assets/Slide4.jpg'
 import AboutUs from "../../components/AboutUs"
 import Programs from "../../components/Programs"
 import Progress from "../../components/Progress"
-import WhatsNew from "../../components/WhatsNew"
-import OtherWebsite from "../../components/OtherWebsite"
+import WhatsNew from "../../components/BeyondClassroom"
+import OtherWebsite from "../../components/OurCenters"
 import OurPartners from "../../components/OurPartners"
 import Footer from "../../global/Footer"
 
@@ -48,7 +48,7 @@ const Homepage = () => {
         <Progress />
         <WhatsNew />
         <OtherWebsite />
-        <OurPartners />
+        {/* <OurPartners /> */}
         <Footer />
     </>
     )

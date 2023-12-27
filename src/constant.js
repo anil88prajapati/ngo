@@ -5,6 +5,7 @@ export const HEADER_BG_COLOR = 'white'
 export const HEADER_TEXT_COLOR = 'black'
 export const HEADER_HOVER_COLOR = '#ffc400'
 export const DELHI_ADDRESS = "Jonapur Village 2nd Floor, New Delhi - 110 047"
+export const JAIPUR_ADDRESS = "54/13, Mansarovar, Jaipur-302020, Rajasthan"
 export const EMAIL_ADDR = "Email: sevasrijanfoundation@gmail.com"
 export const MOBILE_NUMBERS_DELHI = "Contact number: 9717927771 / 8527298877"
 export const MUMBAI_ADDRESS = "Y.B. Chavan Center, 4th Floor, Gen.J.Bhosale Marg.Nariman Point Mumbai, Maharashtra - 400021"

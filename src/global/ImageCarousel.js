@@ -23,7 +23,7 @@ const ImageCarousel = ({ slides }) => {
             <Slider {...settings}>
                 {slides.map((slide, index) => (
                     <div key={index} className="carousel-slideMain" sx={{ height: '440px' }}>
-                        <img className='imageBox' height={'80%'} width={'100%'} src={slide.image} alt={`Slide ${index}`} />
+                        <img className='imageBox' height={'100%'} width={'100%'} src={slide.image} alt={`Slide ${index}`} />
                         <Box className="carousel-slide" sx={{ display: { lg: 'block', sm: 'block', md: 'block', xs: 'flex' } }} >
                             <Box className="headingMore" sx={{ bgcolor: HEADER_HOVER_COLOR, p: { lg: '10px 10px 10px 20px', xs: '5px 5px 5px 10px' }, }}>
                                 <Typography variant='h3' sx={{ fontWeight: 500, fontSize: { lg: '44px', md: '20px', sm: '20px', xs: '12px' } }}>{slide.heading}</Typography>

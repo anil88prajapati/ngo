@@ -24,7 +24,7 @@ const Programs = () => {
                     </Box>
                     <Box sx={{ display: 'flex', bgcolor: 'transparent', p: { lg: '10px 10px 10px 20px', xs: '5px 5px 5px 10px' }, m: '0px 0px', }}>
                         <Typography variant='p' sx={{ fontWeight: 300, fontSize: { lg: '19px', md: '16px', sm: '12px', xs: '12px' } }}>
-                        Good citizens are basic unit for a Nation. India's journey from “Developing” to “Developed” nation would require wheels of good citizens. Association with schools for supplemental & value education right from primary levels is organizations approach towards development of good citizenry, contributing towards the national growth.
+                        Good citizens are basic unit for a Nation. India's journey from “Developing” to “Developed” nation would require wheels of good citizens. Association with schools for supplemental & value education right from primary levels is organizations approach towards development of good citizen, contributing towards the national growth.
                         </Typography>
                     </Box>
                     <Box sx={{ ml: { lg: '20px', xs: '5px' }, mt: '20px' }}>

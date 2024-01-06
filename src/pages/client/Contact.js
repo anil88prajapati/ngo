@@ -4,7 +4,7 @@ import Footer from '../../global/Footer'
 import PageBanner from '../../global/PageBanner'
 import contactPic from '../../assets/contactimage.jpg'
 import { Divider, Grid, Typography } from '@mui/material'
-import { DELHI_ADDRESS, EMAIL_ADDR, MUMBAI_ADDRESS } from '../../constant'
+import { DELHI_ADDRESS, EMAIL_ADDR, JAIPUR_ADDRESS } from '../../constant'
 import HeadingGlobal from '../../global/HeadingGlobal'
 
 const Contact = () => {
@@ -25,9 +25,9 @@ const Contact = () => {
                     </Grid>
                     <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '30px 0px', opacity: 0.5 }} />
                     <Grid item>
-                        <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>MUMBAI OFFICE (REGISTERED)</Typography>
+                        <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>JAIPUR OFFICE</Typography>
                         <Typography sx={{ fontWeight: 300, color: 'gray' }}>
-                            {MUMBAI_ADDRESS}
+                            {JAIPUR_ADDRESS}
                         </Typography>
                         <Typography sx={{ fontWeight: 300, color: 'gray' }}>{EMAIL_ADDR}</Typography>
                     </Grid>

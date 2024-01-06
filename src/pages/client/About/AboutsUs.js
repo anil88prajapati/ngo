@@ -1,5 +1,5 @@
 import { Button, Grid, Typography } from '@mui/material'
-import aboutusbg from '../../../assets/About-Us.jpg'
+import aboutusbg from '../../../assets/aboutUs.jpg'
 import Header from '../../../components/Header'
 import Footer from '../../../global/Footer'
 import HeadingGlobal from '../../../global/HeadingGlobal'
@@ -13,21 +13,22 @@ import contactpartner from '../../../assets/contact-partnericon.png'
 import donateicon from '../../../assets/donate-icon.png'
 import workwithus from '../../../assets/work-with-usicon.png'
 import getInvolved from '../../../assets/get-involvedicon.png'
+import {ABOUT_US_CONTENT, ABOUT_US_CONTENT1} from '../../../constant'
 
 const AboutsUs = () => {
     return (
         <>
             <Header pageState="ABOUT US" />
-            <PageBanner bannerPic={aboutusbg} text='ABOUT US' />
-            <Grid container sx={{ mt: "30px", p: '0px 60px' }}>
+            <PageBanner bannerPic={aboutusbg} />
+            <Grid container sx={{ mt: "30px", p: '0px 100px' }}>
                 <Grid item lg={8}>
                     <Grid item >
                         <HeadingGlobal title="INTRODUCTION" />
                         <Typography sx={{ opacity: 0.6, mt: '20px', mb: '10px', letterSpacing: '1.3px', lineHeight: '30px', fontSize: '15px' }}>
-                            Pratham is an innovative learning organization created to improve the quality of education in India. As one of the largest non-governmental organizations in the country, Pratham focuses on high-quality, low-cost, and replicable interventions to address gaps in the education system. Established in 1995 to provide education to children in the slums of Mumbai, Pratham has grown both in scope and geographical coverage.
+                        {ABOUT_US_CONTENT} 
                         </Typography>
                         <Typography sx={{ opacity: 0.6, mt: '20px', mb: '10px', letterSpacing: '1.3px', lineHeight: '30px', fontSize: '15px' }}>
-                            Pratham means 'first' in Sanskrit. True to its name, it is the first major organization to achieve lasting, wide-scale success in India's educational landscape. This has been made possible due to various policies and strategies adopted by the organization.
+                        {ABOUT_US_CONTENT1}
                         </Typography>
                     </Grid>
                     <Grid container>
@@ -39,18 +40,18 @@ const AboutsUs = () => {
                         <Grid item lg={5} sx={{ m: '0px 30px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <img src={bulb} alt='bulb' style={{ margin: '30px 0px' }} />
                             <Typography textAlign={'center'} sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>A FOCUS ON INNOVATION</Typography>
-                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>Pratham’s strategies reconfigure teaching methodologies, break down traditional tactics,
-                                and challenge the current rote learning mechanisms in our schools. Our programs are innovative and outcome-driven. In its early years Pratham developed innovative teaching-learning approaches, materials, and measurement methods. In 2005, we pioneered a nationwide survey of schooling and learning that has had a major impact on national and international policy discussions.</Typography>
+                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>strategies reconfigure teaching methodologies, break down traditional tactics,
+                                and challenge the current rote learning mechanisms in our schools. Our programs are innovative and outcome-driven. In its early years SSF developed innovative teaching-learning approaches, materials, and measurement methods. In 2005, we pioneered a nationwide survey of schooling and learning that has had a major impact on national and international policy discussions.</Typography>
                         </Grid>
                         <Grid item lg={5} sx={{ m: '0px 30px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <img src={monitor} alt='monitor' style={{ margin: '30px 0px' }} />
                             <Typography textAlign={'center'} sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>LOW-COST, REPLICABLE MODELS</Typography>
-                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>Pratham has worked to develop low-cost, replicable models that can easily spread and be adopted by other organizations. Thousands of volunteers work with Pratham to implement learning interventions at the grassroots level. These volunteers are mobilized, trained, and monitored by the Pratham team. They are also provided with teaching-learning material and books developed by Pratham. Not only does this ensure more effective implementation of the programs, but it also helps to build an infrastructure focused on providing quality education to children.</Typography>
+                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>SSF has worked to develop low-cost, replicable models that can easily spread and be adopted by other organizations. Thousands of volunteers work with SSF to implement learning interventions at the grassroots level. These volunteers are mobilized, trained, and monitored by the SSF team. They are also provided with teaching-learning material and books developed by SSF. Not only does this ensure more effective implementation of the programs, but it also helps to build an infrastructure focused on providing quality education to children.</Typography>
                         </Grid>
                         <Grid item lg={5} sx={{ m: '0px 30px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <img src={graph} alt='graph' style={{ margin: '30px 0px' }} />
                             <Typography textAlign={'center'} sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>PROGRAMS RESULTS AND ACCOUNTABILITY</Typography>
-                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>All programs are designed to ensure that learning levels in schools and communities increase, education reaches all children who are in school or unable to use school facilities, and youth get well trained for job opportunities. Testing tools are also developed by the Pratham team to check the learning levels of children so as to determine the course of action best suited to each child and to assess impact of our programs.</Typography>
+                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>All programs are designed to ensure that learning levels in schools and communities increase, education reaches all children who are in school or unable to use school facilities, and youth get well trained for job opportunities. Testing tools are also developed by the SSF team to check the learning levels of children so as to determine the course of action best suited to each child and to assess impact of our programs.</Typography>
                         </Grid>
                     </Grid>
                     <Grid item>
@@ -76,10 +77,10 @@ const AboutsUs = () => {
                     </Grid>
                 </Grid>
 
-                <Grid item lg={4} sx={{ pl: '20px' }}>
+                {/* <Grid item lg={4} sx={{ pl: '20px' }}>
                     <HeadingGlobal title="Introduction" />
 
-                </Grid>
+                </Grid> */}
             </Grid>
 
             <Footer />

@@ -45,7 +45,7 @@ const Homepage = () => {
         <ImageCarousel slides={slides} />
         <AboutUs />
         <Programs />
-        <Progress />
+        {/* <Progress /> */}
         <WhatsNew />
         <OtherWebsite />
         {/* <OurPartners /> */}

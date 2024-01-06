@@ -88,9 +88,9 @@ const Header = ({ pageState }) => {
                     <MegaMenu nav="CONTACT" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/contact')} />
                 </div>}
 
-                {state.currentScreenSize > 990 && <Box sx={{ borderRadius: '50%', p: '5px 6px', border: '1px solid lightgray', display: 'flex', alignItems: 'center' }}>
-                    <SearchIcon sx={{ color: HEADER_HOVER_COLOR, cursor: 'pointer' }} />
-                </Box>}
+                {/* {state.currentScreenSize > 990 && <Box sx={{ borderRadius: '50%', p: '5px 6px', border: '1px solid lightgray', display: 'flex', alignItems: 'center' }}> */}
+                    {/* <SearchIcon sx={{ color: HEADER_HOVER_COLOR, cursor: 'pointer' }} /> */}
+                {/* </Box>} */}
                 {state.currentScreenSize < 990 && <Box sx={{ p: '5px 6px', display: 'flex', alignItems: 'center' }}>
                     <MenuIcon sx={{ color: 'black' }} />
                 </Box>}

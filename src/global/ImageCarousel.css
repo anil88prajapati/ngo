@@ -4,6 +4,7 @@
 }
 .imageBox{
   position: relative;
+  height: fit-content;
 }
 .slick-prev,
 .slick-next {

@@ -1,7 +1,6 @@
 import { AppBar, Box, Toolbar, Typography } from "@mui/material"
 import { HEADER_BG_COLOR, LOGO_IMG, HEADER_TEXT_COLOR, HEADER_HOVER_COLOR } from "../constant"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import SearchIcon from '@mui/icons-material/Search';
 import './Master.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import useScreenSize from "../utils/useScreenSize";
@@ -10,15 +9,15 @@ import { useNavigate } from "react-router-dom";
 const navData = [
     {
         navItem: 'ABOUT US', data: [
-            { title: 'Board', path: '/' }, { title: 'Leadership', path: '/' }, { title: 'Partners', path: '/' },
+           { title: 'Leadership', path: '/' }, { title: 'Partners', path: '/' },
             //{ title: 'Teaching at the Right Level', path: '/' }, { title: 'Hamara Gaon', path: '/' },
             { title: 'Recognition', path: '/' }, { title: "What's New", path: '/' }, { title: 'Legal & Financial Information', path: '/' },
             { title: 'FAQ', path: '/' }]
     },
     {
         navItem: 'PROGRAMS', data: [
-            { title: 'Good Citizenship Programme', path: '/', data: [] }, { title: 'Juvenile Aftercare Programme', path: '/', data: [] }, { title: 'Skill Development', path: '/', data: [] },
-            { title: 'Talent Bank Development', path: '/', data: [] }]//, { title: 'COVID-19 Response', path: '/', data: ["HOME", "Learning Readiness & Catch Up", "Lessons from the Pandemic"] },]
+            { title: 'Good Citizenship Programme', path: '/aboutus', data: [] }, { title: 'Aftercare Programme', path: '/', data: [] }, { title: 'Skill Development', path: '/', data: [] },
+            { title: 'Talent Bank Development', path: '/', data: [] }]
     },
     {
         navItem: 'GET INVOLVED', data: [
@@ -81,10 +80,10 @@ const Header = ({ pageState }) => {
             <Toolbar sx={{ bgcolor: HEADER_BG_COLOR, display: 'flex', justifyContent: state.currentScreenSize > 990 ? 'space-evenly' : 'space-between', alignItems: 'center' }}>
                 <img onClick={() => navigate('/')} src={LOGO_IMG} alt='logoImage' style={{ cursor: 'pointer' }} width={100} />
                 {state.currentScreenSize > 990 && <div style={{ display: 'flex', padding: '10px', alignItems: 'center', justifyContent: 'space-evenly', width: '53%' }}>
-                    <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/about')} />
-                    <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/programs')} />
-                    <MegaMenu nav="GET INVOLVED" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/get-involved')} />
-                    <MegaMenu nav="RESOURCES" expanded={true} pageState={pageState} />
+                    <MegaMenu nav="HOME" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/')} />
+                    <MegaMenu nav="ABOUT US" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/about')} />
+                    <MegaMenu nav="PROGRAMS" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/programs')} />
+                    <MegaMenu nav="JOIN US" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/joinUs')} />
                     <MegaMenu nav="CONTACT" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/contact')} />
                 </div>}
 

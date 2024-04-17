@@ -2,6 +2,19 @@
   padding-bottom: 20px;
   overflow: hidden; 
 }
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust as needed */
+  gap: 10px; /* Adjust the gap between images */
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+}
+.photo-small {
+  grid-column-end: span 1; /* Takes one column */
+}
 .imageBox{
   position: relative;
   height: fit-content;

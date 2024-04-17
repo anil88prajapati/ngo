@@ -13,36 +13,25 @@ import OurPartners from "../../components/OurPartners"
 import Footer from "../../global/Footer"
 
 const Homepage = () => {
+
     const slides = [
         {
-            image: slide1,
-            heading: 'HOPE',
-            description: 'Description for Slide 1...',
-            path: '/'
+            image: slide1
         },
         {
-            image: slide2,
-            heading: 'HELP',
-            description: 'Description for Slide 2...',
-            path: '/'
+            image: slide2
         },
         {
-            image: slide3,
-            heading: 'HUMANITY',
-            description: 'Description for Slide 2...',
-            path: '/'
+            image: slide3
         },
         {
-            image: slide4,
-            heading: 'Smile',
-            description: 'Description for Slide 2...',
-            path: '/'
+            image: slide4
         },
     ];
 
     return (<>
         <Header />
-        <ImageCarousel slides={slides} />
+        <ImageCarousel/>
         <AboutUs />
         <Programs />
         {/* <Progress /> */}

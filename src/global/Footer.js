@@ -1,6 +1,6 @@
 import { Divider, Grid, Typography } from '@mui/material'
 import React from 'react'
-import { DELHI_ADDRESS, EMAIL_ADDR, MOBILE_NUMBERS_DELHI, MOBILE_NUMBERS_MUMBAI, MUMBAI_ADDRESS } from '../constant'
+import { DELHI_ADDRESS, EMAIL_ADDR, MOBILE_NUMBERS_DELHI} from '../constant'
 
 const Footer = () => {
     return (<Grid container sx={{ p: '20px 60px' }}>
@@ -37,7 +37,7 @@ const Footer = () => {
             <Grid item lg={2.4} xs={6} sx={{ mb: '20px' }}>
                 <Grid container sx={{ display: 'flex', flexDirection: 'column' }}>
                     <Grid item sx={{ mb: '10px' }}>
-                        <Typography sx={{ fontWeight: 600 }}>Get Involved</Typography>
+                        <Typography sx={{ fontWeight: 600 }}>Join Us</Typography>
                     </Grid>
                     <Grid item>
                         <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Partner with us</Typography>

@@ -1,19 +1,28 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
 import HeadingGlobal from '../global/HeadingGlobal'
 import aboutPic from '../assets/goodCitizenship.jpg'
-import vocational from '../assets/skillDevelopment.JPG'
+import vocational from '../assets/skillDevelopment.jpeg'
 import reserch from '../assets/juvenile.jpg'
 import vulne from '../assets/talentBank.jpg'
 import background from '../assets/blurredbackground.png'
 import { HEADER_HOVER_COLOR } from '../constant'
+import { useNavigate } from "react-router-dom";
 
 const Programs = () => {
+    const handleClick = () => {
+        // Navigate to the prgrams page
+        navigate('/programs')
+    
+        // Scroll to the top of the page
+        window.scrollTo(0, 0);
+      };
+    const navigate = useNavigate()
     return (<Box sx={{ m: { lg: '0px 40px', xs: '0px' }, p: { lg: '40px 40px', xs: '0px 20px' }, backgroundImage: `url(${background})` }}>
         <HeadingGlobal title="PROGRAMS" />
         <Grid container sx={{ mt: '20px', boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: { lg: '20px', xs: '0px' }, mb: '0px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <Grid item lg={6} xs={12} sx={{ mb: '20px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img width={'100%'} height={'90%'} src={aboutPic} alt="about us pic" />
-                <Box sx={{ position: 'absolute', bottom: '60px', left: 0, bgcolor: HEADER_HOVER_COLOR, p: '5px 10px 5px 10px' }}>
+                <Box sx={{ position:  'absolute', bottom: '60px', left: 0, bgcolor: HEADER_HOVER_COLOR, p: '5px 10px 5px 10px' }}>
                     <Typography variant='h4' sx={{ fontWeight: 400, fontSize: { lg: '25px', md: '20px', sm: '20px', xs: '12px' } }}>GOOD CITIZENSHIP PROGRAMME</Typography>
                 </Box>
             </Grid>
@@ -28,7 +37,7 @@ const Programs = () => {
                         </Typography>
                     </Box>
                     <Box sx={{ ml: { lg: '20px', xs: '5px' }, mt: '20px' }}>
-                        <Button variant='contained' size='small' sx={{ fontSize: { lg: '14px', xs: '10px' }, textTransform: 'unset', bgcolor: '#f4bb03', color: 'black', fontWeight: 600, '&:hover': { bgcolor: '#f4bb03' } }}>Learn more</Button>
+                        <Button variant='contained' size='small' sx={{ fontSize: { lg: '14px', xs: '10px' }, textTransform: 'unset', bgcolor: '#f4bb03', color: 'black', fontWeight: 600, '&:hover': { bgcolor: '#f4bb03' } }} onClick={handleClick }>Learn more</Button>
                     </Box>
                 </Box>
             </Grid>
@@ -41,7 +50,7 @@ const Programs = () => {
             <Grid item lg={3.5} xs={12} sx={{ mr: '20px', mb: { xs: '20px', lg: '0px' }, ml: '20px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img width={'100%'} height={'100%'} src={reserch} alt="about us pic" />
                 <Box sx={{ position: 'absolute', bottom: '23px', left: 0, bgcolor: HEADER_HOVER_COLOR, p: '5px 10px 5px 10px' }}>
-                    <Typography variant='h4' sx={{ fontWeight: 400, fontSize: { lg: '18px', md: '15px', sm: '13px', xs: '10px' } }}>JUVENILE AFTERCARE PROGRAMME</Typography>
+                    <Typography variant='h4' sx={{ fontWeight: 400, fontSize: { lg: '18px', md: '15px', sm: '13px', xs: '10px' } }}>AFTERCARE PROGRAMME</Typography>
                 </Box>
             </Grid>
             <Grid item lg={3.5} xs={12} sx={{ mr: '20px', mb: { xs: '20px', lg: '0px' }, ml: '20px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

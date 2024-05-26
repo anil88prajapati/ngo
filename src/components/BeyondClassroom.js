@@ -1,13 +1,13 @@
-import { Box, Button, Grid, Typography } from '@mui/material'
+import { Box,Grid, Typography } from '@mui/material'
 import React from 'react'
 import HeadingGlobal from '../global/HeadingGlobal'
-import school from '../assets/schoolDreams.png'
 import computer from '../assets/computer.jpg'
 import artCraft from '../assets/ArtCraft.jpeg'
 import music from '../assets/music.jpg'
 import tution from '../assets/tution.jpg'
 import englishClass from '../assets/englishClass.JPG'
 import careerCounsil from '../assets/careerCounsil.jpeg'
+import library from '../assets/Library.jpg'
 
 const data = [
     { pic: computer, title: 'Computer Classes', para: 'Computer classes offer several benefits, especially for those who are new to using computers or have limited experience. With this we can improve job oppurtunities, enhance communication and can be efficient in data handling.', path: '/about' },
@@ -15,7 +15,7 @@ const data = [
     { pic: artCraft, title: 'Art & Craft', para: 'Art and craft classess offer numerous benefits, fostering creativity, skill development and personal growth across various aspects of life. This helps us to enhance creativity, stress reduction, fine motor skills development, boost self esteem and confidence.', path: '/' },
     { pic: music, title: 'Dance & Music', para: 'Whether as a hobby, for personal enjoyment, or with aspirations for professional career in the arts, participation in dance and music classes offers numerous physical, emotional, cognitive and social benefits that contribute to overall well being and personal development', path: '/' },
     { pic: tution, title: 'Academic Support', para: 'Academic support serves as a supplementary educational support system that can address individual learning needs, boost academic performance, and foster a deeper understanding of subjects. A child can benefit and improve understanding and performance and hence enhance confidence', path: '/' },
-    { pic: tution, title: 'Library', para: 'Libraries are valuable community assests that play a vital role in fostering education, literacy, knowledge dissemination, cultural preservation, and community engagement, benefiting individuals and society as a whole', path: '/' },
+    { pic: library, title: 'Library', para: 'Libraries are valuable community assests that play a vital role in fostering education, literacy, knowledge dissemination, cultural preservation, and community engagement, benefiting individuals and society as a whole', path: '/' },
     { pic: careerCounsil, title: "Career Counselling", para: 'In Seva Srijan foundation we aims to empower individuals to make informed career choices, manage career transitions, and achieve personal and professional fulfillment by aligning their skills, interests and values with suitable career paths.', path: '/about' },
 ]
 

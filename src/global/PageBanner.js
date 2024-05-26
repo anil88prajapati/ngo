@@ -1,5 +1,5 @@
-import { Box, Grid, Typography } from '@mui/material'
-import { HEADER_HOVER_COLOR } from '../constant'
+import { Grid } from '@mui/material'
+
 
 const PageBanner = ({ bannerPic, text }) => {
     return (<>

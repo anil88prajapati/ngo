@@ -1,0 +1,59 @@
+.aftercare-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.quote-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+blockquote span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.intro-section {
+    margin-bottom: 30px;
+}
+
+.reflection-section {
+    margin-top: 30px;
+}
+
+.reflection-section h3 {
+    margin-bottom: 10px;
+}
+
+.reflection-section textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.reflection-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reflection-section button:hover {
+    background-color: #0056b3;
+}

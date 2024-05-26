@@ -53,10 +53,9 @@ const MegaMenuHamburger = ({ title = "GiveTitleName", data = [], navigateHandler
             width: 'fit-content',
         }
     }
-
     if (data.length > 0) {
         return (
-            <>
+            <> 
                 <Box component='div' className="dropdown" >
                     <Button onClick={() => navigate(`${navigateHandlerTitleRoute}`)} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} endIcon={<ExpandMoreIcon />}>
                         {title}

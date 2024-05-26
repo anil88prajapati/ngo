@@ -16,8 +16,8 @@ const navData = [
     },
     {
         navItem: 'PROGRAMS', data: [
-            { title: 'Good Citizenship Programme', path: '/aboutus', data: [] }, { title: 'Aftercare Programme', path: '/', data: [] }, { title: 'Skill Development', path: '/', data: [] },
-            { title: 'Talent Bank Development', path: '/', data: [] }]
+            { title: 'Good Citizenship Programme', path: '/programs', data: [] }, { title: 'Aftercare Programme', path: '/programs', data: [] }, { title: 'Skill Development', path: '/programs', data: [] },
+            { title: 'Talent Bank Development', path: '/programs', data: [] }]
     },
     {
         navItem: 'GET INVOLVED', data: [
@@ -81,8 +81,8 @@ const Header = ({ pageState }) => {
                 <img onClick={() => navigate('/')} src={LOGO_IMG} alt='logoImage' style={{ cursor: 'pointer' }} width={100} />
                 {state.currentScreenSize > 990 && <div style={{ display: 'flex', padding: '10px', alignItems: 'center', justifyContent: 'space-evenly', width: '53%' }}>
                     <MegaMenu nav="HOME" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/')} />
-                    <MegaMenu nav="ABOUT US" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/about')} />
-                    <MegaMenu nav="PROGRAMS" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/programs')} />
+                    <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/about')} />
+                    <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} navRouteHandler={() => navigate('/programs')} />
                     <MegaMenu nav="JOIN US" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/joinUs')} />
                     <MegaMenu nav="CONTACT" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/contact')} />
                 </div>}

@@ -76,7 +76,7 @@ const AboutsUs = () => {
                             </Grid>
                             <Grid item lg={2.6} sx={{ p: '20px 10px', mr: '20px', border: '2px solid lightgray', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
                                 <img src={donateicon} alt='donateicon' />
-                                <Button sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>Donate</Button>
+                                <Button  sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>Donate</Button>
                             </Grid>
                           {/* <Grid item lg={2.6} sx={{ p: '20px 10px', mr: '20px', border: '2px solid lightgray', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
                                 <img src={workwithus} alt='workwithus' />

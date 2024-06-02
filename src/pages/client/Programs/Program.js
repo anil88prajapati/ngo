@@ -23,7 +23,7 @@ const Program = () => {
     return (
         <>
             <Header pageState="PROGRAMS" />
-            <PageBanner bannerPic={aboutusbg} text="PROGRAMS" />
+            <PageBanner bannerPic={aboutusbg} text="PROGRAMS"/>
             <Grid container sx={{ mt: "30px", p: '0px 100px' }}>
                 <Grid item lg={8}>
                     <Grid item>
@@ -52,7 +52,7 @@ const Program = () => {
                             <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>
                                 Strategies reconfigure teaching methodologies, break down traditional tactics, and challenge the current rote learning mechanisms in our schools. Our programs are innovative and outcome-driven. In its early years SSF developed innovative teaching-learning approaches, materials, and measurement methods. In 2005, we pioneered a nationwide survey of schooling and learning that has had a major impact on national and international policy discussions.
                             </Typography>
-                            <Button onClick={() => handleLearnMoreClick('/aftercare')} sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>
+                            <Button onClick={() => handleLearnMoreClick('/AftercareProgramme')} sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>
                                 Learn More
                             </Button>
                         </Grid>
@@ -62,7 +62,7 @@ const Program = () => {
                             <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>
                                 SSF has worked to develop low-cost, replicable models that can easily spread and be adopted by other organizations. Thousands of volunteers work with SSF to implement learning interventions at the grassroots level. These volunteers are mobilized, trained, and monitored by the SSF team. They are also provided with teaching-learning material and books developed by SSF. Not only does this ensure more effective implementation of the programs, but it also helps to build an infrastructure focused on providing quality education to children.
                             </Typography>
-                            <Button onClick={() => handleLearnMoreClick('/skill-development')} sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>
+                            <Button onClick={() => handleLearnMoreClick('/SkillDevelopment')} sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>
                                 Learn More
                             </Button>
                         </Grid>
@@ -73,7 +73,7 @@ const Program = () => {
                         All our dreams can come true, if we have the courage to pursue them - Walt Disney
                         Talent Bank development is the flagship programme of SSF wherein innate talents are identified in their formative years and nurtured for achievement of their dream careers. Children possessing extraordinary talent are taken under the SSF wings for their all-over holistic grooming from the age of 7-8 years to be part of SSF’s talent development initiative.
                     </Typography>
-                    <Button onClick={() => handleLearnMoreClick('/talent-bank-development')} sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>
+                    <Button onClick={() => handleLearnMoreClick('/TalentBankDevelopment')} sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>
                         Learn More
                     </Button>
                         </Grid>

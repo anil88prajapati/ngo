@@ -1,0 +1,59 @@
+.donate-page {
+    background-image: url('../assets/donateback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-container {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff; 
+    max-width: 600px;
+    width: 100%;
+}
+
+.donate-form .form-group {
+    margin-bottom: 15px;
+}
+
+.donate-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.donate-form input,
+.donate-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.donate-form textarea {
+    resize: vertical;
+}
+
+.donate-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.donate-button:hover {
+    background-color: #45a049;
+}
+
+.bank-details {
+    margin-top: 20px;
+}

@@ -9,10 +9,12 @@ import GoodCitizenshipProgramme from "./components/GoodCitizenshipProgramme";
 import AftercareProgramme from './components/AftercareProgramme';
 import SkillDevelopment from './components/SkillDevelopment';
 import TalentBankDevelopment from './components/TalentBankDevelopment';
+import Gallery from "./components/Gallery";
+import Donate from "./components/Donate";
 
 function App() {
   return (
-    <Router>
+    <Router>  
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/contact" element={<Contact />} />
@@ -22,13 +24,15 @@ function App() {
         <Route exact path="//programme/goodCitizen" element={<AboutsUs />} />
         <Route exact path="/joinUs" element={<JoinUs />} />
         <Route path="/GoodCitizenshipProgramme" element={<GoodCitizenshipProgramme/>} /> 
-        <Route path="/aftercare" element={<AftercareProgramme />} />
-        <Route path="/skill-development" element={<SkillDevelopment />} />
-        <Route path="/talent-bank-development" element={<TalentBankDevelopment />} />
-
+        <Route path="/AftercareProgramme" element={<AftercareProgramme />} />
+        <Route path="/SkillDevelopment" element={<SkillDevelopment />} />
+        <Route path="/TalentBankDevelopment" element={<TalentBankDevelopment />} />
+        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/Donate" element={<Donate/>}/>
       </Routes>
     </Router>
   );
 }
 
 export default App;
+              

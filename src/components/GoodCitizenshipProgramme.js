@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './GoodCitizenshipProgramme.css';
 
+
 const GoodCitizenshipProgramme = () => {
     const [reflection, setReflection] = useState('');
     const [submitted, setSubmitted] = useState(false);
@@ -27,6 +28,9 @@ const GoodCitizenshipProgramme = () => {
             </div>
 
             <div className="intro-section">
+             {/* <div className="image-container">
+                    <img src={tution} alt="tution" />
+    </div>*/}
                 <p>
                     Good Citizenship is an important element of Life Skills & Value Education that
                     transforms children into concerned, thinking, and active citizens. It’s never too early
@@ -58,5 +62,4 @@ const GoodCitizenshipProgramme = () => {
         </div>
     );
 };
-
 export default GoodCitizenshipProgramme;

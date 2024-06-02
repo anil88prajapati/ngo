@@ -1,9 +1,21 @@
-.skill-development-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+body {
     font-family: Arial, sans-serif;
     color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-development-container {
+    padding: 20px;
+     
+    background-image: url('../assets/background-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .quote-section {

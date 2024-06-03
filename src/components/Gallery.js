@@ -9,6 +9,7 @@ import Img6 from '../img/img6.jpg';
 import Img7 from '../img/img7.jpg';
 import Img8 from '../img/img8.jpg';
 import Img9 from '../img/img9.jpg';
+import Footer from "../global/Footer";
 
 const Gallery = () => {
     let data = [
@@ -44,6 +45,7 @@ const Gallery = () => {
                     </div>
                 ))}
             </div>
+            <Footer/>
         </>
     );
 };

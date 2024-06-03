@@ -11,6 +11,10 @@ import SkillDevelopment from './components/SkillDevelopment';
 import TalentBankDevelopment from './components/TalentBankDevelopment';
 import Gallery from "./components/Gallery";
 import Donate from "./components/Donate";
+import Partners from "./components/Partners";
+import Aboutssf from "./components/Aboutssf";
+import AboutUs from "./components/AboutUs";
+
 
 function App() {
   return (
@@ -29,6 +33,9 @@ function App() {
         <Route path="/TalentBankDevelopment" element={<TalentBankDevelopment />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Donate" element={<Donate/>}/>
+        <Route path="/Partners" element={<Partners/>}/>
+        <Route path="/Aboutssf" element={<Aboutssf/>}/>
+        <Route path="/AboustUs" element={<AboutUs/>}/>
       </Routes>
     </Router>
   );

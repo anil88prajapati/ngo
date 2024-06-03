@@ -10,6 +10,7 @@
     justify-content: center;
 }
 
+
 .donate-container {
     background-color: rgba(0, 0, 0, 0.7); 
     padding: 50px;
@@ -56,4 +57,18 @@
 
 .bank-details {
     margin-top: 20px;
+}
+.qr-code-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.qr-code-image {
+    width: 200px;
+    height: 200px;
+}
+.thank-you-message {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './GoodCitizenshipProgramme.css';
+import Footer from '../global/Footer';
 
 
 const GoodCitizenshipProgramme = () => {
@@ -16,6 +17,7 @@ const GoodCitizenshipProgramme = () => {
     };
 
     return (
+        <>
         <div className="gcp-container">
             <div className="quote-section">
                 <h2>Good Citizenship Programme</h2>
@@ -60,6 +62,8 @@ const GoodCitizenshipProgramme = () => {
                 )}
             </div>
         </div>
+        <Footer/>
+        </>
     );
 };
 export default GoodCitizenshipProgramme;

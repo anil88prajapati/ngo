@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import './TalentBankDevelopment.css'; 
+import Footer from '../global/Footer';
 
 const TalentBankDevelopment = () => {
         const [reflection, setReflection] = useState('');
@@ -14,6 +15,7 @@ const TalentBankDevelopment = () => {
             setSubmitted(true);
         };
     return (
+        <>
         <div className="talent-bank-development-container">
             <div className="quote-section">
                 <h2>Talent Bank Development</h2>
@@ -49,6 +51,8 @@ const TalentBankDevelopment = () => {
                 )}
             </div>
         </div>
+        <Footer/>
+        </>
     );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './AftercareProgramme.css';
+import Footer from '../global/Footer';
 
 const AftercareProgramme = () => {
     const [reflection, setReflection] = useState('');
@@ -15,6 +16,7 @@ const AftercareProgramme = () => {
     };
 
     return (
+        <>
         <div className="page-background">
             <div className="aftercare-container">
                 <div className="quote-section">
@@ -64,6 +66,8 @@ const AftercareProgramme = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     );
 };
 

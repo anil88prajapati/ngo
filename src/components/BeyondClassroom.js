@@ -9,6 +9,7 @@ import englishClass from '../assets/englishClass.JPG'
 import careerCounsil from '../assets/careerCounsil.jpeg'
 import library from '../assets/Library.jpg'
 
+
 const data = [
     { pic: computer, title: 'Computer Classes', para: 'Computer classes offer several benefits, especially for those who are new to using computers or have limited experience. With this we can improve job oppurtunities, enhance communication and can be efficient in data handling.', path: '/about' },
     { pic: englishClass, title: 'English speaking classes', para: 'English proficiency offers a multitude of benefits, both personality and professionally, due to its widespread use as a global language. Seva Srijan foundation offers a great English classes which can enhance career opportunities and can benefit academics.', path: '/' },
@@ -21,6 +22,7 @@ const data = [
 
 const WhatsNew = () => {
     return (
+        <>
         <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' } }}>
             <HeadingGlobal title="Learning Beyond Classroom" />
             <Grid container sx={{ mt: '20px', boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '10px', mb: '0px' }}>
@@ -38,6 +40,7 @@ const WhatsNew = () => {
                 })}
             </Grid>
         </Box >
+        </>
     )
 }
 

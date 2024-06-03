@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const navData = [
     {
         navItem: 'ABOUT US', data: [
-           { title: 'Leadership', path: '/' }, { title: 'Partners', path: '/' },
+           { title: 'Leadership', path: '/' }, { title: 'Partners', path: '/Partners' },
             {title: "Gallery", path: '/Gallery' },
             { title: 'FAQ', path: '/' }]
     },
@@ -91,5 +91,4 @@ const Header = ({ pageState }) => {
         </>
     )
 }
-
 export default Header;

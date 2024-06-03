@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SkillDevelopment.css';
+import Footer from '../global/Footer';
 
 const SkillDevelopment = () => {
     const [reflection, setReflection] = useState('');
@@ -15,6 +16,7 @@ const SkillDevelopment = () => {
     };
 
     return (
+        <>
         <div className="skill-development-container">
             <div className="quote-section">
                 <h2>Skill Development</h2>
@@ -55,6 +57,8 @@ const SkillDevelopment = () => {
                 )}
             </div>
         </div>
+        <Footer/>
+        </>
     );
 };
 

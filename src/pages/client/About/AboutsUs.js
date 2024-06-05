@@ -10,7 +10,7 @@ import { HEADER_HOVER_COLOR } from '../../../constant';
 import apple from '../../../assets/apple-icon.jpg';
 import bulb from '../../../assets/bulb-icon.png';
 import monitor from '../../../assets/moniter-icon.png';
-import graph from '../../../assets/graph-icon.jpeg';
+import graph from '../../../assets/graph-icon.jpg';
 import contactpartner from '../../../assets/contact-partnericon.png';
 import donateicon from '../../../assets/donate-icon.png';
 import { ABOUT_US_CONTENT, ABOUT_US_CONTENT1 } from '../../../constant';
@@ -39,7 +39,7 @@ const AboutsUs = () => {
                     </Grid>
                     <Grid container>
                         <Grid item lg={5} sx={{ m: '0px 30px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={apple} alt='picapple' style={{ margin: '30px 0px' }} />
+                            <img src={apple} alt='picapple' style={{ margin: '30px 0px', width: '200px', height: '200px' }} />
                             <Typography textAlign={'center'} sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>DEDICATED TO LARGE-SCALE CHANGE</Typography>
                             <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>
                                 The mission to improve the quality of education in India and ensure that all children not only attend but also thrive in school is being accomplished by working in collaboration with the government, local communities, parents, teachers, volunteers, and civil society members. Our programs aim to supplement rather than replace governmental efforts. They are implemented on a large scale to not only reach as many children as possible, but also to create an adoptable demonstration model for state governments.

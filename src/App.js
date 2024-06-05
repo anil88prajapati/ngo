@@ -14,6 +14,7 @@ import Donate from "./components/Donate";
 import Partners from "./components/Partners";
 import Aboutssf from "./components/Aboutssf";
 import AboutUs from "./components/AboutUs";
+import DonationDetails from './components/DonationDetails';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/Partners" element={<Partners/>}/>
         <Route path="/Aboutssf" element={<Aboutssf/>}/>
         <Route path="/AboustUs" element={<AboutUs/>}/>
+        <Route path="/donation-details" element={<DonationDetails />} />
       </Routes>
     </Router>
   );

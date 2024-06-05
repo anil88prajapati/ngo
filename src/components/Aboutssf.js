@@ -6,7 +6,7 @@ import Footer from '../global/Footer';
 const Aboutssf = () => {
     return (
         <>
-            <Header pageState="AboutSSF" />
+            <Header pageState="Aboutssf" />
             <Box sx={{ backgroundColor: '#f5f5f5', py: 5 }}>
                 <Container>
                     <Paper elevation={3} sx={{ p: { xs: 2, md: 4 }, textAlign: 'left' }}>

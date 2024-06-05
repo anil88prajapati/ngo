@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './GoodCitizenshipProgramme.css';
 import Footer from '../global/Footer';
+import Header from './Header';
 
 
 const GoodCitizenshipProgramme = () => {
@@ -18,6 +19,7 @@ const GoodCitizenshipProgramme = () => {
 
     return (
         <>
+        <Header/>
         <div className="gcp-container">
             <div className="quote-section">
                 <h2>Good Citizenship Programme</h2>

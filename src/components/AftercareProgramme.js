@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './AftercareProgramme.css';
 import Footer from '../global/Footer';
+import Header from './Header';
 
 const AftercareProgramme = () => {
     const [reflection, setReflection] = useState('');
@@ -17,6 +18,7 @@ const AftercareProgramme = () => {
 
     return (
         <>
+        <Header/>
         <div className="page-background">
             <div className="aftercare-container">
                 <div className="quote-section">

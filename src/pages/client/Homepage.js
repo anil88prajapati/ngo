@@ -8,17 +8,14 @@ import OtherWebsite from "../../components/OurCenters"
 import Footer from "../../global/Footer"
 import './Homepage.css'
 
-
 const Homepage = () => {
     return (<>
         <Header />
         <ImageCarousel/>
         <AboutUs />
         <Programs />
-        {/* <Progress /> */}
         <WhatsNew />
         <OtherWebsite />
-        {/* <OurPartners /> */}
         <Footer />
     </>
     )

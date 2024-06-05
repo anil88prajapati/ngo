@@ -10,7 +10,7 @@ import { HEADER_HOVER_COLOR } from '../../../constant';
 import apple from '../../../assets/apple-icon.jpg';
 import bulb from '../../../assets/bulb-icon.png';
 import monitor from '../../../assets/moniter-icon.png';
-import graph from '../../../assets/graph-icon.jpeg';
+import graph from '../../../assets/graph-icon.jpg';
 import { ABOUT_US_CONTENT, ABOUT_US_CONTENT1 } from '../../../constant';
 
 const Program = () => {
@@ -67,7 +67,7 @@ const Program = () => {
                             </Button>
                         </Grid>
                         <Grid item lg={12} sx={{ m: '0px 70px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={graph} alt="graph" style={{ margin: '30px 0px' }} />
+                            <img src={graph} alt="graph" style={{ margin: '30px 0px',width: '200px', height: '200px' }} />
                             <Typography textAlign="center" sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>Talent Bank Development</Typography>
                             <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>
                                 All our dreams can come true, if we have the courage to pursue them - Walt Disney

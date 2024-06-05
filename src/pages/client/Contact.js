@@ -16,13 +16,15 @@ const Contact = () => {
                 <Grid item lg={6} sx={{ p: '0px 30px' }}>
                     <HeadingGlobal title="LOCATE US NEAR YOU" />
                     <Typography sx={{ fontWeight: 900, m: '20px 0px' }}>CENTRAL OFFICE</Typography>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-start' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '43px', alignItems: 'flex-start' }}>
                         <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>HEAD OFFICE</Typography>
                         <Typography sx={{ fontWeight: 300, color: 'gray' }}>
                             {HEAD_OFFICE_ADDRESS}
                         </Typography>
+                       
                         <Typography sx={{ fontWeight: 300, color: 'gray' }}>{EMAIL_ADDR}</Typography>
                         <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px', opacity: 0.5 }} />
+                        
                         <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>DELHI OFFICE</Typography>
                         <Typography sx={{ fontWeight: 300, color: 'gray' }}>
                             {DELHI_ADDRESS}

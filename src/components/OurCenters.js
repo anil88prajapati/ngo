@@ -5,7 +5,7 @@ import { HEAD_OFFICE_ADDRESS, DELHI_ADDRESS, JAIPUR_ADDRESS, LOGO_IMG } from '..
 const data = [
     { pic: LOGO_IMG, link: 'Head Office', redirect: HEAD_OFFICE_ADDRESS, mapUrl: 'https://maps.app.goo.gl/jbquwAsaGv1Jczet8' },
     { pic: LOGO_IMG, link: 'Jaunapur (Delhi) Center', redirect: DELHI_ADDRESS, mapUrl: 'https://maps.app.goo.gl/ic8cND3c7U4AEfNSA' },
-    { pic: LOGO_IMG, link: 'Jaipur (Rajasthan) Chapter', redirect: JAIPUR_ADDRESS, mapUrl: 'https://maps.googleapis.com/maps/api/staticmap?center=37.7749,-122.4194&zoom=10&size=600x450&maptype=roadmap&markers=color:red%7Clabel:A%7C37.7749,-122.4194' }
+    { pic: LOGO_IMG, link: 'Jaipur (Rajasthan) Chapter', redirect: JAIPUR_ADDRESS, mapUrl: 'https://maps.app.goo.gl/jbquwAsaGv1Jczet8' }
 ];
 const OtherWebsite = () => {
     return (

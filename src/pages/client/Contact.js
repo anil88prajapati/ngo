@@ -15,29 +15,28 @@ const Contact = () => {
             <Grid container sx={{ mt: '40px', p: '0px 30px', mb: '30px' }} spacing={2}>
                 <Grid item lg={6} sx={{ p: '0px 30px' }}>
                     <HeadingGlobal title="LOCATE US NEAR YOU" />
-                    <Typography sx={{ fontWeight: 900, m: '20px 0px' }}>CENTRAL OFFICE</Typography>
+                    <Typography sx={{ fontWeight: 900, m: '20px 0px', fontSize: '24px', color: '#1E88E5' }}>CENTRAL OFFICE</Typography>
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '43px', alignItems: 'flex-start' }}>
-                        <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>HEAD OFFICE</Typography>
-                        <Typography sx={{ fontWeight: 300, color: 'gray' }}>
+                        <Typography sx={{ fontWeight: 700, m: '10px 0px', fontSize: '20px', color: '#FF4081' }}>HEAD OFFICE</Typography>
+                        <Typography sx={{ fontWeight: 500, color: '#616161', fontSize: '16px' }}>
                             {HEAD_OFFICE_ADDRESS}
                         </Typography>
-                       
-                        <Typography sx={{ fontWeight: 300, color: 'gray' }}>{EMAIL_ADDR}</Typography>
+                        <Typography sx={{ fontWeight: 500, color: '#616161', fontSize: '16px' }}>{EMAIL_ADDR}</Typography>
                         <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px', opacity: 0.5 }} />
                         
-                        <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>DELHI OFFICE</Typography>
-                        <Typography sx={{ fontWeight: 300, color: 'gray' }}>
+                        <Typography sx={{ fontWeight: 700, m: '10px 0px', fontSize: '20px', color: '#FF4081' }}>DELHI OFFICE</Typography>
+                        <Typography sx={{ fontWeight: 500, color: '#616161', fontSize: '16px' }}>
                             {DELHI_ADDRESS}
                         </Typography>
-                        <Typography sx={{ fontWeight: 300, color: 'gray' }}>{EMAIL_ADDR}</Typography>
+                        <Typography sx={{ fontWeight: 500, color: '#616161', fontSize: '16px' }}>{EMAIL_ADDR}</Typography>
                     </Box>
                     <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '30px 0px', opacity: 0.5 }} />
                     <Box>
-                        <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>JAIPUR OFFICE</Typography>
-                        <Typography sx={{ fontWeight: 300, color: 'gray' }}>
+                        <Typography sx={{ fontWeight: 700, m: '10px 0px', fontSize: '20px', color: '#FF4081' }}>JAIPUR OFFICE</Typography>
+                        <Typography sx={{ fontWeight: 500, color: '#616161', fontSize: '16px' }}>
                             {JAIPUR_ADDRESS}
                         </Typography>
-                        <Typography sx={{ fontWeight: 300, color: 'gray' }}>{EMAIL_ADDR}</Typography>
+                        <Typography sx={{ fontWeight: 500, color: '#616161', fontSize: '16px' }}>{EMAIL_ADDR}</Typography>
                     </Box>
                     
                 </Grid>

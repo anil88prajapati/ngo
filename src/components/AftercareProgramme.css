@@ -3,8 +3,8 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 20px;
-    min-height: 100vh;
+    padding: 80px;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,11 @@
 }
 
 .quote-section, .intro-section, .reflection-section {
-    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 50%;
+    padding: 20px;
     border-radius: 10px;
-    margin-bottom: 50px;
-    
+    margin-bottom: 20px;
 }
 
 .quote-section blockquote {

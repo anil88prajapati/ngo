@@ -47,7 +47,7 @@ const Program = () => {
                             </Button>
                         </Grid>
                         <Grid item lg={12} sx={{ m: '0px 70px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={bulb} alt="bulb" style={{ margin: '30px 0px' }} />
+                            <img src={bulb} alt="bulb" style={{ margin: '30px 0px', width: '200px', height: '200px' }} />
                             <Typography textAlign="center" sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>Aftercare Programme</Typography>
                             <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>
                                 Strategies reconfigure teaching methodologies, break down traditional tactics, and challenge the current rote learning mechanisms in our schools. Our programs are innovative and outcome-driven. In its early years SSF developed innovative teaching-learning approaches, materials, and measurement methods. In 2005, we pioneered a nationwide survey of schooling and learning that has had a major impact on national and international policy discussions.
@@ -57,7 +57,7 @@ const Program = () => {
                             </Button>
                         </Grid>
                         <Grid item lg={12} sx={{ m: '0px 70px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={monitor} alt="monitor" style={{ margin: '30px 0px' }} />
+                            <img src={monitor} alt="monitor" style={{ margin: '30px 0px', width: '200px', height: '200px' }} />
                             <Typography textAlign="center" sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>Skill Development</Typography>
                             <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>
                                 SSF has worked to develop low-cost, replicable models that can easily spread and be adopted by other organizations. Thousands of volunteers work with SSF to implement learning interventions at the grassroots level. These volunteers are mobilized, trained, and monitored by the SSF team. They are also provided with teaching-learning material and books developed by SSF. Not only does this ensure more effective implementation of the programs, but it also helps to build an infrastructure focused on providing quality education to children.

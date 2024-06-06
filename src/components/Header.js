@@ -11,7 +11,7 @@ const navData = [
         navItem: 'ABOUT US', data: [
            { title: 'Leadership', path: '/' }, { title: 'Partners', path: '/Partners' },
             {title: "Gallery", path: '/Gallery' },
-            { title: 'FAQ', path: '/' }]
+            { title: 'FAQ', path: '/Faq' }]
     },
     {
         navItem: 'PROGRAMS', data: [

@@ -10,10 +10,10 @@ import { useNavigate } from "react-router-dom";
 
 const Programs = () => {
     const handleClick = () => {
-        // Navigate to the prgrams page
+      
         navigate('/programs')
     
-        // Scroll to the top of the page
+       
         window.scrollTo(0, 0);
       };
     const navigate = useNavigate()

@@ -1,25 +1,30 @@
-.page-background {
-    background-image: url('../assets/background-1.JPG'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 80px;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .aftercare-container {
-    background-color: rgba(255, 255, 255, 0.262); 
-    padding: 40px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    max-width: 800px;
-    width: 800%;
-    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url('../assets/background-1.JPG');
+    background-size: cover; 
+    background-position: center;
+}
+.aftercare-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.aftercare-container textarea {
+    width: 90%;
+    margin-bottom: 10px;
 }
 
+.aftercare-container button {
+    width: 100px; 
+}
 .quote-section, .intro-section, .reflection-section {
     background-color: rgba(255, 255, 255, 0.8); 
     width: 50%;

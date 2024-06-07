@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import './Gallery.css';
 import CloseIcon from '@mui/icons-material/Close';
-import Img1 from '../img/img1.jpg';
-import Img2 from '../img/img2.JPG';
-import Img4 from '../img/img4.JPG';
-import Img5 from '../img/img5.jpg';
-import Img6 from '../img/img6.jpg';
-import Img7 from '../img/img7.jpg';
-import Img8 from '../img/img8.jpg';
-import Img9 from '../img/img9.jpg';
+import Img1 from './../assets/img/img1.jpg';
+import Img2 from './../assets/img/img2.JPG';
+import Img4 from './../assets/img/img4.JPG';
+import Img5 from './../assets/img/img5.jpg';
+import Img6 from './../assets/img/img6.jpg';
+import Img7 from './../assets/img/img7.jpg';
+import Img8 from './../assets/img/img8.jpg';
+import Img9 from './../assets/img/img9.jpg';
 import Footer from "../global/Footer";
 
 const Gallery = () => {

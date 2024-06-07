@@ -25,7 +25,7 @@ const Programs = () => {
                 <Box sx={{ position:  'absolute', bottom: '60px', left: 0, bgcolor: HEADER_HOVER_COLOR, p: '5px 10px 5px 10px' }}>
                     <Typography variant='h4' sx={{ fontWeight: 400, fontSize: { lg: '25px', md: '20px', sm: '20px', xs: '12px' } }}>GOOD CITIZENSHIP PROGRAMME</Typography>
                 </Box>
-            </Grid>
+            </Grid>   
             <Grid item lg={6} xs={12} sx={{ p: '0px 20px 0px 20px', mb: { xs: '20px', lg: '0px' } }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column' }} >
                     <Box sx={{ p: { lg: '10px 10px 10px 20px', xs: '5px 5px 5px 10px' }, mt: '0px' }}>

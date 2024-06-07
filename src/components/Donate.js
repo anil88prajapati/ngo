@@ -8,6 +8,7 @@ function Donate() {
         from_donationAmount: '',
         from_name: '',
         from_email: '',
+        from_program: '',  // Added new field
         from_message: '' 
     });
 
@@ -82,6 +83,22 @@ function Donate() {
                                 onChange={handleChange}
                                 required
                             />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="program">Program:</label>
+                            <select
+                                id="program"
+                                name="from_program"
+                                value={formData.from_program}
+                                onChange={handleChange}
+                                required
+                            >
+                                <option value="">Select a Program</option>
+                                <option value="Good Citizenship Programme">Good Citizenship Programme</option>
+                                <option value="Aftercare Programme">Aftercare Programme</option>
+                                <option value="Skill Development">Skill Development</option>
+                                <option value="Talent Bank Development">Talent Bank Development</option>
+                            </select>
                         </div>
                         <div className="form-group">
                             <label htmlFor="message">Message (Optional):</label>

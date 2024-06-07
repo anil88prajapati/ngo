@@ -35,6 +35,12 @@ const Faq = () => {
         </p>
       </div>
       <div className="faq-item">
+        <h3>What is the vision of SSF?</h3>
+        <p>
+          The vision of SSF is to create a society based on legitimate rights, equity, social sensitivity, and justice, built on the foundation of Good Citizens.
+        </p>
+      </div>
+      <div className="faq-item">
         <h3>What is the mission of SSF?</h3>
         <p>
           SSF's mission is "To identify and channelize the energies of economically & socially marginalized youth towards self-reliance & helping them through awareness, education & skilling" using the pedagogy "Educate-Train-Employ."
@@ -47,13 +53,7 @@ const Faq = () => {
         </p>
       </div>
       <div className="faq-item">
-        <h3>What is the vision of SSF?</h3>
-        <p>
-          The vision of SSF is to create a society based on legitimate rights, equity, social sensitivity, and justice, built on the foundation of Good Citizens.
-        </p>
-      </div>
-      <div className="faq-item">
-        <h3>What are various Initiatives that SEVA Srijan Foundation is involved with?</h3>
+        <h3>What are various Programs that SEVA Srijan Foundation is involved with?</h3>
         <p>
           With its primary focus on channelizing resources from the cities to the villages, SEVA Srijan Foundation works on the following programs:
           <ul>
@@ -76,7 +76,7 @@ const Faq = () => {
       <div className="faq-item">
         <h3>What types of materials are most needed by SSF?</h3>
         <p>
-          SSF typically requires educational supplies, healthcare materials, and items that support skill development programs. It is best to check their current needs list on their website or contact them for the most updated information.
+          SSF typically requires educational supplies, healthcare materials, and items that support skill development programs.
         </p>
       </div>
       <div className="faq-item">

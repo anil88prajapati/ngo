@@ -1,20 +1,21 @@
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
 import './TalentBankDevelopment.css'; 
 import Footer from '../global/Footer';
 import Header from './Header';
 
 const TalentBankDevelopment = () => {
-        const [reflection, setReflection] = useState('');
-        const [submitted, setSubmitted] = useState(false);
-    
-        const handleInputChange = (e) => {
-            setReflection(e.target.value);
-        };
-    
-        const handleSubmit = (e) => {
-            e.preventDefault();
-            setSubmitted(true);
-        };
+    const [reflection, setReflection] = useState('');
+    const [submitted, setSubmitted] = useState(false);
+
+    const handleInputChange = (e) => {
+        setReflection(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setSubmitted(true);
+    };
+
     return (
         <>
         <Header/>

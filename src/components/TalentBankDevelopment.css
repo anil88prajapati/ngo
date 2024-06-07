@@ -1,38 +1,99 @@
 .talent-bank-development-container {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #020202;
-    background-image: url('../assets/background-4.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border-radius: 10px; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.677);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url('../assets/background-4.jpg');
+    background-size: cover; 
+    background-position: center;
 }
 
-.quote-section {
-    text-align: center;
-    margin-bottom: 30px;
+.talent-bank-development-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-blockquote {
+.talent-bank-development-container textarea {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.talent-bank-development-container button {
+    width: 100px; 
+}
+
+.quote-section, .description-section, .reflection-section {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.quote-section blockquote {
     font-style: italic;
-    margin: 20px 0;
+    color: #333;
 }
 
-blockquote span {
+.quote-section blockquote span {
     display: block;
     margin-top: 10px;
+    text-align: right;
     font-weight: bold;
 }
 
-.description-section {
-    margin-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.695); 
-    padding: 20px;
-    border-radius: 10px; 
+.description-section .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description-section .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description-section p, .description-section ul {
+    color: #333;
+}
+
+.description-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.reflection-section h3 {
+    color: #333;
+}
+
+.reflection-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reflection-section textarea {
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.reflection-section button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.reflection-section button:hover {
+    background-color: #0056b3;
 }

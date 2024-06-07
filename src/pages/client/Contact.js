@@ -24,7 +24,7 @@ const Contact = () => {
                         <Typography sx={{ fontWeight: 500, color: '#616161', fontSize: '16px' }}>{EMAIL_ADDR}</Typography>
                         <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px', opacity: 0.5 }} />
                         
-                        <Typography sx={{ fontWeight: 700, m: '10px 0px', fontSize: '20px', color: '#FF4081' }}>DELHI OFFICE</Typography>
+                        <Typography sx={{ fontWeight: 700, m: '10px 0px', fontSize: '20px', color: '#FF4081' }}>PROJECT OFFICE DELHI</Typography>
                         <Typography sx={{ fontWeight: 500, color: '#616161', fontSize: '16px' }}>
                             {DELHI_ADDRESS}
                         </Typography>
@@ -32,7 +32,7 @@ const Contact = () => {
                     </Box>
                     <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '30px 0px', opacity: 0.5 }} />
                     <Box>
-                        <Typography sx={{ fontWeight: 700, m: '10px 0px', fontSize: '20px', color: '#FF4081' }}>JAIPUR OFFICE</Typography>
+                        <Typography sx={{ fontWeight: 700, m: '10px 0px', fontSize: '20px', color: '#FF4081' }}>PROJECT OFFICE JAIPUR</Typography>
                         <Typography sx={{ fontWeight: 500, color: '#616161', fontSize: '16px' }}>
                             {JAIPUR_ADDRESS}
                         </Typography>

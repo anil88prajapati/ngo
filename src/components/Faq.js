@@ -103,7 +103,7 @@ const Faq = () => {
       <div className="faq-item">
         <h3>I want to see your processing center in Delhi. Who should I coordinate with, for this?</h3>
         <p>
-          Please write to <a href="mailto:SEVA Srijan Foundation">SEVA Srijan Foundation</a> to schedule your visit during our working hours i.e Monday – Saturday (10 am – 5 pm, lunch hours 1.30 pm – 2.30 pm).
+          Please Contact SEVA Srijan Foundation to schedule your visit during our working hours i.e Monday – Saturday (10 am – 5 pm, lunch hours 1.30 pm – 2.30 pm).
           In Delhi, our address is – SEVA Srijan Foundation Plot # 76, Bhagrati Niwas, Main Mandi Road, Village-Jaunapur, New Delhi-110047.
           Please call on  9717927771 / 8527298877 for any assistance regarding directions etc.
         </p>

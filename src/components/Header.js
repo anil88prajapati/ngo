@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const navData = [
     {
         navItem: 'ABOUT US', data: [
-           { title: 'Leadership', path: '/' }, { title: 'Partners', path: '/Partners' },
+           { title: 'Leadership', path: '/Leadership' }, { title: 'Partners', path: '/Partners' },
             {title: "Gallery", path: '/Gallery' },
             { title: 'FAQ', path: '/Faq' }]
     },
@@ -58,15 +58,12 @@ const MegaMenu = ({ nav, expanded, pageState, navRouteHandler }) => {
         )
     }
 }
-
 const Header = ({ pageState }) => {
     const { state } = useScreenSize();
     const navigate = useNavigate();
-
     const navRouteHandler = (path) => {
         navigate(path);
     }
-
     return (
         <>
             <AppBar>

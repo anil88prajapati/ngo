@@ -49,6 +49,24 @@ const Aboutssf = () => {
                         <Typography variant="body1" sx={{ mb: 2 }}>
                             SSF has its motto - “HOPE HELP HUMANITY” and its mission - “To identify and channelize the energies of economically & socially marginalized youth towards self-reliance & helping them through awareness, education & skilling” by employing “Educate-Train-Employ” as their pedagogy.
                         </Typography>
+                        <Typography variant="h6" sx={{ mb: 2, fontWeight: 600 }}>
+                        OUR ACTIVITY FOCUS
+                        </Typography>
+                        <Typography variant="body1" sx={{ mb: 2 }}>
+                        CHILD RIGHTS
+<br></br>
+                        JUVENILE RIGHTS
+<br></br>
+                        SUPPLEMENTAL EDUCATION
+<br></br>
+                        CAREER COUNSELLING
+<br></br>
+                        SKILL DEVELOPMENT
+<br></br>
+                        TALENT BANK DEVELOPMENT
+<br></br>
+                        GOOD CITIZENSHIP
+                        </Typography>
                     </Paper>
                 </Container>
             </Box>

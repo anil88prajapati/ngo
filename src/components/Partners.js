@@ -9,12 +9,22 @@ const Partners = () => {
     return (
         <>
             <Header pageState="Partners" />
-            <Box sx={{ p: { lg: '40px 80px', xs: '20px 40px' }, textAlign: 'center', position: 'relative' }}>
-                <Typography variant="h4" sx={{ mb: '20px', fontWeight: 600 }}>
+            <Box
+                sx={{
+                    p: { lg: '40px 80px', xs: '20px 20px' },
+                    textAlign: 'center',
+                    position: 'relative',
+                    marginTop: '20px',
+                }}
+            >
+                <Typography
+                    variant="h4"
+                    sx={{ mb: '20px', fontWeight: 600, textAlign: 'center' }}
+                >
                     Our Partners
                 </Typography>
                 <Grid container spacing={3} justifyContent="center">
-                    <Grid item xs={12} sm={8}>
+                    <Grid item xs={12} sm={10} md={8}>
                         <Paper elevation={3} sx={{ p: '20px', textAlign: 'left' }}>
                             <Box sx={{ display: 'flex', alignItems: 'center', mb: '10px' }}>
                                 <Typography variant="h5" sx={{ fontWeight: 600, flex: 1 }}>
@@ -59,7 +69,7 @@ const Partners = () => {
                             </Typography>
                         </Paper>
                     </Grid>
-                    <Grid item xs={12} sm={8}>
+                    <Grid item xs={12} sm={10} md={8}>
                         <Paper elevation={3} sx={{ p: '20px', textAlign: 'left' }}>
                             <Box sx={{ display: 'flex', alignItems: 'center', mb: '10px' }}>
                                 <Typography variant="h5" sx={{ fontWeight: 600, flex: 1 }}>

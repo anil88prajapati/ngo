@@ -2,7 +2,7 @@ import { Divider, Grid, Typography } from '@mui/material';
 import React from 'react';
 import { DELHI_ADDRESS, EMAIL_ADDR, MOBILE_NUMBERS_DELHI, HEAD_OFFICE_ADDRESS } from '../constant';
 import { useNavigate } from 'react-router-dom';
-import './Footer.css';  
+import './Footer.css';
 import FacebookIcon from './../assets/facebook.png';
 import InstagramIcon from './../assets/instagram.png';
 import LinkedinIcon from './../assets/linkedin.png';
@@ -53,7 +53,12 @@ const Footer = () => {
                             </Grid>
                             <Grid item>
                                 <Typography onClick={() => handleNavigation('/joinUs')} sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Partner with us</Typography>
-                                <Typography onClick={() => handleNavigation('/Donate')} sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Donate</Typography>
+                                <a href="/Donate" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>
+        Donate
+    </Typography>
+</a>
+
                             </Grid>
                         </Grid>
                     </Grid>
@@ -84,7 +89,7 @@ const Footer = () => {
                 </Grid>
             </Grid>
             <div className="social-media-links">
-                <p>© 2024 Your Website. All rights reserved.</p>
+                <p>© 2024 Seva Srijan Foundation. All Rights Reserved.</p>
                 <div className="social-icons">
                     <a href="https://www.facebook.com/sevasrijanfoundation?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                         <img src={FacebookIcon} alt="Facebook" className="social-icon" />

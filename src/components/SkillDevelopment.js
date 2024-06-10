@@ -1,21 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './SkillDevelopment.css';
 import Footer from '../global/Footer';
 import Header from './Header';
 
 const SkillDevelopment = () => {
-    const [reflection, setReflection] = useState('');
-    const [submitted, setSubmitted] = useState(false);
-
-    const handleInputChange = (e) => {
-        setReflection(e.target.value);
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setSubmitted(true);
-    };
-
     return (
         <>
         <Header/>
@@ -27,9 +15,15 @@ const SkillDevelopment = () => {
                     <span>- Will Smith</span>
                 </blockquote>
             </div>
-
             <div className="intro-section">
-                <p>
+                    <h3>Why Skill Development Programme</h3>
+                    <p>National growth story's fulcrum is skilled, well groomed youth ready to contribute their share in the overall industrial and entrepreneurial growth of the country. Children in the fold of the organization are planned to be put into skilling trade, aligning with their interest and career goal achievement. In the initial phase, SEVA SRIJAN FOUNDATION has plans to operate through skilling centres in Delhi NCR, Rajasthan and Uttarakhand states.
+
+                    </p>
+                </div>
+            <div className="what-we-do-section">
+                    <h3>What We Do</h3>
+                    <p>
                     Skill Development is a significant driver to address poverty through improved
                     employability, productivity and sustainable enterprise development. It facilitates a
                     cycle of high productivity, increased employment opportunities, income growth
@@ -41,23 +35,7 @@ const SkillDevelopment = () => {
                     Programme based on “Educate-Train-Employ” model wherein youth are trained in
                     various skills to enable them earn their livelihood and lead a dignified life.
                 </p>
-            </div>
-
-            <div className="reflection-section">
-                <h3>What does Skill Development mean to you?</h3>
-                {!submitted ? (
-                    <form onSubmit={handleSubmit}>
-                        <textarea
-                            value={reflection}
-                            onChange={handleInputChange}
-                            placeholder="Share your thoughts..."
-                        />
-                        <button type="submit">Submit</button>
-                    </form>
-                ) : (
-                    <p>Thank you for your submission!</p>
-                )}
-            </div>
+                </div>
         </div>
         <Footer/>
         </>

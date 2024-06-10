@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Box, Button, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button, Grid, TextField, Typography, FormControlLabel, Checkbox, FormGroup } from '@mui/material';
 import Header from '../../../components/Header';
 import PageBanner from '../../../global/PageBanner';
 import Footer from '../../../global/Footer';
@@ -15,7 +15,17 @@ const JoinUs = () => {
         from_name: '',
         from_email: '',
         from_number: '',
-        message: ''
+        message: '',
+        interests: {
+            Administration: false,
+            FieldWork: false,
+            Fundraising: false,
+            ProjectImplementation: false,
+            ProjectPlanning: false,
+            Teaching: false,
+            VocationalTraining: false,
+            VolunteerCoordination: false,
+        },
     });
 
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -28,19 +38,41 @@ const JoinUs = () => {
         });
     };
 
+    const handleCheckboxChange = (e) => {
+        const { name, checked } = e.target;
+        setFormData({
+            ...formData,
+            interests: {
+                ...formData.interests,
+                [name]: checked,
+            },
+        });
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_7qxpor1', 'template_12umir8', form.current, 'PmDLW4fe-z9seZ1Mf')
-        .then(
-            (result) => {
-                console.log('SUCCESS!', result.text);
-                setIsSubmitted(true);
-            },
-            (error) => {
-                console.log('FAILED...', error.text);
-            }
-        );
+       
+        const selectedInterests = Object.entries(formData.interests)
+            .filter(([key, value]) => value)
+            .map(([key]) => key.replace(/([A-Z])/g, ' $1').trim())
+            .join(', ');
+
+        const formDataWithInterests = {
+            ...formData,
+            selectedInterests
+        };
+
+        emailjs.send('service_7qxpor1', 'template_12umir8', formDataWithInterests, 'PmDLW4fe-z9seZ1Mf')
+            .then(
+                (result) => {
+                    console.log('SUCCESS!', result.text);
+                    setIsSubmitted(true);
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                }
+            );
     };
 
     return (
@@ -49,7 +81,7 @@ const JoinUs = () => {
             <PageBanner bannerPic={aboutusbg} text="Join Us" />
             <Box sx={{ p: { lg: '40px 80px', xs: '20px 40px' }, textAlign: 'center' }}>
                 <Typography variant="h4" sx={{ mb: '20px', fontWeight: 600 }}>
-                    Join Us
+                    Volunteer Form
                 </Typography>
                 <Typography variant="body1" sx={{ mb: '40px' }}>
                     We are excited to have you join us in making a difference. Please fill out the form below to get started.
@@ -102,6 +134,27 @@ const JoinUs = () => {
                                 />
                             </Grid>
                             <Grid item xs={12}>
+                                <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
+                                    Interests
+                                </Typography>
+                                <FormGroup>
+                                    {Object.keys(formData.interests).map((interest) => (
+                                        <FormControlLabel
+                                            key={interest}
+                                            control={
+                                                <Checkbox
+                                                    checked={formData.interests[interest]}
+                                                    onChange={handleCheckboxChange}
+                                                    name={interest}
+                                                />
+                                            }
+                                            label={interest.replace(/([A-Z])/g, ' $1').trim()}
+                                        />
+                                    ))}
+                                </FormGroup>
+                            </Grid>
+
+                            <Grid item xs={12}>
                                 <Button variant="contained" type="submit" sx={{ bgcolor: '#f4bb03', color: 'black', fontWeight: 600, '&:hover': { bgcolor: '#f4bb03' } }}>
                                     Submit
                                 </Button>
@@ -115,10 +168,10 @@ const JoinUs = () => {
                 )}
             </Box>
             <Grid item lg={6} sx={{ p: '0px 30px' }}>
-            <HeadingGlobal title="SEND US A MESSAGE" />
-                    <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>
-                        Please feel free to drop all your queries at {EMAIL_ADDR}.
-                    </Typography>
+                <HeadingGlobal title="SEND US A MESSAGE" />
+                <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>
+                    Please feel free to drop all your queries at {EMAIL_ADDR}.
+                </Typography>
             </Grid>
             <Footer />
         </>

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './Donate.css';
+import Footer from '../global/Footer';
 
 function Donate() {
     const [formData, setFormData] = useState({
@@ -27,6 +28,7 @@ function Donate() {
     };
 
     return (
+        <>
         <div className="donate-page">
             <div className="donate-container">
                 <h2>Donate to SEVA SRIJAN FOUNDATION</h2>
@@ -93,6 +95,8 @@ function Donate() {
                 </form>
             </div>
         </div>
+        <Footer/>
+        </>
     );
 }
 

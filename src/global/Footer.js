@@ -16,9 +16,11 @@ const Footer = () => {
         window.scrollTo(0, 0);
     };
 
+    const textColor = '#5b3c14';
+
     return (
         <>
-            <Grid container sx={{ p: '20px 60px' }}>
+            <Grid container sx={{ p: '20px 60px', color: textColor }}>
                 <Divider sx={{ border: '1px solid lightgray', width: '100%' }} />
                 <Grid container sx={{ mb: '20px', mt: '30px' }}>
                     <Grid item lg={2.4} xs={6} sx={{ mb: '20px' }}>
@@ -54,11 +56,10 @@ const Footer = () => {
                             <Grid item>
                                 <Typography onClick={() => handleNavigation('/joinUs')} sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Partner with us</Typography>
                                 <a href="/Donate" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-    <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>
-        Donate
-    </Typography>
-</a>
-
+                                    <Typography sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>
+                                        Donate
+                                    </Typography>
+                                </a>
                             </Grid>
                         </Grid>
                     </Grid>
@@ -88,7 +89,7 @@ const Footer = () => {
                     </Grid>
                 </Grid>
             </Grid>
-            <div className="social-media-links">
+            <div className="social-media-links" style={{ color: textColor }}>
                 <p>© 2024 Seva Srijan Foundation. All Rights Reserved.</p>
                 <div className="social-icons">
                     <a href="https://www.facebook.com/sevasrijanfoundation?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">

@@ -1,6 +1,7 @@
 .donation-details-page {
     display: flex;
     flex-direction: column;
+    color: #5b3c14;
     align-items: center;
     padding: 40px 20px;
     background-color: #f0f4f8;

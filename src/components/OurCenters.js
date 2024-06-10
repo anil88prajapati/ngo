@@ -7,9 +7,11 @@ const data = [
     { pic: LOGO_IMG, link: 'Jaunapur (Delhi) Center', redirect: DELHI_ADDRESS, mapUrl: 'https://maps.app.goo.gl/ic8cND3c7U4AEfNSA' },
     { pic: LOGO_IMG, link: 'Jaipur (Rajasthan) Chapter', redirect: JAIPUR_ADDRESS, mapUrl: 'https://maps.app.goo.gl/k99MptLTjKA7ho8b7' }
 ];
+
 const OurCenters = () => {
+    const textColor = '#5b3c14'; 
     return (
-        <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' } }}>
+        <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' }, color: textColor }}>
             <HeadingGlobal title="OUR CENTERS" />
             <Grid container sx={{ mt: '20px', boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: { lg: '20px', xs: '0px' }, mb: '0px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 {data.map((item) => {
@@ -20,7 +22,7 @@ const OurCenters = () => {
                             </Box>
                             <Box sx={{ mt: '20px', mb: '20px' }}>
                                 <Typography textAlign={'center'}>
-                                    <a style={{ color: 'black' }} href={item.mapUrl} target="_blank" rel="noopener noreferrer">{item.link}</a>
+                                    <a style={{ color: textColor }} href={item.mapUrl} target="_blank" rel="noopener noreferrer">{item.link}</a>
                                 </Typography>
                             </Box>
                         </Grid>

@@ -1,11 +1,15 @@
 .social-media-links {
     text-align: center;
+    color: #5b3c14;
+    padding: 20px 0;
+    background-color: #f0f0f0;
     margin-top: 10px; 
     font-size: 14px;
 }
 
 .social-icons {
     display: flex;
+    color: #5b3c14;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -22,11 +26,16 @@
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 45px; 
+    height: 40px;
+    transition: transform 0.3s;
     margin-bottom: 5px;
 }
 
 .social-icons a:hover {
     color: #007bff;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
 }

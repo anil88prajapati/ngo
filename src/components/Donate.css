@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
+    color: #5b3c14;
     padding: 20px;
     min-height: 100vh;
     display: flex;

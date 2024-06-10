@@ -52,7 +52,7 @@ const MegaMenu = ({ nav, expanded, pageState, navRouteHandler }) => {
                                      <Typography sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px', color: HEADER_TEXT_COLOR }}>{navs.title}</Typography>
                                  </a>
                                      ) : (
-                                     <Typography onClick={() => navRouteHandler(navs.path)} sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px', cursor: 'pointer' }}>{navs.title}</Typography>
+                                     <Typography onClick={() => navRouteHandler(navs.path)} sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px', cursor: 'pointer', color: HEADER_TEXT_COLOR }}>{navs.title}</Typography>
                                      )}                   
                                  </Box>
                                 ))
@@ -90,7 +90,7 @@ const Header = ({ pageState }) => {
                     )}
                     {state.currentScreenSize < 990 && (
                         <Box sx={{ p: '5px 6px', display: 'flex', alignItems: 'center' }}>
-                            <MenuIcon sx={{ color: 'black' }} />
+                            <MenuIcon sx={{ color: HEADER_TEXT_COLOR }} />
                         </Box>
                     )}
                 </Toolbar>
@@ -99,4 +99,5 @@ const Header = ({ pageState }) => {
         </>
     )
 }
+
 export default Header;

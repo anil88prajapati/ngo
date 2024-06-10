@@ -26,6 +26,15 @@ const JoinUs = () => {
             VocationalTraining: false,
             VolunteerCoordination: false,
         },
+        availability: {
+            Sunday: { Morning: false, Afternoon: false, Evening: false },
+            Monday: { Morning: false, Afternoon: false, Evening: false },
+            Tuesday: { Morning: false, Afternoon: false, Evening: false },
+            Wednesday: { Morning: false, Afternoon: false, Evening: false },
+            Thursday: { Morning: false, Afternoon: false, Evening: false },
+            Friday: { Morning: false, Afternoon: false, Evening: false },
+            Saturday: { Morning: false, Afternoon: false, Evening: false },
+        },
     });
 
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -40,6 +49,21 @@ const JoinUs = () => {
 
     const handleCheckboxChange = (e) => {
         const { name, checked } = e.target;
+        const [day, time] = name.split('_');
+        setFormData({
+            ...formData,
+            availability: {
+                ...formData.availability,
+                [day]: {
+                    ...formData.availability[day],
+                    [time]: checked,
+                },
+            },
+        });
+    };
+
+    const handleInterestChange = (e) => {
+        const { name, checked } = e.target;
         setFormData({
             ...formData,
             interests: {
@@ -52,18 +76,29 @@ const JoinUs = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-       
         const selectedInterests = Object.entries(formData.interests)
             .filter(([key, value]) => value)
             .map(([key]) => key.replace(/([A-Z])/g, ' $1').trim())
             .join(', ');
 
-        const formDataWithInterests = {
+        const selectedAvailability = Object.entries(formData.availability)
+            .map(([day, times]) => {
+                const availableTimes = Object.entries(times)
+                    .filter(([time, available]) => available)
+                    .map(([time]) => time)
+                    .join(', ');
+                return `${day}: ${availableTimes}`;
+            })
+            .filter((availability) => availability.split(': ')[1])
+            .join('; ');
+
+        const formDataWithDetails = {
             ...formData,
-            selectedInterests
+            selectedInterests,
+            selectedAvailability,
         };
 
-        emailjs.send('service_7qxpor1', 'template_12umir8', formDataWithInterests, 'PmDLW4fe-z9seZ1Mf')
+        emailjs.send('service_7qxpor1', 'template_12umir8', formDataWithDetails, 'PmDLW4fe-z9seZ1Mf')
             .then(
                 (result) => {
                     console.log('SUCCESS!', result.text);
@@ -135,6 +170,36 @@ const JoinUs = () => {
                             </Grid>
                             <Grid item xs={12}>
                                 <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
+                                    Availability
+                                </Typography>
+                                <FormGroup>
+                                    {Object.keys(formData.availability).map((day) => (
+                                        <Grid container key={day} spacing={2} sx={{ mb: '10px' }}>
+                                            <Grid item xs={2}>
+                                                <Typography variant="body1" sx={{ fontWeight: 500 }}>
+                                                    {day}
+                                                </Typography>
+                                            </Grid>
+                                            {Object.keys(formData.availability[day]).map((time) => (
+                                                <Grid item xs={3} key={time}>
+                                                    <FormControlLabel
+                                                        control={
+                                                            <Checkbox
+                                                                checked={formData.availability[day][time]}
+                                                                onChange={handleCheckboxChange}
+                                                                name={`${day}_${time}`}
+                                                            />
+                                                        }
+                                                        label={time}
+                                                    />
+                                                </Grid>
+                                            ))}
+                                        </Grid>
+                                    ))}
+                                </FormGroup>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
                                     Interests
                                 </Typography>
                                 <FormGroup>
@@ -144,7 +209,7 @@ const JoinUs = () => {
                                             control={
                                                 <Checkbox
                                                     checked={formData.interests[interest]}
-                                                    onChange={handleCheckboxChange}
+                                                    onChange={handleInterestChange}
                                                     name={interest}
                                                 />
                                             }
@@ -153,7 +218,6 @@ const JoinUs = () => {
                                     ))}
                                 </FormGroup>
                             </Grid>
-
                             <Grid item xs={12}>
                                 <Button variant="contained" type="submit" sx={{ bgcolor: '#f4bb03', color: 'black', fontWeight: 600, '&:hover': { bgcolor: '#f4bb03' } }}>
                                     Submit

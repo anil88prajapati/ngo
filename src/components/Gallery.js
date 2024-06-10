@@ -10,6 +10,7 @@ import Img7 from './../assets/img/img7.jpg';
 import Img8 from './../assets/img/img8.jpg';
 import Img9 from './../assets/img/img9.jpg';
 import Footer from "../global/Footer";
+import Header from "./Header";
 
 const Gallery = () => {
     let data = [
@@ -33,6 +34,7 @@ const Gallery = () => {
 
     return (
         <>
+        <Header/>
         <h1 style={{textAlign:'center', fontFamily:'initial'}}>Gallery</h1>
             <div className={model ? "model open" : "model"}>
                 <img src={tempImgSrc} alt="Expanded view" />

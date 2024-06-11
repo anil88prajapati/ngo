@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../global/Footer';
 import PageBanner from '../../global/PageBanner';
-import contactPic from '../../assets/contactimage.jpg';
+import contactback from '../../assets/contactback.jpg'
 import { Divider, Grid, Typography, Box } from '@mui/material';
 import { DELHI_ADDRESS, EMAIL_ADDR, HEAD_OFFICE_ADDRESS, JAIPUR_ADDRESS } from '../../constant';
 import HeadingGlobal from '../../global/HeadingGlobal';
@@ -12,7 +12,7 @@ const Contact = () => {
     return (
         <>
             <Header pageState="contact" />
-            <PageBanner bannerPic={contactPic} text='Contact' />
+            <PageBanner bannerPic={contactback} text='Contact' />
             <Box sx={{ color: textColor }}>
                 <Grid container sx={{ mt: '40px', p: '0px 30px', mb: '30px' }} spacing={3}>
                     <Grid item lg={6} sx={{ p: '0px 30px' }}>

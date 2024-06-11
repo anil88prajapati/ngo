@@ -203,19 +203,22 @@ const JoinUs = () => {
                                     Interests
                                 </Typography>
                                 <FormGroup>
-                                    {Object.keys(formData.interests).map((interest) => (
-                                        <FormControlLabel
-                                            key={interest}
-                                            control={
-                                                <Checkbox
-                                                    checked={formData.interests[interest]}
-                                                    onChange={handleInterestChange}
-                                                    name={interest}
+                                    <Grid container spacing={2}>
+                                        {Object.keys(formData.interests).map((interest, index) => (
+                                            <Grid item xs={12} sm={6} md={3} key={interest}>
+                                                <FormControlLabel
+                                                    control={
+                                                        <Checkbox
+                                                            checked={formData.interests[interest]}
+                                                            onChange={handleInterestChange}
+                                                            name={interest}
+                                                        />
+                                                    }
+                                                    label={interest.replace(/([A-Z])/g, ' $1').trim()}
                                                 />
-                                            }
-                                            label={interest.replace(/([A-Z])/g, ' $1').trim()}
-                                        />
-                                    ))}
+                                            </Grid>
+                                        ))}
+                                    </Grid>
                                 </FormGroup>
                             </Grid>
                             <Grid item xs={12}>

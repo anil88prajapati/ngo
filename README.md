@@ -2,4 +2,4 @@
 
 This project is using MATERIAL MUI CSS LIBRARY.
 
-## BY: ROHIT AMBAWATA
+## BY: Nitish Manethiya

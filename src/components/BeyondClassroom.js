@@ -31,8 +31,8 @@ const WhatsNew = () => {
                                 <img width={"150px"} height={'150px'} src={item.pic} alt="schooldreams" />
                             </Grid>
                             <Grid item lg={10} xs={12} sx={{ p: '0px 15px' }}>
-                                <Typography sx={{ textAlign: { lg: 'left', xs: 'center' }, mt: '10px', fontWeight: 900, color: '#5b3c14', fontSize: '20px' }}>{item.title}</Typography>
-                                <Typography sx={{ fontSize: '16px', mt: '20px', fontWeight: 500, color: '#5b3c14' }}>{item.para}</Typography>
+                                <Typography sx={{ textAlign: { lg: 'left', xs: 'center' }, mt: '10px', fontWeight: 900, color: '#5b3c14', fontSize: { lg: '24px', xs: '22px' } }}>{item.title}</Typography>
+                                <Typography sx={{ fontSize: { lg: '18px', xs: '16px' }, mt: '20px', fontWeight: 500, color: '#5b3c14' }}>{item.para}</Typography>
                             </Grid>
                         </Grid>
                     ))}

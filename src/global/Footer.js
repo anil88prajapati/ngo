@@ -92,7 +92,7 @@ const Footer = () => {
             <div className="social-media-links" style={{ color: textColor }}>
                 <p>© 2024 Seva Srijan Foundation. All Rights Reserved.</p>
                 <div className="social-icons">
-                    <a href="https://www.facebook.com/sevasrijanfoundation?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/groups/384329389922374/" target="_blank" rel="noopener noreferrer">
                         <img src={FacebookIcon} alt="Facebook" className="social-icon" />
                         Facebook
                     </a>

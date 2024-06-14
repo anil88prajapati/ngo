@@ -11,6 +11,9 @@ import bhartagg from './../assets/Bhartagg.jpg'
 import ravi from './../assets/ravi.jpg'
 import Sumana from './../assets/Sumana.jpg'
 import Maheshwari from './../assets/Maheshwari.jpg'
+import saurabh from './../assets/saurabh.jpg'
+import mahesh from './../assets/mahesh.jpg'
+import anita from './../assets/anita.jpg'
 
 const Leadership = () => {
     const textColor = '#5b3c14';
@@ -29,19 +32,8 @@ const Leadership = () => {
                 }}
             />
             <Box sx={{ p: { lg: '50px 40px', xs: '40px 20px' }, color: textColor }}>
-                <HeadingGlobal title="INTRODUCTION" />
-                <Typography 
-                    component="div" 
-                    sx={{ 
-                        fontSize: { lg: '18px', xs: '16px' }, 
-                        lineHeight: '1.6',
-                        mt: 2 
-                    }}
-                >
-                    Professor. Social worker. Educationist. Economist. Activist.
-                    These are SEVA SRIJAN FOUNDATION's leaders: visionaries dedicated to improving opportunities for children and youth in India.
-                    Here are some of the pillars of SEVA SRIJAN FOUNDATION.
-                </Typography>
+                <HeadingGlobal title="WHO WE ARE" />
+            
             </Box>
             <Box 
                 sx={{ 
@@ -176,7 +168,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                             color: textColor
                         }}
                     >
-                   Mrs. Bharti Pareek, an educationist having three decades of experience and inclination towards social work has driven her to join SSF and cater to the “Child-focused” activities run by the Organization. Her strong emotional bonding with the children and youth participants helps in boosting creativity and confidence in them.
+               Mrs. Bharti Pareek, a dedicated and compassionate social worker cum educationist possesses three decades of rich experience in the field of child education and counselling. Her natural flair to reach every student and inculcate a love for learning in them was the purpose behind her joining SEVA Srijan Foundation and lead the “Child-focused” activities run by the Organization. Her strong emotional bonding with the students helps in boosting creativity and confidence in them.
                     </Typography>
                 </Box>
             </Box>
@@ -361,7 +353,141 @@ His passion for social work has driven him in his dynamic involvement with many 
                     </Typography>
                 </Box>
             </Box>
-            
+            <Box 
+                sx={{ 
+                    p: { lg: '50px 40px', xs: '40px 20px' },
+                    mt: 4,
+                    boxShadow: 3,
+                    bgcolor: 'rgba(255, 255, 255, 0.8)',
+                    borderRadius: '10px',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            >
+                <Avatar 
+                    alt="Mahesh Prajapati" 
+                    src={mahesh} 
+                    variant="square"
+                    sx={{ 
+                        width: { lg: '150px', xs: '100px' }, 
+                        height: { lg: '150px', xs: '100px' }, 
+                        mr: 10 
+                    }} 
+                />
+                <Box>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '20px', xs: '18px' }, 
+                            fontWeight: 'bold',
+                            color: textColor,
+                            mb: 1 
+                        }}
+                    >
+                      Mahesh Prajapati
+                    </Typography>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '18px', xs: '16px' }, 
+                            lineHeight: '1.6',
+                            color: textColor
+                        }}
+                    >
+             Mr. Mahesh’s passion for social work is the driving force behind his association with SEVA Srijan Foundation as a Volunteer to teach Art & Craft. He did his MFA in Sculpture from BHU.
+                    </Typography>
+                </Box>
+            </Box>
+            <Box 
+                sx={{ 
+                    p: { lg: '50px 40px', xs: '40px 20px' },
+                    mt: 4,
+                    boxShadow: 3,
+                    bgcolor: 'rgba(255, 255, 255, 0.8)',
+                    borderRadius: '10px',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            >
+                <Avatar 
+                    alt="Anita Prajapati" 
+                    src={anita} 
+                    variant="square"
+                    sx={{ 
+                        width: { lg: '150px', xs: '100px' }, 
+                        height: { lg: '150px', xs: '100px' }, 
+                        mr: 10 
+                    }} 
+                />
+                <Box>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '20px', xs: '18px' }, 
+                            fontWeight: 'bold',
+                            color: textColor,
+                            mb: 1 
+                        }}
+                    >
+                      Anita Prajapati
+                    </Typography>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '18px', xs: '16px' }, 
+                            lineHeight: '1.6',
+                            color: textColor
+                        }}
+                    >
+          Mrs. Anita Prajapati possessing BFA in Pottery Ceramics from BHU is associated with SEVA Srijan Foundation as a Volunteer teaching Art & Craft to the students.
+                    </Typography>
+                </Box>
+            </Box>
+            <Box 
+                sx={{ 
+                    p: { lg: '50px 40px', xs: '40px 20px' },
+                    mt: 4,
+                    boxShadow: 3,
+                    bgcolor: 'rgba(255, 255, 255, 0.8)',
+                    borderRadius: '10px',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            >
+                <Avatar 
+                    alt="Dr. Saurabh Agarwal" 
+                    src={saurabh} 
+                    variant="square"
+                    sx={{ 
+                        width: { lg: '150px', xs: '100px' }, 
+                        height: { lg: '150px', xs: '100px' }, 
+                        mr: 10 
+                    }} 
+                />
+                <Box>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '20px', xs: '18px' }, 
+                            fontWeight: 'bold',
+                            color: textColor,
+                            mb: 1 
+                        }}
+                    >
+                      Dr. Saurabh Agarwal
+                    </Typography>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '18px', xs: '16px' }, 
+                            lineHeight: '1.6',
+                            color: textColor
+                        }}
+                    >
+         Dr. Saurabh Agarwal, having Doctoral Degree in Bio-technology is working as a project coordinator in the Technology Development Board, a statutory body DST, new Delhi. Currently he is associated with SEVA Srijan Foundation as a Volunteer.
+                    </Typography>
+                </Box>
+            </Box>
             <Footer />
         </>
     );

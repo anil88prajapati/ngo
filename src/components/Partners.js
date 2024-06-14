@@ -3,7 +3,7 @@ import { Box, Typography, Grid, Paper, Link } from '@mui/material';
 import Header from '../components/Header';
 import Footer from './../global/Footer';
 import partnersbg from '../assets/Partners.jpg';
-import sevalawoffice from '../assets/sevalawoffice.png';
+import sevalawoffice from './../assets/sevalawoffice.jpg'
 
 const Partners = () => {
     const textColor = '#5b3c14';

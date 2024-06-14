@@ -18,36 +18,40 @@ import DonationDetails from './components/DonationDetails';
 import Faq from "./components/Faq";
 import History from "./components/History";
 import Leadership from "./components/Leadership";
-
+import ScrollToTop from "./components/ScrollToTop";
+import DonorsAndNotifications from './components/DonorsAndNotifications';
+import Shiningstars from "./components/Shiningstars";
 
 function App() {
-  return (
-    <Router>  
-      <Routes>
-        <Route exact path="/" element={<Homepage />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/about" element={<AboutsUs />} />
-        <Route exact path="/about/board" element={<Board />} />
-        <Route exact path="/programs" element={<Program />} />
-        <Route exact path="//programme/goodCitizen" element={<AboutsUs />} />
-        <Route exact path="/joinUs" element={<JoinUs />} />
-        <Route path="/GoodCitizenshipProgramme" element={<GoodCitizenshipProgramme/>} /> 
-        <Route path="/AftercareProgramme" element={<AftercareProgramme />} />
-        <Route path="/SkillDevelopment" element={<SkillDevelopment />} />
-        <Route path="/TalentBankDevelopment" element={<TalentBankDevelopment />} />
-        <Route path="/Gallery" element={<Gallery />} />
-        <Route path="/Donate" element={<Donate/>}/>
-        <Route path="/Partners" element={<Partners/>}/>
-        <Route path="/Aboutssf" element={<Aboutssf/>}/>
-        <Route path="/AboustUs" element={<AboutUs/>}/>
-        <Route path="/donation-details" element={<DonationDetails />} />
-        <Route path="/Faq" element={<Faq/>}/>
-        <Route path="/History" element={<History/>}/>
-        <Route path="/Leadership" element={<Leadership/>}/>
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <ScrollToTop />
+            <Routes>
+                <Route exact path="/" element={<Homepage />} />
+                <Route exact path="/contact" element={<Contact />} />
+                <Route exact path="/about" element={<AboutsUs />} />
+                <Route exact path="/about/board" element={<Board />} />
+                <Route exact path="/programs" element={<Program />} />
+                <Route exact path="/programme/goodCitizen" element={<AboutsUs />} />
+                <Route exact path="/joinUs" element={<JoinUs />} />
+                <Route path="/GoodCitizenshipProgramme" element={<GoodCitizenshipProgramme />} />
+                <Route path="/AftercareProgramme" element={<AftercareProgramme />} />
+                <Route path="/SkillDevelopment" element={<SkillDevelopment />} />
+                <Route path="/TalentBankDevelopment" element={<TalentBankDevelopment />} />
+                <Route path="/Gallery" element={<Gallery />} />
+                <Route path="/Donate" element={<Donate />} />
+                <Route path="/Partners" element={<Partners />} />
+                <Route path="/Aboutssf" element={<Aboutssf />} />
+                <Route path="/AboutUs" element={<AboutUs />} />
+                <Route path="/donation-details" element={<DonationDetails />} />
+                <Route path="/Faq" element={<Faq />} />
+                <Route path="/History" element={<History />} />
+                <Route path="/Leadership" element={<Leadership />} />
+                <Route path='/DonorsAndNotifications' element={<DonorsAndNotifications />} />
+                <Route path="/Shiningstars" element={<Shiningstars />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
-              

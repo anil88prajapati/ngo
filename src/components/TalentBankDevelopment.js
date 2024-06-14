@@ -16,7 +16,7 @@ const TalentBankDevelopment = () => {
                 </blockquote>
             </div>
             <div className="intro-section">
-                    <h3>Why Skill Development Programme</h3>
+                    <h3>Why Talent Bank Development</h3>
                     <p>
                     Children possessing extraordinary talent and identified by domain experts - Psychological and career counsellors of the SEVA SRIJAN FOUNDATION will be inducted in talent groom right from the age of 7-8 years and would be hand held by experts to be part of innovative talent pool. To fulfil gap between dreams and resources SEVA SRIJAN FOUNDATION will collaborate with other governmental agencies and NGO's also.
                     </p>

@@ -35,7 +35,7 @@ const Gallery = () => {
     return (
         <>
         <Header/>
-        <h1 style={{textAlign:'center', fontFamily:'initial'}}>Gallery</h1>
+        <h1 style={{textAlign:'center', fontFamily:'initial', padding:20}}>Gallery</h1>
             <div className={model ? "model open" : "model"}>
                 <img src={tempImgSrc} alt="Expanded view" />
                 <CloseIcon onClick={() => setModel(false)} /> 

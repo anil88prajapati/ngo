@@ -3,11 +3,14 @@ import Header from "./Header";
 import Footer from "../global/Footer";
 import HeadingGlobal from '../global/HeadingGlobal';
 import { Box, Typography, Avatar } from '@mui/material';
-import bharti from './../assets/bharti.png';
-import siddhart from './../assets/Siddhartha.jpeg';
+import bharti from './../assets/bharti.jpg'
+import siddhart from './../assets/Siddhartha.jpg';
 import anil from './../assets/anil.png';
 import leadfirst from './../assets/leadfront.jpg';
 import bhartagg from './../assets/Bhartagg.jpg'
+import ravi from './../assets/ravi.jpg'
+import Sumana from './../assets/Sumana.jpg'
+import Maheshwari from './../assets/Maheshwari.jpg'
 
 const Leadership = () => {
     const textColor = '#5b3c14';
@@ -81,7 +84,54 @@ const Leadership = () => {
                             color: textColor
                         }}
                     >
-                        A Qualified lawyer and worked as a cop in Delhi for 3 decades, Siddhartha decided to enter into social entrepreneurship in pursuit of teaching of his spiritual Master Sri Baba Sevanand ji Maharaj that "निष्काम सेवा" (SELFLESS SERVICE) is the goal of human life.
+                 A passionate social worker, Mr. Siddhartha Pareek’s career span of 3 decades as a Cop exposed him to the daily travails faced by marginalized youth in the society and helped him conceptualize several social projects run by Delhi Police, Prayas JAC Society & Delhi Commission for Protection of Child Rights (DCPCR) and Mewat Rural Education Programme. Inspired by his spiritual master, Baba Sevanand Ji Maharaj’s teachings on “SELFLESS SERVICE”, Mr. Pareek started his dream initiative of forming SEVA Srijan Foundation to support marginalized children and youth realize their life dreams.
+                    </Typography>
+                </Box>
+            </Box>
+            <Box 
+                sx={{ 
+                    p: { lg: '50px 40px', xs: '40px 20px' },
+                    mt: 4,
+                    boxShadow: 3,
+                    bgcolor: 'rgba(255, 255, 255, 0.8)',
+                    borderRadius: '10px',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            >
+                <Avatar 
+                    alt="Dr. R.C. Maheshwari" 
+                    src={Maheshwari} 
+                    variant="square"
+                    sx={{ 
+                        width: { lg: '150px', xs: '100px' }, 
+                        height: { lg: '150px', xs: '100px' }, 
+                        mr: 10 
+                    }} 
+                />
+                <Box>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '20px', xs: '18px' }, 
+                            fontWeight: 'bold',
+                            color: textColor,
+                            mb: 1 
+                        }}
+                    >
+                        Dr. R.C. Maheshwari
+                    </Typography>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '18px', xs: '16px' }, 
+                            lineHeight: '1.6',
+                            color: textColor
+                        }}
+                    >
+              An alumnus of IIT, Kharagpur, Dr. R.C. Maheshwari, Ex-Vice Chancellor, SDAU has done hid doctoral degree in Agricultural Engineering. He held the post of Asst. Director General (Technical Coordination) at the Indian Council of Agricultural Research, New Delhi for more than half a decade. In his brief stint as Vice Chancellor, SDAU from 2006 to 2011 he has several innovative initiatives to his credit like introducing the ‘seed village’ concept and ‘my village’ concept and playing key role in the establishment of a college of Renewable Energy and Environmental Engineering.
+His passion for social work has driven him in his dynamic involvement with many renowned NGOs working towards the cause of education, women empowerment and skill development. 
+
                     </Typography>
                 </Box>
             </Box>
@@ -126,9 +176,52 @@ const Leadership = () => {
                             color: textColor
                         }}
                     >
-                        An Educationist for 29 years and a Humanist also joined in to contribute to the "child focussed" activities of the NGO.
-                        Their pursuit for the cause started way back in the Year 2000 by setting up a 'Children's Club' at their Government residential complex at East of Kailash in Delhi.
-                        The club besides running the outdoor and indoor recreational activities for children used to train them for "life skills" too with a view to help them grow as "Good Citizens".
+                   Mrs. Bharti Pareek, an educationist having three decades of experience and inclination towards social work has driven her to join SSF and cater to the “Child-focused” activities run by the Organization. Her strong emotional bonding with the children and youth participants helps in boosting creativity and confidence in them.
+                    </Typography>
+                </Box>
+            </Box>
+            <Box 
+                sx={{ 
+                    p: { lg: '50px 40px', xs: '40px 20px' },
+                    mt: 4,
+                    boxShadow: 3,
+                    bgcolor: 'rgba(255, 255, 255, 0.8)',
+                    borderRadius: '10px',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            >
+                <Avatar 
+                    alt="Dr. (Ms.) Sumana Raychaudhuri" 
+                    src={Sumana} 
+                    variant="square"
+                    sx={{ 
+                        width: { lg: '150px', xs: '100px' }, 
+                        height: { lg: '150px', xs: '100px' }, 
+                        mr: 10 
+                    }} 
+                />
+                <Box>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '20px', xs: '18px' }, 
+                            fontWeight: 'bold',
+                            color: textColor,
+                            mb: 1 
+                        }}
+                    >
+                        Dr. (Ms.) Sumana Raychaudhuri
+                    </Typography>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '18px', xs: '16px' }, 
+                            lineHeight: '1.6',
+                            color: textColor
+                        }}
+                    >
+                      Doctorate in Law and an Associate Member of the Institute of Company Secretaries of India (ICSI) possesses more than two decades’ experience in Legal and Secretarial arena having headed several national level Corporates as Company Secretary & Compliance Officer and as Legal Head, exclusively handling legal and secretarial matters. She is an Independent Director in several listed and public limited companies. Being a passionate social worker, she is associated with several NGOs of national repute. Presently, she is a Group Partner in SEVA Group of organisations and an active volunteer at SEVA Srijan Foundation Think Tank.
                     </Typography>
                 </Box>
             </Box>
@@ -173,10 +266,7 @@ const Leadership = () => {
                             color: textColor
                         }}
                     >
-                        Working as Senior software engineer with having 10 years of experience in a fortune 500 company.
-                        Done BCA from MDU and MCA from BIT Mesra.
-                        Volunteering with Seva Srijan Foundation which is dedicated to the wellbeing of society in a meaningful way to give back to our community, make a positive impact, and foster personal growth of everyone.
-                        By finding the right organization, aligning my skills and interests with their mission, and committing my time and energy to it.
+                   A Senior software engineer possessing more than 10 years of experience of being associated with a fortune 500 company. He has completed BCA from MDU and MCA from BIT Mesra. A dedicated social worker, a promising software professional and a sincere educator, his commitment towards SEVA Srijan Foundation reflects from his relentless efforts in developing the Skill Development programme.
                     </Typography>
                 </Box>
             </Box>
@@ -226,6 +316,52 @@ const Leadership = () => {
                     </Typography>
                 </Box>
             </Box>
+            <Box 
+                sx={{ 
+                    p: { lg: '50px 40px', xs: '40px 20px' },
+                    mt: 4,
+                    boxShadow: 3,
+                    bgcolor: 'rgba(255, 255, 255, 0.8)',
+                    borderRadius: '10px',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            >
+                <Avatar 
+                    alt="Ravi Kumar" 
+                    src={ravi} 
+                    variant="square"
+                    sx={{ 
+                        width: { lg: '150px', xs: '100px' }, 
+                        height: { lg: '150px', xs: '100px' }, 
+                        mr: 10 
+                    }} 
+                />
+                <Box>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '20px', xs: '18px' }, 
+                            fontWeight: 'bold',
+                            color: textColor,
+                            mb: 1 
+                        }}
+                    >
+                        Ravi Kumar
+                    </Typography>
+                    <Typography 
+                        component="div" 
+                        sx={{ 
+                            fontSize: { lg: '18px', xs: '16px' }, 
+                            lineHeight: '1.6',
+                            color: textColor
+                        }}
+                    >
+                Bachelor's degree in Interior Design, I am a passionate and creative Interior Designer. My academic background equips me with the knowledge and skills to transform spaces into aesthetically pleasing and functional environments. Driven by a commitment to design excellence and client satisfaction, I bring innovative ideas and meticulous attention to detail to every project, ensuring that each space reflects the unique personality and needs of its occupants.
+                    </Typography>
+                </Box>
+            </Box>
+            
             <Footer />
         </>
     );

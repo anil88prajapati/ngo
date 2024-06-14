@@ -38,7 +38,7 @@ const Footer = () => {
                     <Grid item lg={2.4} xs={6} sx={{ mb: '20px' }}>
                         <Grid container sx={{ display: 'flex', flexDirection: 'column' }}>
                             <Grid item sx={{ mb: '10px' }}>
-                                <Typography sx={{ fontWeight: 600 }}>Programs</Typography>
+                                <Typography sx={{ fontWeight: 600 }}>Programmes</Typography>
                             </Grid>
                             <Grid item>
                                 <Typography onClick={() => handleNavigation('/GoodCitizenshipProgramme')} sx={{ fontSize: '14px', cursor: 'pointer', fontWeight: 500, opacity: 0.5, '&:hover': { opacity: 1 } }}>Good Citizenship Programme</Typography>

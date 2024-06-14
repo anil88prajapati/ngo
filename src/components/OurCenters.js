@@ -4,7 +4,7 @@ import { HEAD_OFFICE_ADDRESS, DELHI_ADDRESS, JAIPUR_ADDRESS, LOGO_IMG } from '..
 
 const data = [
     { pic: LOGO_IMG, link: 'Head Office', redirect: HEAD_OFFICE_ADDRESS, mapUrl: 'https://maps.app.goo.gl/jbquwAsaGv1Jczet8' },
-    { pic: LOGO_IMG, link: 'Jaunapur (Delhi) Center', redirect: DELHI_ADDRESS, mapUrl: 'https://maps.app.goo.gl/ic8cND3c7U4AEfNSA' },
+    { pic: LOGO_IMG, link: 'Jaunapur (Delhi) Chapter', redirect: DELHI_ADDRESS, mapUrl: 'https://maps.app.goo.gl/ic8cND3c7U4AEfNSA' },
     { pic: LOGO_IMG, link: 'Jaipur (Rajasthan) Chapter', redirect: JAIPUR_ADDRESS, mapUrl: 'https://maps.app.goo.gl/k99MptLTjKA7ho8b7' }
 ];
 

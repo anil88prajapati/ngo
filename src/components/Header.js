@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import { HEADER_BG_COLOR, LOGO_IMG, HEADER_TEXT_COLOR, HEADER_HOVER_COLOR } from "../constant";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -14,30 +15,43 @@ const navData = [
             { title: 'Gallery', path: '/Gallery' },
             { title: 'FAQ', path: '/Faq' },
             { title: 'History', path: '/History' } 
-        ]
+        ]   
     },
     {
         navItem: 'PROGRAMS', data: [
-            { title: 'Good Citizenship Programme', path: '/GoodCitizenshipProgramme', data: [] },
-            { title: 'Aftercare Programme', path: '/AftercareProgramme', data: [] },
-            { title: 'Skill Development', path: '/SkillDevelopment', data: [] },
-            { title: 'Talent Bank Development', path: '/TalentBankDevelopment', data: [] }
+            { title: 'Good Citizenship Programme', path: '/GoodCitizenshipProgramme' },
+            { title: 'Aftercare Programme', path: '/AftercareProgramme' },
+            { title: 'Skill Development', path: '/SkillDevelopment' },
+            { title: 'Talent Bank Development', path: '/TalentBankDevelopment' },
+            { title: 'Shining Stars', path: '/Shiningstars' } 
         ]
     },
     {
         navItem: 'JOIN US', data: [
             { title: 'Support Us', path: '/Donate' },
-            {title: 'Volunteer Form', path:'/JoinUs'}
+            { title: 'Volunteer Form', path: '/JoinUs' }
         ]
     }
 ];
 
-const MegaMenu = ({ nav, expanded, pageState, navRouteHandler }) => {
+
+const MegaMenu = ({ nav, expanded, pageState, navRouteHandler, activeNav, setActiveNav }) => {
     if (expanded) {
         return (
             <div className="mainContainer">
                 <div className="mainContainerInner">
-                    <Typography sx={{ fontWeight: 700, fontSize: '15px', transition: 'all 0.50s ease', color: pageState === nav ? HEADER_HOVER_COLOR : HEADER_TEXT_COLOR, '&:hover': { color: HEADER_HOVER_COLOR } }}>{nav}</Typography>
+                    <Typography
+                        sx={{
+                            fontWeight: 700,
+                            fontSize: '15px',
+                            transition: 'all 0.50s ease',
+                            color: pageState === nav || activeNav === nav ? HEADER_HOVER_COLOR : HEADER_TEXT_COLOR,
+                            '&:hover': { color: HEADER_HOVER_COLOR }
+                        }}
+                        onClick={() => setActiveNav(nav)}
+                    >
+                        {nav}
+                    </Typography>
                     <ExpandMoreIcon className="iconExpand" sx={{ color: HEADER_TEXT_COLOR }} />
                 </div>
 
@@ -47,14 +61,25 @@ const MegaMenu = ({ nav, expanded, pageState, navRouteHandler }) => {
                             return item.navItem === nav &&
                                 item.data.map((navs) => (
                                     <Box key={navs.title} sx={{ p: '10px', pl: '20px', pb: '0px', width: '100%', '&:hover': { color: HEADER_HOVER_COLOR } }}>
-                                   {navs.title === 'Support Us' ? (
-                                     <a href={navs.path} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
-                                     <Typography sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px', color: HEADER_TEXT_COLOR }}>{navs.title}</Typography>
-                                 </a>
-                                     ) : (
-                                     <Typography onClick={() => navRouteHandler(navs.path)} sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px', cursor: 'pointer', color: HEADER_TEXT_COLOR }}>{navs.title}</Typography>
-                                     )}                   
-                                 </Box>
+                                        {navs.title === 'Support Us' ? (
+                                            <a href={navs.path} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                                                <Typography sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px', color: HEADER_TEXT_COLOR }}>{navs.title}</Typography>
+                                            </a>
+                                        ) : (
+                                            <Typography
+                                                onClick={() => { navRouteHandler(navs.path); setActiveNav(nav); }}
+                                                sx={{
+                                                    transition: 'all 0.50s ease',
+                                                    fontWeight: 500,
+                                                    fontSize: '15px',
+                                                    cursor: 'pointer',
+                                                    color: HEADER_TEXT_COLOR
+                                                }}
+                                            >
+                                                {navs.title}
+                                            </Typography>
+                                        )}
+                                    </Box>
                                 ))
                         })}
                     </Box>
@@ -63,17 +88,33 @@ const MegaMenu = ({ nav, expanded, pageState, navRouteHandler }) => {
         )
     } else {
         return (
-            <Typography onClick={navRouteHandler} sx={{ fontWeight: 700, fontSize: '15px', transition: 'all 0.50s ease', color: pageState === 'contact' ? HEADER_HOVER_COLOR : HEADER_TEXT_COLOR, cursor: 'pointer', '&:hover': { color: HEADER_HOVER_COLOR } }}>{nav}</Typography>
+            <Typography
+                onClick={() => { navRouteHandler(nav.path); setActiveNav(nav); }}
+                sx={{
+                    fontWeight: 700,
+                    fontSize: '15px',
+                    transition: 'all 0.50s ease',
+                    color: pageState === nav || activeNav === nav ? HEADER_HOVER_COLOR : HEADER_TEXT_COLOR,
+                    cursor: 'pointer',
+                    '&:hover': { color: HEADER_HOVER_COLOR }
+                }}
+            >
+                {nav}
+            </Typography>
         )
     }
 }
 
+
 const Header = ({ pageState }) => {
     const { state } = useScreenSize();
     const navigate = useNavigate();
+    const [activeNav, setActiveNav] = useState(null);
+
     const navRouteHandler = (path) => {
         navigate(path);
     }
+
     return (
         <>
             <AppBar>
@@ -81,11 +122,11 @@ const Header = ({ pageState }) => {
                     <img onClick={() => navigate('/')} src={LOGO_IMG} alt='logoImage' style={{ cursor: 'pointer' }} width={100} />
                     {state.currentScreenSize > 990 && (
                         <div style={{ display: 'flex', padding: '10px', alignItems: 'center', justifyContent: 'space-evenly', width: '53%' }}>
-                            <MegaMenu nav="HOME" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/')} />
-                            <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} />
-                            <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} />
-                            <MegaMenu nav="JOIN US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} />
-                            <MegaMenu nav="CONTACT" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/contact')} />
+                            <MegaMenu nav="HOME" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/')} activeNav={activeNav} setActiveNav={setActiveNav} />
+                            <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
+                            <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
+                            <MegaMenu nav="JOIN US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
+                            <MegaMenu nav="CONTACT" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/contact')} activeNav={activeNav} setActiveNav={setActiveNav} />
                         </div>
                     )}
                     {state.currentScreenSize < 990 && (

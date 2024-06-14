@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Box, Button, Grid, TextField, Typography, FormControlLabel, Checkbox, FormGroup } from '@mui/material';
+import { Box, Button, Grid, TextField, Typography, FormControlLabel, Checkbox, FormGroup, Divider } from '@mui/material';
 import Header from '../../../components/Header';
 import PageBanner from '../../../global/PageBanner';
 import Footer from '../../../global/Footer';
@@ -27,13 +27,8 @@ const JoinUs = () => {
             VolunteerCoordination: false,
         },
         availability: {
-            Sunday: { Morning: false, Afternoon: false, Evening: false },
-            Monday: { Morning: false, Afternoon: false, Evening: false },
-            Tuesday: { Morning: false, Afternoon: false, Evening: false },
-            Wednesday: { Morning: false, Afternoon: false, Evening: false },
-            Thursday: { Morning: false, Afternoon: false, Evening: false },
-            Friday: { Morning: false, Afternoon: false, Evening: false },
-            Saturday: { Morning: false, Afternoon: false, Evening: false },
+            Weekdays: { Morning: false, Afternoon: false, Evening: false },
+            Weekends: { Morning: false, Afternoon: false, Evening: false },
         },
     });
 
@@ -49,13 +44,13 @@ const JoinUs = () => {
 
     const handleCheckboxChange = (e) => {
         const { name, checked } = e.target;
-        const [day, time] = name.split('_');
+        const [period, time] = name.split('_');
         setFormData({
             ...formData,
             availability: {
                 ...formData.availability,
-                [day]: {
-                    ...formData.availability[day],
+                [period]: {
+                    ...formData.availability[period],
                     [time]: checked,
                 },
             },
@@ -82,12 +77,12 @@ const JoinUs = () => {
             .join(', ');
 
         const selectedAvailability = Object.entries(formData.availability)
-            .map(([day, times]) => {
+            .map(([period, times]) => {
                 const availableTimes = Object.entries(times)
                     .filter(([time, available]) => available)
                     .map(([time]) => time)
                     .join(', ');
-                return `${day}: ${availableTimes}`;
+                return `${period}: ${availableTimes}`;
             })
             .filter((availability) => availability.split(': ')[1])
             .join('; ');
@@ -125,104 +120,118 @@ const JoinUs = () => {
                     <form ref={form} onSubmit={handleSubmit}>
                         <Grid container spacing={3} justifyContent="center">
                             <Grid item xs={12} sm={6} md={4}>
-                                <TextField
-                                    fullWidth
-                                    label="Name"
-                                    name="from_name"
-                                    value={formData.from_name}
-                                    onChange={handleChange}
-                                    required
-                                />
+                                <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '10px', borderRadius: '8px' }}>
+                                    <TextField
+                                        fullWidth
+                                        label="Name"
+                                        name="from_name"
+                                        value={formData.from_name}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </Box>
                             </Grid>
                             <Grid item xs={12} sm={6} md={4}>
-                                <TextField
-                                    fullWidth
-                                    label="Email"
-                                    name="from_email"
-                                    type="email"
-                                    value={formData.from_email}
-                                    onChange={handleChange}
-                                    required
-                                />
+                                <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '10px', borderRadius: '8px' }}>
+                                    <TextField
+                                        fullWidth
+                                        label="Email"
+                                        name="from_email"
+                                        type="email"
+                                        value={formData.from_email}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </Box>
                             </Grid>
                             <Grid item xs={12} sm={6} md={4}>
-                                <TextField
-                                    fullWidth
-                                    label="Phone"
-                                    name="from_number"
-                                    type="tel"
-                                    value={formData.from_number}
-                                    onChange={handleChange}
-                                    required
-                                />
+                                <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '10px', borderRadius: '8px' }}>
+                                    <TextField
+                                        fullWidth
+                                        label="Phone"
+                                        name="from_number"
+                                        type="tel"
+                                        value={formData.from_number}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </Box>
                             </Grid>
                             <Grid item xs={12}>
-                                <TextField
-                                    fullWidth
-                                    label="Message"
-                                    name="message"
-                                    multiline
-                                    rows={4}
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required
-                                />
+                                <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '10px', borderRadius: '8px' }}>
+                                    <TextField
+                                        fullWidth
+                                        label="Message"
+                                        name="message"
+                                        multiline
+                                        rows={4}
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </Box>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
-                                    Availability
-                                </Typography>
-                                <FormGroup>
-                                    {Object.keys(formData.availability).map((day) => (
-                                        <Grid container key={day} spacing={2} sx={{ mb: '10px' }}>
-                                            <Grid item xs={2}>
-                                                <Typography variant="body1" sx={{ fontWeight: 500 }}>
-                                                    {day}
-                                                </Typography>
-                                            </Grid>
-                                            {Object.keys(formData.availability[day]).map((time) => (
-                                                <Grid item xs={3} key={time}>
+                                <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '20px', mb: '20px', borderRadius: '8px' }}>
+                                    <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
+                                        Interests
+                                    </Typography>
+                                    <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px', opacity: 0.5 }} />
+                                    <FormGroup>
+                                        <Grid container spacing={2}>
+                                            {Object.keys(formData.interests).map((interest) => (
+                                                <Grid item xs={12} sm={6} md={3} key={interest}>
                                                     <FormControlLabel
                                                         control={
                                                             <Checkbox
-                                                                checked={formData.availability[day][time]}
-                                                                onChange={handleCheckboxChange}
-                                                                name={`${day}_${time}`}
+                                                                checked={formData.interests[interest]}
+                                                                onChange={handleInterestChange}
+                                                                name={interest}
                                                             />
                                                         }
-                                                        label={time}
+                                                        label={interest.replace(/([A-Z])/g, ' $1').trim()}
                                                     />
                                                 </Grid>
                                             ))}
                                         </Grid>
-                                    ))}
-                                </FormGroup>
+                                    </FormGroup>
+                                </Box>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
-                                    Interests
-                                </Typography>
-                                <FormGroup>
-                                    <Grid container spacing={2}>
-                                        {Object.keys(formData.interests).map((interest, index) => (
-                                            <Grid item xs={12} sm={6} md={3} key={interest}>
-                                                <FormControlLabel
-                                                    control={
-                                                        <Checkbox
-                                                            checked={formData.interests[interest]}
-                                                            onChange={handleInterestChange}
-                                                            name={interest}
+                                <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '20px', mb: '20px', borderRadius: '8px' }}>
+                                    <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
+                                        Availability
+                                    </Typography>
+                                    <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px', opacity: 0.5 }} />
+                                    <FormGroup>
+                                        {Object.keys(formData.availability).map((period) => (
+                                            <Grid container key={period} spacing={2} sx={{ mb: '10px' }}>
+                                                <Grid item xs={2}>
+                                                    <Typography variant="body1" sx={{ fontWeight: 500 }}>
+                                                        {period}
+                                                    </Typography>
+                                                </Grid>
+                                                {Object.keys(formData.availability[period]).map((time) => (
+                                                    <Grid item xs={3} key={time}>
+                                                        <FormControlLabel
+                                                            control={
+                                                                <Checkbox
+                                                                    checked={formData.availability[period][time]}
+                                                                    onChange={handleCheckboxChange}
+                                                                    name={`${period}_${time}`}
+                                                                />
+                                                            }
+                                                            label={time}
                                                         />
-                                                    }
-                                                    label={interest.replace(/([A-Z])/g, ' $1').trim()}
-                                                />
+                                                    </Grid>
+                                                ))}
                                             </Grid>
                                         ))}
-                                    </Grid>
-                                </FormGroup>
+                                    </FormGroup>
+                                </Box>
                             </Grid>
                             <Grid item xs={12}>
-                                <Button variant="contained" type="submit" sx={{ bgcolor: '#f4bb03', color: 'black', fontWeight: 600, '&:hover': { bgcolor: '#f4bb03' } }}>
+                                <Button variant="contained" type="submit" sx={{ bgcolor: 'rgb(46, 139, 87)', color: 'black', fontWeight: 600, '&:hover': { bgcolor: '#5b3c14' } }}>
                                     Submit
                                 </Button>
                             </Grid>

@@ -53,7 +53,7 @@ const Faq = () => {
         </p>
       </div>
       <div className="faq-item">
-        <h3>What are various Programs that SEVA Srijan Foundation is involved with?</h3>
+        <h3>What are various programme that SEVA Srijan Foundation is involved with?</h3>
         <p>
           With its primary focus on channelizing resources from the cities to the villages, SEVA Srijan Foundation works on the following programs:
           <ul>

@@ -6,13 +6,17 @@ import Programs from "../../components/Programs"
 import WhatsNew from "../../components/BeyondClassroom"
 import OtherWebsite from "../../components/OurCenters"
 import Footer from "../../global/Footer"
+
 import './Homepage.css'
+import DonorsAndNotifications from "../../components/DonorsAndNotifications"
 
 const Homepage = () => {
     return (<>
         <Header />
         <ImageCarousel/>
         <AboutUs />
+        <DonorsAndNotifications />
+        <br></br>
         <Programs />
         <WhatsNew />
         <OtherWebsite />

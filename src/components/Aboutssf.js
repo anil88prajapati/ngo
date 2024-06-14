@@ -11,7 +11,7 @@ const Aboutssf = () => {
             <Box sx={{ backgroundColor: '#f5f5f5', py: 5 }}>
                 <Container>
                     <Grid container spacing={4}>
-                        <Grid item xs={12} md={8}>
+                        <Grid item xs={12} md={15}>
                             <Box
                                 sx={{
                                     position: 'relative',
@@ -30,7 +30,7 @@ const Aboutssf = () => {
                             >
                                 <Paper elevation={3} sx={{ p: { xs: 2, md: 4 }, textAlign: 'left', position: 'relative', zIndex: 1, backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
                                     <Typography variant="h4" sx={{ mb: 3, fontWeight: 600, textAlign: 'center', color: '#5b3c14' }}>
-                                        About Seva Srijan Foundation
+                                        About SEVA Srijan Foundation
                                     </Typography>
                                     <Typography variant="body1" sx={{ mb: 3, color: '#5b3c14' }}>
                                         <i>“Children are the living messages we send to a time we will not see.”</i> - John F. Kennedy
@@ -89,31 +89,71 @@ const Aboutssf = () => {
                                 </Paper>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} md={4}>
-                            <Paper elevation={3} sx={{ p: { xs: 2, md: 4 }, textAlign: 'center', backgroundColor: '#ffffff' }}>
-                                <Typography variant="h5" sx={{ mb: 3, fontWeight: 700, color: '#5b3c14' }}>
-                                    Our Manifesto
+                        <Grid item xs={12} md={8}>
+                            <Paper elevation={3} sx={{ p: { xs: 2, md: 4 }, textAlign: 'left', backgroundColor: '#ffffff' }}>
+                                <Typography variant="h5" sx={{ mb: 4, fontWeight: 700, color: '#5b3c14' }}>
+                                    Our Theme Song
                                 </Typography>
-                                <Typography variant="body1" sx={{ color: '#5b3c14', whiteSpace: 'pre-line', fontSize: '1.1rem' }}>
-                                    WE ARE TOMORROW, CLOTHED IN THE ROBES OF TODAY.
-                                    WE ARE FOR THOSE, WHO ARE READY TO FIND A WAY.
-                                    WE ARE THE HERALD OF HOPE.
-                                    TO HELP CHILDREN COPE.
-                                    WE ARE FOR WOMEN, WHO NEED TO HAVE THEIR SAY.
-                                    WE ARE RESTLESS, BUT NEVER HELPLESS.
-                                    WE ARE FOR EMANCIPATION.
-                                    WE ARE FOR EVERY DREAM AND AMBITION.
-                                    WE ARE FOR THE NATION.
-                                    WE ARE HERE FOR A HELPING HAND.
-                                    WE ARE HERE FOR MAKING A STAND.
-                                    WE ARE TOGETHER.
-                                    HERE FOR EACH OTHER.
-                                    READY TO GO ON FOREVER.
-                                    WE ARE HERE TO MOVE FORWARD EVERY DAY.
-                                    WE ARE TOMORROW, CLOTHED IN THE ROBES OF TODAY.
-                                    WE ARE FOR THOSE, WHO ARE READY TO FIND A WAY.
-                                    SEVA SRIJAN FOUNDATION
-                                    HOPE, HELP, HUMANITY
+                                <Typography variant="body1" sx={{ color: '#5b3c14', whiteSpace: 'pre-line', fontSize: '1.1rem', textAlign: 'left' }}>
+                                    <Typography variant="body1" sx={{ color: '#ffb300' }}>
+                                        WE ARE TOMORROW, CLOTHED IN THE ROBES OF TODAY.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#6b8e23' }}>
+                                        WE ARE FOR THOSE, WHO ARE READY TO FIND A WAY.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#00bfff' }}>
+                                        WE ARE THE HERALD OF HOPE.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#6b8e23' }}>
+                                        TO HELP CHILDREN COPE.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#8b4513' }}>
+                                        WE ARE FOR WOMEN, WHO NEED TO HAVE THEIR SAY.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#ffb300' }}>
+                                        WE ARE RESTLESS, BUT NEVER HELPLESS.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#006400' }}>
+                                        WE ARE FOR EMANCIPATION.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#00bfff' }}>
+                                        WE ARE FOR EVERY DREAM AND AMBITION.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#6b8e23' }}>
+                                        WE ARE FOR THE NATION.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#8b4513' }}>
+                                        WE ARE HERE FOR A HELPING HAND.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#ffb300' }}>
+                                        WE ARE HERE TO MAKE ONE STAND.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#006400' }}>
+                                        WE ARE TOGETHER.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#00bfff' }}>
+                                        HERE FOR EACH OTHER.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#6b8e23' }}>
+                                        READY TO GO ON FOREVER.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#8b4513' }}>
+                                        WE ARE HERE TO MOVE FORWARD EVERY DAY.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#ffb300' }}>
+                                        WE ARE TOMORROW, CLOTHED IN THE ROBES OF TODAY.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#006400' }}>
+                                        WE ARE FOR THOSE, WHO ARE READY TO FIND A WAY.
+                                    </Typography>
+                                    <br></br>
+
+                                    <Typography variant="body1" sx={{ color: '#5b3c14', fontWeight: 700, textAlign:'center' }}>
+                                        SEVA SRIJAN FOUNDATION
+                                    </Typography>
+                                    <Typography variant="body1" sx={{ color: '#5b3c14', fontWeight: 700, textAlign:'center' }}>
+                                        HOPE  HELP HUMANITY
+                                    </Typography>
                                 </Typography>
                             </Paper>
                         </Grid>

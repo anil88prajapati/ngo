@@ -7,7 +7,7 @@ const AboutUs = () => {
     const textColor = '#5b3c14'; 
     return (
         <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' }, color: textColor }}>
-            <HeadingGlobal title="ABOUT US" />
+            <HeadingGlobal title="OVERVIEW" />
             <Grid container sx={{ mt: '20px', boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '10px', mb: '0px' }}>
                 <Grid item lg={6} xs={12} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img width={'100%'} height={'90%'} src={Contactus} alt="about us pic" />

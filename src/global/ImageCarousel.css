@@ -42,7 +42,7 @@
   right: 20px;
 }
 
-/* Responsive Styles */
+
 @media only screen and (max-width: 927px) {
   .carousel-slide {
       top: 150px;

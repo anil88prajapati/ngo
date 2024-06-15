@@ -14,8 +14,8 @@ const navData = [
             { title: 'Partners', path: '/Partners' },
             { title: 'Gallery', path: '/Gallery' },
             { title: 'FAQ', path: '/Faq' },
-            { title: 'History', path: '/History' } 
-        ]   
+            { title: 'History', path: '/History' }
+        ]
     },
     {
         navItem: 'PROGRAMS', data: [
@@ -23,17 +23,23 @@ const navData = [
             { title: 'Aftercare Programme', path: '/AftercareProgramme' },
             { title: 'Skill Development', path: '/SkillDevelopment' },
             { title: 'Talent Bank Development', path: '/TalentBankDevelopment' },
-            { title: 'Shining Stars', path: '/Shiningstars' } 
+            { title: 'Shining Stars', path: '/Shiningstars' }
         ]
     },
     {
         navItem: 'JOIN US', data: [
             { title: 'Support Us', path: '/Donate' },
-            { title: 'Volunteer Form', path: '/JoinUs' }
+            { title: 'Volunteer Form', path: '/JoinUs' },
+            { title: 'Donors List', path: '/Donorlist' } // Added Donors List
+        ]
+    },
+    {
+        navItem: 'CONTACT', data: [ // Added CONTACT dropdown
+            { title: 'Reach Us', path: '/Contact' },
+            { title: 'Write to Us', path: '/Writetous' }
         ]
     }
 ];
-
 
 const MegaMenu = ({ nav, expanded, pageState, navRouteHandler, activeNav, setActiveNav }) => {
     if (expanded) {
@@ -105,7 +111,6 @@ const MegaMenu = ({ nav, expanded, pageState, navRouteHandler, activeNav, setAct
     }
 }
 
-
 const Header = ({ pageState }) => {
     const { state } = useScreenSize();
     const navigate = useNavigate();
@@ -126,7 +131,7 @@ const Header = ({ pageState }) => {
                             <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
                             <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
                             <MegaMenu nav="JOIN US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
-                            <MegaMenu nav="CONTACT" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/contact')} activeNav={activeNav} setActiveNav={setActiveNav} />
+                            <MegaMenu nav="CONTACT" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
                         </div>
                     )}
                     {state.currentScreenSize < 990 && (

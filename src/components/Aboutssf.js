@@ -89,7 +89,7 @@ const Aboutssf = () => {
                                 </Paper>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} md={8}>
+                        <Grid item xs={12} md={6}>
                             <Paper elevation={3} sx={{ p: { xs: 2, md: 4 }, textAlign: 'left', backgroundColor: '#ffffff' }}>
                                 <Typography variant="h5" sx={{ mb: 4, fontWeight: 700, color: '#5b3c14' }}>
                                     Our Theme Song
@@ -153,6 +153,63 @@ const Aboutssf = () => {
                                     </Typography>
                                     <Typography variant="body1" sx={{ color: '#5b3c14', fontWeight: 700, textAlign:'center' }}>
                                         HOPE  HELP HUMANITY
+                                    </Typography>
+                                </Typography>
+                            </Paper>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <Paper elevation={3} sx={{ p: { xs: 2, md: 6 }, textAlign: 'left', backgroundColor: '#ffffff' }}>
+                                <Typography variant="h5" sx={{ mb: 4, fontWeight: 700, color: '#5b3c14' }}>
+                                    "अच्छा नागरिक" शपथ
+                                </Typography>
+                                <Typography variant="body1" sx={{ color: '#5b3c14', whiteSpace: 'pre-line', fontSize: '1.1rem', textAlign: 'left' }}>
+                                    <Typography variant="body1" sx={{ color: '#ffb300' }}>
+                                        मैं सिद्धार्थ पारीक
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#6b8e23' }}>
+                                        सेवा सृजन फाउंडेशन के
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#00bfff' }}>
+                                        गुड सिटीजन्स  क्लब
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#6b8e23' }}>
+                                        का सदस्य हूँ 
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#8b4513' }}>
+                                        मुझे अपने देश 
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#5b3c14' }}>
+                                        भारत पर गर्व 
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#ffb300' }}>
+                                        देश का नागरिक होने के नाते
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#6b8e23' }}>
+                                        मैं अपना अधिकारों के प्रति जागरूक हूँ 
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#00bfff' }}>
+                                        दूसरे नागरिकों व देश के प्रति
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#6b8e23' }}>
+                                        अपने कर्तव्यों का पालन करने के लिए भी वचनबद्ध हूँ 
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#8b4513' }}>
+                                        मैं शपथ लेता हूँ  या लेती हूँ  कि 
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#00bfff' }}>
+                                        मैं अपने अधिकारों की रक्षा 
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#ffb300' }}>
+                                        व कर्तव्यों का निर्वाह 
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '#6b8e23' }}>
+                                        पूर्ण जिम्मेदारी व उत्साह से 
+                                        </Typography>
+                                        <Typography variant="body1" sx={{ color: '##00bfff' }}>
+                                        आजीवन  करता रहूँगा / रहूँगी 
+                                        </Typography>
+                                    <Typography variant="h5" sx={{ color: '#5b3c14', fontWeight: 600, textAlign:'center', mt: 3 }}>
+                                        जय हिन्द जय हिन्द जय हिन्द
                                     </Typography>
                                 </Typography>
                             </Paper>

@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography, Paper } from '@mui/material';
 import React from 'react';
 import HeadingGlobal from '../global/HeadingGlobal';
 import computer from '../assets/computer.jpg';
@@ -19,23 +19,62 @@ const data = [
     { pic: careerCounsil, title: 'Career Counselling', para: 'Career counselling sessions at SSF are formulated to help students identify their strengths and weaknesses and provide support in areas where they need improvement. SSF counsellors also assist with course selection and provide career options guidance.', path: '/about' },
 ];
 
+const runningEvents = [
+    'Summer Camp starts on July 5th!',
+    'Art & Craft Exhibition on June 30th!',
+    'Music & Dance Competition on July 20th!',
+    'Library Week from August 1st to August 7th!',
+];
+
 const WhatsNew = () => {
     return (
         <>
             <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' } }}>
                 <HeadingGlobal title="Learning Beyond Classroom" />
                 <Grid container sx={{ mt: '20px', boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '10px', mb: '0px' }}>
-                    {data.map((item) => (
-                        <Grid key={item.title} item container sx={{ mb: '18px' }}>
-                            <Grid item lg={1.6} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <img width={"150px"} height={'150px'} src={item.pic} alt="schooldreams" />
+                    <Grid item lg={8} xs={12} sx={{ pr: { lg: 2, xs: 0 } }}>
+                        {data.map((item) => (
+                            <Grid key={item.title} item container sx={{ mb: '18px' }}>
+                                <Grid item lg={2} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                    <img width={"150px"} height={'150px'} src={item.pic} alt="schooldreams" />
+                                </Grid>
+                                <Grid item lg={10} xs={12} sx={{ p: '0px 15px' }}>
+                                    <Typography sx={{ textAlign: { lg: 'left', xs: 'center' }, mt: '10px', fontWeight: 900, color: '#5b3c14', fontSize: { lg: '24px', xs: '22px' } }}>{item.title}</Typography>
+                                    <Typography sx={{ fontSize: { lg: '18px', xs: '16px' }, mt: '20px', fontWeight: 500, color: '#5b3c14' }}>{item.para}</Typography>
+                                </Grid>
                             </Grid>
-                            <Grid item lg={10} xs={12} sx={{ p: '0px 15px' }}>
-                                <Typography sx={{ textAlign: { lg: 'left', xs: 'center' }, mt: '10px', fontWeight: 900, color: '#5b3c14', fontSize: { lg: '24px', xs: '22px' } }}>{item.title}</Typography>
-                                <Typography sx={{ fontSize: { lg: '18px', xs: '16px' }, mt: '20px', fontWeight: 500, color: '#5b3c14' }}>{item.para}</Typography>
-                            </Grid>
-                        </Grid>
-                    ))}
+                        ))}
+                    </Grid>
+                    <Grid item lg={4} xs={12}>
+                        <Paper elevation={3} sx={{ p: 2, flex: 1, height: '90%', margin: '5%' }}>
+                            <Typography variant="h6" sx={{ fontWeight: 'bold', textAlign: 'center' }}>Notifications</Typography>
+                            <Paper elevation={3} sx={{ p: 2, mt: 2, flex: 1, overflow: 'hidden', height: '1050px' }}>
+                                <Box
+                                    sx={{
+                                        animation: 'scrollTopToBottom 10s linear infinite',
+                                        height: '100%',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        justifyContent: 'center',
+                                    }}
+                                >
+                                    {runningEvents.map((event, index) => (
+                                        <Typography key={index} sx={{ my: 1 }}>
+                                            {event}
+                                        </Typography>
+                                    ))}
+                                </Box>
+                                <style>
+                                    {`
+                                        @keyframes scrollTopToBottom {
+                                            0% { transform: translateY(100%); }
+                                            100% { transform: translateY(-100%); }
+                                        }
+                                    `}
+                                </style>
+                            </Paper>
+                        </Paper>
+                    </Grid>
                 </Grid>
             </Box>
         </>

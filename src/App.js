@@ -21,6 +21,8 @@ import Leadership from "./components/Leadership";
 import ScrollToTop from "./components/ScrollToTop";
 import DonorsAndNotifications from './components/DonorsAndNotifications';
 import Shiningstars from "./components/Shiningstars";
+import Donorlist from "./components/Donorlist";
+import Writetous from "./components/Writetous";
 
 function App() {
     return (
@@ -49,6 +51,8 @@ function App() {
                 <Route path="/Leadership" element={<Leadership />} />
                 <Route path='/DonorsAndNotifications' element={<DonorsAndNotifications />} />
                 <Route path="/Shiningstars" element={<Shiningstars />} />
+                <Route path="/Donorlist" element={<Donorlist/>}/>
+                <Route path="/Writetous" element={<Writetous/>}/>
             </Routes>
         </Router>
     );

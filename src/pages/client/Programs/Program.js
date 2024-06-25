@@ -1,97 +1,83 @@
-import React from 'react'
-import Header from '../../../components/Header'
-import PageBanner from '../../../global/PageBanner'
-import Footer from '../../../global/Footer'
-import aboutusbg from '../../../assets/Programs.jpg'
-import { Button, Grid, Typography } from '@mui/material'
-import HeadingGlobal from '../../../global/HeadingGlobal'
-import { HEADER_HOVER_COLOR } from '../../../constant'
-import apple from '../../../assets/apple-icon.png'
-import bulb from '../../../assets/bulb-icon.png'
-import monitor from '../../../assets/moniter-icon.png'
-import graph from '../../../assets/graph-icon.png'
-import contactpartner from '../../../assets/contact-partnericon.png'
-import donateicon from '../../../assets/donate-icon.png'
-import workwithus from '../../../assets/work-with-usicon.png'
-import getInvolved from '../../../assets/get-involvedicon.png'
-import {ABOUT_US_CONTENT, ABOUT_US_CONTENT1} from '../../../constant'
+import React from 'react';
+import { Grid, Typography, Box } from '@mui/material';
+import { Link } from 'react-router-dom';
+import Header from '../../../components/Header';
+import PageBanner from '../../../global/PageBanner';
+import Footer from '../../../global/Footer';
+import aboutusbg from '../../../assets/Programs.jpg';
+import HeadingGlobal from '../../../global/HeadingGlobal';
+import apple from '../../../assets/apple-icon.jpg';
+import bulb from '../../../assets/bulb-icon.png';
+import monitor from '../../../assets/moniter-icon.png';
+import graph from '../../../assets/graph-icon.jpg';
 
 const Program = () => {
     return (
         <>
             <Header pageState="PROGRAMS" />
-            <PageBanner bannerPic={aboutusbg} text='PROGRAMS' />
-            <Grid container sx={{ mt: "30px", p: '0px 100px' }}>
-                <Grid item lg={8}>
-                    <Grid item >
-                        <HeadingGlobal title="Programs" />
-                        <Typography sx={{ opacity: 0.6, mt: '20px', mb: '10px', letterSpacing: '1.3px', lineHeight: '30px', fontSize: '15px' }}>
-                        {ABOUT_US_CONTENT} 
-                        </Typography>
-                        <Typography sx={{ opacity: 0.6, mt: '20px', mb: '10px', letterSpacing: '1.3px', lineHeight: '30px', fontSize: '15px' }}>
-                        {ABOUT_US_CONTENT1}
-                        </Typography>
-                    </Grid>
-                    <Grid container>
-                        <Grid item lg={12} sx={{ m: '0px 70px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                            <img src={apple} alt='picapple' style={{ margin: '30px 0px' }} />
-                            <Typography textAlign={'center'} sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>Good Citizenship Programme</Typography>
-                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>The mission to improve the quality of education in India and ensure that all children not only attend but also thrive in school is being accomplished by working in collaboration with the government, local communities, parents, teachers, volunteers, and civil society members. Our programs aim to supplement rather than replace governmental efforts. They are implemented on a large scale to not only reach as many children as possible, but also to create an adoptable demonstration model for state governments.</Typography>
-                        </Grid>
-                        <Grid item lg={12} sx={{ m: '0px 70px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={bulb} alt='bulb' style={{ margin: '30px 0px' }} />
-                            <Typography textAlign={'center'} sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>Aftercare Programme</Typography>
-                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>strategies reconfigure teaching methodologies, break down traditional tactics,
-                                and challenge the current rote learning mechanisms in our schools. Our programs are innovative and outcome-driven. In its early years SSF developed innovative teaching-learning approaches, materials, and measurement methods. In 2005, we pioneered a nationwide survey of schooling and learning that has had a major impact on national and international policy discussions.</Typography>
-                        </Grid>
-                        <Grid item lg={12} sx={{ m: '0px 70px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={monitor} alt='monitor' style={{ margin: '30px 0px' }} />
-                            <Typography textAlign={'center'} sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>Skill Development</Typography>
-                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>SSF has worked to develop low-cost, replicable models that can easily spread and be adopted by other organizations. Thousands of volunteers work with SSF to implement learning interventions at the grassroots level. These volunteers are mobilized, trained, and monitored by the SSF team. They are also provided with teaching-learning material and books developed by SSF. Not only does this ensure more effective implementation of the programs, but it also helps to build an infrastructure focused on providing quality education to children.</Typography>
-                        </Grid>
-                        <Grid item lg={12} sx={{ m: '0px 70px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={graph} alt='graph' style={{ margin: '30px 0px' }} />
-                            <Typography textAlign={'center'} sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>Talent Bank Development</Typography>
-                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>All programs are designed to ensure that learning levels in schools and communities increase, education reaches all children who are in school or unable to use school facilities, and youth get well trained for job opportunities. Testing tools are also developed by the SSF team to check the learning levels of children so as to determine the course of action best suited to each child and to assess impact of our programs.</Typography>
-                        </Grid>
-                        <Grid item lg={12} sx={{ m: '0px 70px 0px 0px', borderTop: `1px solid ${HEADER_HOVER_COLOR}`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={apple} alt='picapple' style={{ margin: '30px 0px' }} />
-                            <Typography textAlign={'center'} sx={{ fontWeight: 700, m: '0px', fontSize: '14px' }}>DEDICATED TO LARGE-SCALE CHANGE</Typography>
-                            <Typography sx={{ m: '20px 0px', opacity: 0.6, letterSpacing: '1.3px', lineHeight: '22px', fontSize: '15px' }}>The mission to improve the quality of education in India and ensure that all children not only attend but also thrive in school is being accomplished by working in collaboration with the government, local communities, parents, teachers, volunteers, and civil society members. Our programs aim to supplement rather than replace governmental efforts. They are implemented on a large scale to not only reach as many children as possible, but also to create an adoptable demonstration model for state governments.</Typography>
-                        </Grid>
-                    </Grid>
-                    {/* <Grid item>
-                        <HeadingGlobal title="GET INVOLVED" />
-                        <Grid container sx={{ mt: '20px' }}>
-                            <Grid item lg={2.6} sx={{ p: '20px 0px', mr: '20px', border: '1px solid lightgray', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                                <img src={contactpartner} alt='contactpartner' />
-                                <Button sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>Partner with us</Button>
+            <PageBanner bannerPic={aboutusbg} text="PROGRAMMES" />
+            <Grid container justifyContent="center" sx={{ mt: "30px", p: '0px 20px' }}>
+                <Grid item lg={8} md={10} sm={12}>
+                    <HeadingGlobal title="OUR PROGRAMMES" />
+                    <Box sx={{ 
+                        mt: '20px', 
+                        p: '20px', 
+                        boxShadow: 3, 
+                        borderRadius: '10px',
+                        bgcolor: 'background.paper'
+                    }}>
+                        <Grid container spacing={4}>
+                            <Grid item lg={6} md={6} sm={12} textAlign="center">
+                                <Link to="/GoodCitizenshipProgramme" style={{ textDecoration: 'none' }}>
+                                    <img src={apple} alt="Good Citizenship Programme" style={{ width: '100px', height: '100px' }} />
+                                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'green', mt: '10px' }}>
+                                        Good Citizenship Programme
+                                    </Typography>
+                                </Link>
+                                <Typography sx={{ mt: '10px', opacity: 0.6 }}>
+                                    Empowering Youth: Nurturing Good Citizenship through Life Skills & Value Education
+                                </Typography>
                             </Grid>
-                            <Grid item lg={2.6} sx={{ p: '20px 0px', mr: '20px', border: '1px solid lightgray', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                                <img src={donateicon} alt='donateicon' />
-                                <Button sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>Donate</Button>
+                            <Grid item lg={6} md={6} sm={12} textAlign="center">
+                                <Link to="/AftercareProgramme" style={{ textDecoration: 'none' }}>
+                                    <img src={bulb} alt="Aftercare Programme" style={{ width: '100px', height: '100px' }} />
+                                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'lightblue', mt: '10px' }}>
+                                        Aftercare Programme
+                                    </Typography>
+                                </Link>    
+                                <Typography sx={{ mt: '10px', opacity: 0.6 }}>
+                                    SSF Aftercare Programme: Empowering Underprivileged Youth to Achieve Their Life Dreams
+                                </Typography>
                             </Grid>
-                            <Grid item lg={2.6} sx={{ p: '20px 0px', mr: '20px', border: '1px solid lightgray', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                                <img src={workwithus} alt='workwithus' />
-                                <Button sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>Job Opportunities</Button>
+                            <Grid item lg={6} md={6} sm={12} textAlign="center">
+                                <Link to="/TalentBankDevelopment" style={{ textDecoration: 'none' }}>
+                                    <img src={graph} alt="Talent Bank Development" style={{ width: '100px', height: '100px' }} />
+                                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'gold', mt: '10px' }}>
+                                        Talent Bank Development
+                                    </Typography>
+                                </Link>    
+                                <Typography sx={{ mt: '10px', opacity: 0.6 }}>
+                                    Unlocking Potential: SSF Talent Bank Development Programme Fosters Dreams into Careers
+                                </Typography>
                             </Grid>
-                            <Grid item lg={2.6} sx={{ p: '20px 0px', mr: '20px', border: '1px solid lightgray', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                                <img src={getInvolved} alt='contactpartner' />
-                                <Button sx={{ p: '10px 3px', bgcolor: HEADER_HOVER_COLOR, mt: '30px', width: '100%' }}>Internships</Button>
+                            <Grid item lg={6} md={6} sm={12} textAlign="center">
+                                <Link to="/SkillDevelopment" style={{ textDecoration: 'none' }}>
+                                    <img src={monitor} alt="Skill Development" style={{ width: '100px', height: '100px' }} />
+                                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'orange', mt: '10px' }}>
+                                        Skill Development
+                                    </Typography>
+                                </Link>    
+                                <Typography sx={{ mt: '10px', opacity: 0.6 }}>
+                                    Fostering Economic Empowerment: SSF's Skill Development Initiative Transforms Lives and Communities
+                                </Typography>
                             </Grid>
                         </Grid>
-                    </Grid> */}
+                    </Box>
                 </Grid>
-
-                {/* <Grid item lg={4} sx={{ pl: '20px' }}>
-                    <HeadingGlobal title="Introduction" />
-
-                </Grid> */}
             </Grid>
             <Footer />
-
         </>
-    )
-}
+    );
+};
 
-export default Program
+export default Program;

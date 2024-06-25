@@ -1,0 +1,25 @@
+.shiningstars-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.shiningstars-card {
+    margin: 20px;
+    max-width: 345px;
+}
+
+.shiningstars-media {
+    height: 250px;
+}
+
+.shiningstars-title {
+    color: #5b3c14;
+}
+
+.shiningstars-description {
+    color: #5b3c14;
+}

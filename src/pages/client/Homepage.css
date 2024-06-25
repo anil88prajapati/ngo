@@ -1,0 +1,21 @@
+.slider-4{
+    height: 300%;
+    width: 500%;
+}
+
+.social-media-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-media-links a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}

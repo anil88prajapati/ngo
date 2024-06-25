@@ -1,93 +1,53 @@
-import React from 'react'
-import '../pages/Homepage.css'
-import { useNavigate } from 'react-router-dom'
-import { Box, Button, Grid, Typography } from '@mui/material'
-import { HOVER_COLOR, MAIN_COLOR, SECONDARY_COLOR } from '../constant'
+import React from 'react';
+import { Box, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { HEADER_TEXT_COLOR, HEADER_HOVER_COLOR } from '../constant';
 
-// format of getting data as a prop
-// const items = [
-//     {
-//         header: { title: "Header1", item_link: '/' }, data: [{ title: 'item1', item_link: "demo" }, { title: 'item2', item_link: "/" }, { title: 'item3', item_link: "/" }]
-//     },
-//     {
-//         header: { title: "Header2", item_link: '/' }, data: [{ title: 'item1', item_link: "/" }, { title: 'item2', item_link: "/" }, { title: 'item3', item_link: "/" }]
-//     },
-// ]
-
-
-const MegaMenuHamburger = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRoute = '/' }) => {
-    const navigate = useNavigate()
-    const style = {
-        navTitle: {
-            '&:hover': { opacity: 0.6, borderBottom: `3px solid ${HOVER_COLOR}` },
-            transition: "all 0.50s ease",
-            mr: "20px",
-            color: SECONDARY_COLOR,
-            cursor: "pointer",
-            textDecoration: "none",
-            borderBottom: '3px solid transparent',
-            padding: '5px 5px',
-            textTransform: 'unset',
-            fontSize: '17px',
-            fontWeight: 900
-        },
-        megaMenuTitle: {
-            '&:hover': { cursor: 'pointer' },
-            fontSize: '18px',
-            color: MAIN_COLOR,
-            mb: '0px',
-            mt: '10px',
-            fontWeight: 900,
-            lineHeight: 'initial',
-            padding: '10px 0px',
-            width: 'fit-content'
-        },
-        megaMenuItems: {
-            '&:hover': { cursor: 'pointer', color: MAIN_COLOR },
-            color: '#2B2B2B',
-            fontSize: '14px',
-            padding: '4px 0px',
-            lineHeight: 'inherit',
-            fontWeight: 100,
-            width: 'fit-content',
-        }
-    }
-
-    if (data.length > 0) {
-        return (
-            <>
-                <Box component='div' className="dropdown" >
-                    <Button onClick={() => navigate(`${navigateHandlerTitleRoute}`)} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} endIcon={<ExpandMoreIcon />}>
-                        {title}
-                    </Button>
-                    <Box component='div' className="dropdown-content" sx={{ borderTop: `9px solid ${MAIN_COLOR}`, borderBottom: `9px solid ${MAIN_COLOR}` }}>
-                        <Grid container className="row">
-                            {data.map((item, index) => {
-                                return <Grid item xs={2} component='div' key={index} className="column">
-                                    <Typography variant='h1' onClick={() => navigate(`${item.header.item_link}`)} sx={style.megaMenuTitle} >{item.header.title}</Typography>
-                                    {item.data.map((nav, i) => {
-                                        return <Typography variant='h5' key={i} onClick={() => navigate(`${nav.item_link}`)} sx={style.megaMenuItems} >{nav.title}</Typography>
-                                    })}
-                                </Grid>
-                            })}
-                        </Grid>
+const MegaMenu = ({ nav, expanded, pageState, navRouteHandler, navData }) => {
+    return (
+        <div className="mainContainer">
+            <div className="mainContainerInner">
+                <Typography
+                    sx={{
+                        fontWeight: 700,
+                        fontSize: '15px',
+                        transition: 'all 0.50s ease',
+                        color: pageState === nav ? HEADER_HOVER_COLOR : HEADER_TEXT_COLOR,
+                        '&:hover': { color: HEADER_HOVER_COLOR },
+                    }}
+                >
+                    {nav}
+                </Typography>
+                {expanded && <ExpandMoreIcon className="iconExpand" sx={{ color: HEADER_TEXT_COLOR }} />}
+            </div>
+            {expanded && (
+                <div className="hiddenArea">
+                    <Box sx={{ mt: '5px', mb: '20px', width: '88%' }}>
+                        {navData
+                            .find((item) => item.navItem === nav)
+                            ?.data.map((navs) => (
+                                <Box
+                                    key={navs.title}
+                                    sx={{
+                                        p: '10px',
+                                        pl: '20px',
+                                        pb: '0px',
+                                        width: '100%',
+                                        '&:hover': { color: HEADER_HOVER_COLOR },
+                                        cursor: 'pointer',
+                                    }}
+                                    onClick={() => navRouteHandler(navs.path)}
+                                >
+                                    <Typography sx={{ transition: 'all 0.50s ease', fontWeight: 500, fontSize: '15px' }}>
+                                        {navs.title}
+                                    </Typography>
+                                </Box>
+                            ))}
                     </Box>
-                </Box>
-            </>
-        )
-    } else {
-        return (
-            <>
-                <Box component='div' className="dropdown">
-                    <Button onClick={() => navigate(`${navigateHandlerTitleRoute}`)} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} >
-                        {title}
-                    </Button>
-                </Box>
-            </>
-        )
-    }
+                </div>
+            )}
+        </div>
+    );
+};
 
-}
-
-export default MegaMenuHamburger
+export default MegaMenu;

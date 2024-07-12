@@ -14,6 +14,10 @@ import video8 from '../assets/videos/video8.mp4';
 import video9 from '../assets/videos/video9.mp4';
 import video10 from '../assets/videos/video10.mp4';
 import video11 from '../assets/videos/video11.mp4';
+import video12 from '../assets/videos/video12.mp4';
+import video13 from '../assets/videos/video13.mp4';
+import video14 from '../assets/videos/video14.mp4';
+import video15 from '../assets/videos/video15.mp4';
 
 const DonorsAndNotifications = () => {
     const settings = {
@@ -83,6 +87,26 @@ const DonorsAndNotifications = () => {
                 <div>
                     <video width="100%" height="500" controls>
                         <source src={video11} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video12} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video13} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video14} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video15} type='video/mp4' />
                     </video>
                 </div>
             </Slider>

@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "./Header";
 import Footer from "../global/Footer";
 import HeadingGlobal from '../global/HeadingGlobal';
-import { Box, Typography, Avatar } from '@mui/material';
+import { Box, Typography, Avatar,Divider } from '@mui/material';
 import bharti from './../assets/bharti.jpg'
 import siddhart from './../assets/Siddhartha.jpeg'
 import anil from './../assets/anil.png';
@@ -35,6 +35,10 @@ const Leadership = () => {
                 <HeadingGlobal title="WHO WE ARE" />
             
             </Box>
+            <h1 style={{ textAlign: 'center', fontFamily: 'initial', color: '#5b3c14' }}>
+                <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px' }} />FOUNDER'S
+                <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px' }} />
+            </h1>
             <Box 
                 sx={{ 
                     p: { lg: '50px 40px', xs: '40px 20px' },
@@ -172,6 +176,10 @@ His passion for social work has driven him in his dynamic involvement with many 
                     </Typography>
                 </Box>
             </Box>
+            <h1 style={{ textAlign: 'center', fontFamily: 'initial', padding: 20, color: '#5b3c14' }}>
+                <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px' }} />THINK TANK
+                <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px' }} />
+            </h1>
             <Box 
                 sx={{ 
                     p: { lg: '50px 40px', xs: '40px 20px' },

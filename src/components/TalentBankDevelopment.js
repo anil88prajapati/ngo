@@ -30,7 +30,7 @@ const TalentBankDevelopment = () => {
                     The programme has a method talent induction process, comprising the following steps:
                 </p>
                 <div className="induction-steps">
-                    <ol>
+                    <ol> 
                         <li>Analysis of life history from socio-economic cultural point of view;</li>
                         <li>SWOT analysis of the talents with the help of SSF mentors;</li>
                         <li>Dream-Resource mapping, taking into account material & intellectual resources of the talent;</li>

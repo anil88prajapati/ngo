@@ -3,9 +3,15 @@ import { Container, Typography, Box, Paper } from '@mui/material';
 import { styled } from '@mui/system';
 import Header from "./Header";
 import Footer from "../global/Footer";
+import logo from './../assets/SevaSrijanLogo.jpeg';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
     backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    backgroundImage: `url(${logo})`,
+    backgroundSize: '230%', 
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundBlendMode: 'overlay', 
     padding: theme.spacing(4),
     boxShadow: theme.shadows[5],
     borderRadius: theme.shape.borderRadius,
@@ -22,7 +28,7 @@ const History = () => {
             <Box sx={{ py: 4, backgroundColor: '#ffb300' }}>
                 <Container maxWidth="md">
                     <StyledPaper>
-                        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', textAlign: 'center', mb: 4, color: textColor,fontStyle:'italic' }}>
+                        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', textAlign: 'center', mb: 4, color: textColor, fontStyle: 'italic' }}>
                             How the journey began…….
                         </Typography>
                         <Typography variant="body1" paragraph sx={{ color: textColor, fontWeight: 'bold', textAlign: 'justify' }}>

@@ -553,7 +553,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                             color: textColor
                         }}
                     >
-             Mr. Jitendra Kumar, a Mechanical Engineer having completed his MBA from IIM, Joka possesses 17 years of versatile experience in the Information Technology sector and is currently working with IBM India Pvt Ltd. He is associated with SEVA Srijan Foundation as a Volunteer Leader helping underprivileged children learn computer skills.
+             Mr. Jitendra Kumar, a Mechanical Engineer having completed his MBA from IIM, Jitender Kumar possesses 17 years of versatile experience in the Information Technology sector and is currently working with IBM India Pvt Ltd. He is associated with SEVA Srijan Foundation as a Volunteer Leader helping underprivileged children learn computer skills.
                     </Typography>
                 </Box>
             </Box>

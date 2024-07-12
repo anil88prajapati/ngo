@@ -80,7 +80,8 @@ const Gallery = () => {
         { id: 34, imgSrc: Img34 },
         { id: 35, imgSrc: Img35 },
         { id: 36, imgSrc: Img36 },
-        { id: 37, imgSrc: Img37 }
+        { id: 37, imgSrc: Img37 },
+     
     ];
 
     const [model, setModel] = useState(false);

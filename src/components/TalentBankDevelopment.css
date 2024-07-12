@@ -13,23 +13,7 @@
     background-position: center;
 }
 
-.talent-bank-development-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.talent-bank-development-container textarea {
-    width: 90%;
-    margin-bottom: 10px;
-}
-
-.talent-bank-development-container button {
-    width: 100px; 
-}
-
-.quote-section, .description-section, .reflection-section {
+.quote-section, .intro-section, .what-we-do-section {
     background-color: rgba(255, 255, 255, 0.8); 
     width: 50%;
     padding: 20px;
@@ -49,52 +33,20 @@
     font-weight: bold;
 }
 
-.description-section .image-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.description-section .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.description-section p, .description-section ul {
+.intro-section p, .what-we-do-section p {
     color: #333;
 }
 
-.description-section ul {
-    list-style-type: disc;
+.induction-steps {
+    margin-top: 10px;
+}
+
+.induction-steps ol {
+    list-style-type: decimal;
     margin-left: 20px;
-}
-
-.reflection-section h3 {
     color: #333;
 }
 
-.reflection-section form {
-    display: flex;
-    flex-direction: column;
-}
-
-.reflection-section textarea {
-    resize: none;
-    padding: 10px;
+.induction-steps li {
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.reflection-section button {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-}
-
-.reflection-section button:hover {
-    background-color: #0056b3;
 }

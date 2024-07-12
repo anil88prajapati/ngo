@@ -7,6 +7,7 @@ import aiflogo from './../assets/aiflogo.png';
 import aarologo from './../assets/aarologo.jpg';
 import partner from './../assets/Partners.jpg';
 import sevalaw from './../assets/sevalawoffice.jpg';
+import cuflogo from './../assets/cuflogo.jpg';
 
 const data = [
     { pic: LOGO_IMG, link: 'Head Office', redirect: HEAD_OFFICE_ADDRESS, mapUrl: 'https://maps.app.goo.gl/jbquwAsaGv1Jczet8' },
@@ -14,7 +15,7 @@ const data = [
     { pic: LOGO_IMG, link: 'Jaipur (Rajasthan) Chapter', redirect: JAIPUR_ADDRESS, mapUrl: 'https://maps.app.goo.gl/k99MptLTjKA7ho8b7' }
 ];
 
-const partnerLogos = [esflogo, aiflogo, aarologo, partner, sevalaw];
+const partnerLogos = [esflogo, aiflogo, aarologo, partner, sevalaw,cuflogo];
 
 const OurCenters = () => {
     const textColor = '#5b3c14'; 

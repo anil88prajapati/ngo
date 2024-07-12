@@ -18,7 +18,7 @@ const navData = [
         ]
     },
     {
-        navItem: 'PROGRAMS', data: [
+        navItem: 'PROGRAMMES', data: [
             { title: 'Good Citizenship Programme', path: '/GoodCitizenshipProgramme' },
             { title: 'Aftercare Programme', path: '/AftercareProgramme' },
             { title: 'Skill Development', path: '/SkillDevelopment' },
@@ -129,7 +129,7 @@ const Header = ({ pageState }) => {
                         <div style={{ display: 'flex', padding: '10px', alignItems: 'center', justifyContent: 'space-evenly', width: '53%' }}>
                             <MegaMenu nav="HOME" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/')} activeNav={activeNav} setActiveNav={setActiveNav} />
                             <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
-                            <MegaMenu nav="PROGRAMS" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
+                            <MegaMenu nav="PROGRAMMES" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
                             <MegaMenu nav="JOIN US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
                             <MegaMenu nav="CONTACT" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
                         </div>

@@ -34,7 +34,7 @@ const Program = () => {
                                         Good Citizenship Programme
                                     </Typography>
                                 </Link>
-                                <Typography sx={{ mt: '10px', opacity: 0.6 }}>
+                                <Typography sx={{ mt: '10px', opacity: 1, fontWeight: 'bold' }}>
                                     Empowering Youth: Nurturing Good Citizenship through Life Skills & Value Education
                                 </Typography>
                             </Grid>
@@ -45,7 +45,7 @@ const Program = () => {
                                         Aftercare Programme
                                     </Typography>
                                 </Link>    
-                                <Typography sx={{ mt: '10px', opacity: 0.6 }}>
+                                <Typography sx={{ mt: '10px', opacity: 1, fontWeight: 'bold' }}>
                                     SSF Aftercare Programme: Empowering Underprivileged Youth to Achieve Their Life Dreams
                                 </Typography>
                             </Grid>
@@ -56,7 +56,7 @@ const Program = () => {
                                         Talent Bank Development
                                     </Typography>
                                 </Link>    
-                                <Typography sx={{ mt: '10px', opacity: 0.6 }}>
+                                <Typography sx={{ mt: '10px', opacity: 1, fontWeight: 'bold' }}>
                                     Unlocking Potential: SSF Talent Bank Development Programme Fosters Dreams into Careers
                                 </Typography>
                             </Grid>
@@ -67,7 +67,7 @@ const Program = () => {
                                         Skill Development
                                     </Typography>
                                 </Link>    
-                                <Typography sx={{ mt: '10px', opacity: 0.6 }}>
+                                <Typography sx={{ mt: '10px', opacity: 1, fontWeight: 'bold' }}>
                                     Fostering Economic Empowerment: SSF's Skill Development Initiative Transforms Lives and Communities
                                 </Typography>
                             </Grid>

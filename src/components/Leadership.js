@@ -4,7 +4,7 @@ import Footer from "../global/Footer";
 import HeadingGlobal from '../global/HeadingGlobal';
 import { Box, Typography, Avatar } from '@mui/material';
 import bharti from './../assets/bharti.jpg'
-import siddhart from './../assets/Siddhartha.jpg';
+import siddhart from './../assets/Siddhartha.jpeg'
 import anil from './../assets/anil.png';
 import leadfirst from './../assets/leadfront.jpg';
 import bhartagg from './../assets/Bhartagg.jpg'

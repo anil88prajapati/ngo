@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material'
 import HeadingGlobal from '../global/HeadingGlobal'
 import Contactus from './../assets/contactimage.jpg'
-import { ABOUT_US_CONTENT, ABOUT_US_CONTENT1} from '../constant'
+import { ABOUT_US_CONTENT, ABOUT_US_CONTENT1 } from '../constant'
 
 const AboutUs = () => {
     const textColor = '#5b3c14'; 
@@ -16,9 +16,27 @@ const AboutUs = () => {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <Typography sx={{ lineHeight: '1.4', letterSpacing: '1.2px', fontSize: { lg: '18px', xs: '14px' } }}>{ABOUT_US_CONTENT}</Typography>
+                    <Typography 
+                        sx={{ 
+                            lineHeight: '1.4', 
+                            letterSpacing: '1.2px', 
+                            fontSize: { lg: '18px', xs: '14px' }, 
+                            textAlign: 'justify' 
+                        }}
+                    >
+                        {ABOUT_US_CONTENT}
+                    </Typography>
                     <Typography sx={{ mb: '20px' }}></Typography>
-                    <Typography sx={{ lineHeight: '1.4', letterSpacing: '1.2px', fontSize: { lg: '18px', xs: '14px' } }}>{ABOUT_US_CONTENT1}</Typography>
+                    <Typography 
+                        sx={{ 
+                            lineHeight: '1.4', 
+                            letterSpacing: '1.2px', 
+                            fontSize: { lg: '18px', xs: '14px' }, 
+                            textAlign: 'justify' 
+                        }}
+                    >
+                        {ABOUT_US_CONTENT1}
+                    </Typography>
                 </Grid>
             </Grid>
         </Box>

@@ -1,24 +1,91 @@
 import React from 'react';
-import { Box, Paper, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import testVideo from '../assets/videos/testVideo.mp4';
+import video1 from '../assets/videos/video1.mp4';
+import video2 from '../assets/videos/video2.mp4';
+import video3 from '../assets/videos/video3.mp4';
+import video4 from '../assets/videos/video4.mp4';
+import video6 from '../assets/videos/video6.mp4';
+import video7 from '../assets/videos/video7.mp4';
+import video8 from '../assets/videos/video8.mp4';
+import video9 from '../assets/videos/video9.mp4';
+import video10 from '../assets/videos/video10.mp4';
+import video11 from '../assets/videos/video11.mp4';
 
 const DonorsAndNotifications = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+    };
+
     return (
-        <Box sx={{ maxWidth: '93%', mx: 'auto', p: 2, boxShadow: '3px 3px 13px rgba(0,0,0,0.40), -3px -3px 13px rgba(0,0,0,0.40)' }}>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
-                <Paper elevation={3} sx={{ p: 2, mr: 2, flex: 1 }}>
-                    <Typography variant="h6" sx={{ fontWeight: 'bold',textAlign:'center' }}></Typography>
-                    <Paper elevation={3} sx={{ p: 15, mr: 2, flex: 1 }}>
-                    <Typography variant="h6" sx={{ fontWeight: 'bold' }}></Typography>
-                    
-                </Paper>
-                </Paper>
-                <Paper elevation={3} sx={{ p: 2, ml: 2, flex: 1 }}>
-                    <Typography variant="h6" sx={{ fontWeight: 'bold', textAlign:'center' }}></Typography>
-                    <Paper elevation={3} sx={{ p: 15, mr: 2, flex: 1 }}>
-                    <Typography variant="h6" sx={{ fontWeight: 'bold' }}></Typography>
-                </Paper>
-                </Paper>
-            </Box>
+        <Box sx={{ maxWidth: '93%', mx: 'auto', p: 2, height: '520px', boxShadow: '3px 3px 13px rgba(0,0,0,0.40), -3px -3px 13px rgba(0,0,0,0.40)' }}>
+            <Slider {...settings}>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video4} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video1} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video2} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video3} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={testVideo} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video6} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video7} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video8} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video9} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video10} type='video/mp4' />
+                    </video>
+                </div>
+                <div>
+                    <video width="100%" height="500" controls>
+                        <source src={video11} type='video/mp4' />
+                    </video>
+                </div>
+            </Slider>
         </Box>
     );
 };

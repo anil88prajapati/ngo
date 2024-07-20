@@ -102,7 +102,7 @@ iv.	Collaborate: If you represent an organization or have an idea for a partners
       <div className="faq-item">
         <h3>What will SEVA Srijan Foundation do with my donation?</h3>
         <p>
-        Your donation will be used to support SSF’s various programs and initiatives aimed at empowering the youth, promoting education, fostering the development of a equitable society through creation of employment opportunities and uplifting communities by development of good citizenry. You may also contribute to the cause that is close to your heart.
+        Your donation will be used to support SSF’s various programmes and initiatives aimed at empowering the youth, promoting education, fostering the development of a equitable society through creation of employment opportunities and uplifting communities by development of good citizenry. You may also contribute to the cause that is close to your heart.
         </p>
       </div>
       <div className="faq-header">

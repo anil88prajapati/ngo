@@ -1,70 +1,74 @@
 .faq-container {
-    width: 90%;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    padding: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    color: #5b3c14;
-  }
-  
-  .faq-header {
-    background-color: #5b3c14;
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-    padding: 20px 0;
-    border-radius: 8px 8px 0 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .faq-content {
-    margin: 20px 0;
-  }
-  
-  .faq-content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .faq-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  .faq-content a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .faq-content a:hover {
-    text-decoration: underline;
-  }
-  
-  .faq-item {
-    background: #fff;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .faq-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .faq-item p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  .faq-item ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  .faq-item ul li {
-    margin-bottom: 5px;
-  }
-  
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #5b3c14;
+}
+
+.faq-header {
+  background-color: #5b3c14;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-content {
+  margin: 20px 0;
+}
+
+.faq-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.faq-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.faq-content a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.faq-content a:hover {
+  text-decoration: underline;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.faq-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.faq-item ul li {
+  margin-bottom: 5px;
+}

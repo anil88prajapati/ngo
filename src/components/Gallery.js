@@ -28,6 +28,18 @@ import Img22 from './../assets/img/img22.jpg';
 import Img23 from './../assets/img/img23.jpg';
 import Img24 from './../assets/img/img24.jpg';
 import Img25 from './../assets/img/img25.jpg';
+import Img26 from './../assets/img/img26.jpg';
+import Img27 from './../assets/img/img27.jpg';
+import Img28 from './../assets/img/img28.jpg';
+import Img29 from './../assets/img/img29.jpg';
+import Img30 from './../assets/img/img30.jpg';
+import Img31 from './../assets/img/img31.jpg';
+import Img32 from './../assets/img/img32.jpg';
+import Img33 from './../assets/img/img33.jpg';
+import Img34 from './../assets/img/img34.jpg';
+import Img35 from './../assets/img/img35.jpg';
+import Img36 from './../assets/img/img36.jpg';
+import Img37 from './../assets/img/img37.jpg';
 import Footer from "../global/Footer";
 import Header from "./Header";
 
@@ -56,7 +68,20 @@ const Gallery = () => {
         { id: 22, imgSrc: Img22 },
         { id: 23, imgSrc: Img23 },
         { id: 24, imgSrc: Img24 },
-        { id: 25, imgSrc: Img25 }
+        { id: 25, imgSrc: Img25 },
+        { id: 26, imgSrc: Img26 },
+        { id: 27, imgSrc: Img27 },
+        { id: 28, imgSrc: Img28 },
+        { id: 29, imgSrc: Img29 },
+        { id: 30, imgSrc: Img30 },
+        { id: 31, imgSrc: Img31 },
+        { id: 32, imgSrc: Img32 },
+        { id: 33, imgSrc: Img33 },
+        { id: 34, imgSrc: Img34 },
+        { id: 35, imgSrc: Img35 },
+        { id: 36, imgSrc: Img36 },
+        { id: 37, imgSrc: Img37 },
+     
     ];
 
     const [model, setModel] = useState(false);

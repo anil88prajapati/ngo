@@ -31,7 +31,7 @@ const Writetous = () => {
                 <Grid container spacing={3} justifyContent="center">
                     <Grid item xs={12} sm={10} md={8} lg={6}>
                         <div style={{ backgroundColor: "#fff", padding: "20px", borderRadius: "8px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
-                            <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Write to Us</h2>
+                            <h2 style={{ textAlign: "center", marginBottom: "20px", color: "#5b3c14" }}>Write to Us</h2>
                             {!submitted ? (
                                 <form onSubmit={handleSubmit}>
                                     <Grid container spacing={2}>
@@ -44,6 +44,8 @@ const Writetous = () => {
                                                 onChange={handleChange}
                                                 variant="outlined"
                                                 required
+                                                InputLabelProps={{ style: { color: '#5b3c14' } }}
+                                                InputProps={{ style: { color: '#5b3c14' } }}
                                             />
                                         </Grid>
                                         <Grid item xs={12} sm={6}>
@@ -56,6 +58,8 @@ const Writetous = () => {
                                                 onChange={handleChange}
                                                 variant="outlined"
                                                 required
+                                                InputLabelProps={{ style: { color: '#5b3c14' } }}
+                                                InputProps={{ style: { color: '#5b3c14' } }}
                                             />
                                         </Grid>
                                         <Grid item xs={12} sm={6}>
@@ -68,6 +72,8 @@ const Writetous = () => {
                                                 onChange={handleChange}
                                                 variant="outlined"
                                                 required
+                                                InputLabelProps={{ style: { color: '#5b3c14' } }}
+                                                InputProps={{ style: { color: '#5b3c14' } }}
                                             />
                                         </Grid>
                                         <Grid item xs={12} sm={6}>
@@ -81,6 +87,8 @@ const Writetous = () => {
                                                 variant="outlined"
                                                 required
                                                 SelectProps={{ native: true }}
+                                                InputLabelProps={{ style: { color: '#5b3c14' } }}
+                                                InputProps={{ style: { color: '#5b3c14' } }}
                                             >
                                                 <option value="jaunapur">Jaunapur</option>
                                                 <option value="jaipur">Jaipur</option>
@@ -97,17 +105,19 @@ const Writetous = () => {
                                                 onChange={handleChange}
                                                 variant="outlined"
                                                 required
+                                                InputLabelProps={{ style: { color: '#5b3c14' } }}
+                                                InputProps={{ style: { color: '#5b3c14' } }}
                                             />
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Button type="submit" variant="contained" color="primary" fullWidth>
+                                            <Button type="submit" variant="contained" fullWidth style={{ backgroundColor: '#5b3c14', color: '#fff' }}>
                                                 Submit
                                             </Button>
                                         </Grid>
                                     </Grid>
                                 </form>
                             ) : (
-                                <div style={{ textAlign: "center" }}>
+                                <div style={{ textAlign: "center", color: "#5b3c14" }}>
                                     <h3>Thank you for your submission!</h3>
                                 </div>
                             )}

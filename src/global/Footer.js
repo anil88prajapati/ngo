@@ -1,6 +1,6 @@
 import { Divider, Grid, Typography } from '@mui/material';
 import React from 'react';
-import { DELHI_ADDRESS, EMAIL_ADDR, MOBILE_NUMBERS_DELHI, HEAD_OFFICE_ADDRESS } from '../constant';
+import { DELHI_ADDRESS, EMAIL_ADDR, MOBILE_NUMBERS_DELHI, HEAD_OFFICE_ADDRESS, MOBILE_NUMBERS_HEAD } from '../constant';
 import { useNavigate } from 'react-router-dom';
 import './Footer.css';
 import FacebookIcon from './../assets/facebook.png';
@@ -71,7 +71,7 @@ const Footer = () => {
                             <Grid item>
                                 <Typography sx={{ fontSize: '14px', fontWeight: 500, opacity: 0.5 }}>{HEAD_OFFICE_ADDRESS}</Typography>
                                 <Typography sx={{ fontSize: '14px', fontWeight: 500, opacity: 0.5 }}>{EMAIL_ADDR}</Typography>
-                                <Typography sx={{ fontSize: '14px', fontWeight: 500, opacity: 0.5 }}>{MOBILE_NUMBERS_DELHI}</Typography>
+                                <Typography sx={{ fontSize: '14px', fontWeight: 500, opacity: 0.5 }}>{MOBILE_NUMBERS_HEAD}</Typography>
                             </Grid>
                         </Grid>
                     </Grid>

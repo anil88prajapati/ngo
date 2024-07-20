@@ -5,10 +5,11 @@ import sevalawoffice from './../assets/sevalawoffice.jpg';
 import esflogo from './../assets/esflogo.jpg';
 import aiflogo from './../assets/aiflogo.png';
 import aarologo from './../assets/aarologo.jpg';
+import cuflogo from './../assets/cuflogo.jpg';
 import { Box, Grid } from '@mui/material';
 
 const Partners = () => {
-    const images = [partnersbg, sevalawoffice, esflogo, aiflogo, aarologo];
+    const images = [partnersbg, sevalawoffice, esflogo, aiflogo, aarologo,cuflogo];
 
     return (
         <>

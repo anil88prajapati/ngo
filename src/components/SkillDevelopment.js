@@ -17,23 +17,16 @@ const SkillDevelopment = () => {
             </div>
             <div className="intro-section">
                     <h3>Why Skill Development Programme</h3>
-                    <p>National growth story's fulcrum is skilled, well groomed youth ready to contribute their share in the overall industrial and entrepreneurial growth of the country. Children in the fold of the organization are planned to be put into skilling trade, aligning with their interest and career goal achievement. In the initial phase, SEVA SRIJAN FOUNDATION has plans to operate through skilling centres in Delhi NCR, Rajasthan and Uttarakhand states.
-
+                    <p>Skill development bridges the gap between formal education and job market needs. It increases employment opportunities for individuals acquiring skills in a specific field, which assumes all the more importance in the context of marginalized youth.
                     </p>
                 </div>
             <div className="what-we-do-section">
                     <h3>What We Do</h3>
                     <p>
-                    Skill Development is a significant driver to address poverty through improved
-                    employability, productivity and sustainable enterprise development. It facilitates a
-                    cycle of high productivity, increased employment opportunities, income growth
-                    and development.
+                    It supports students to hone their interests and helps them develop their skills into the field for which their aptitude fits the best. Academics are important yet giving a practical approach to learning through these skill trainings, helps budding growth enhance their prospects for employability /employment. 
                 </p>
                 <p>
-                    SSF works with those youths who are interested to earn early to support
-                    themselves & their families. For them, SSF has devised its Skill Development
-                    Programme based on “Educate-Train-Employ” model wherein youth are trained in
-                    various skills to enable them earn their livelihood and lead a dignified life.
+                Seva Srijan Foundation believes in holistic development of a child into a confident, self-reliant youth. We believe that though education is the fundamental right of every child irrespective of their background, skill development trainings are important to help majority of children excel in skills/trades that lead them to earn a decent living and lead a dignified life. Children of or above 14 years of age are eligible to benefit from this programme of SSF. Computer classes, spoken English classes, Art & Craft and Dance & Music classes are few programmes to start with.
                 </p>
                 </div>
         </div>

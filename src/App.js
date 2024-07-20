@@ -23,6 +23,7 @@ import DonorsAndNotifications from './components/DonorsAndNotifications';
 import Shiningstars from "./components/Shiningstars";
 import Donorlist from "./components/Donorlist";
 import Writetous from "./components/Writetous";
+import Notification from "./components/Notification";
 
 function App() {
     return (
@@ -53,6 +54,7 @@ function App() {
                 <Route path="/Shiningstars" element={<Shiningstars />} />
                 <Route path="/Donorlist" element={<Donorlist/>}/>
                 <Route path="/Writetous" element={<Writetous/>}/>
+                <Route path="/Notification" element={<Notification/>}/>
             </Routes>
         </Router>
     );

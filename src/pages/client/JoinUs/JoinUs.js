@@ -19,12 +19,12 @@ const JoinUs = () => {
         interests: {
             Administration: false,
             FieldWork: false,
+            VolunteerCoordination: false,
             Fundraising: false,
-            ProjectImplementation: false,
             ProjectPlanning: false,
+            ProjectImplementation: false,
             Teaching: false,
             VocationalTraining: false,
-            VolunteerCoordination: false,
         },
         availability: {
             Weekdays: { Morning: false, Afternoon: false, Evening: false },
@@ -174,7 +174,7 @@ const JoinUs = () => {
                             <Grid item xs={12}>
                                 <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '20px', mb: '20px', borderRadius: '8px' }}>
                                     <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
-                                        Interests
+                                      Areas Of Interest
                                     </Typography>
                                     <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px', opacity: 0.5 }} />
                                     <FormGroup>
@@ -200,7 +200,7 @@ const JoinUs = () => {
                             <Grid item xs={12}>
                                 <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '20px', mb: '20px', borderRadius: '8px' }}>
                                     <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
-                                        Availability
+                                      Day of Availability
                                     </Typography>
                                     <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px', opacity: 0.5 }} />
                                     <FormGroup>
@@ -246,7 +246,7 @@ const JoinUs = () => {
             <Grid item lg={6} sx={{ p: '0px 30px' }}>
                 <HeadingGlobal title="SEND US A MESSAGE" />
                 <Typography sx={{ fontWeight: 500, m: '10px 0px' }}>
-                    Please feel free to drop all your queries at {EMAIL_ADDR}.
+                    Please feel free to connect at {EMAIL_ADDR}.
                 </Typography>
             </Grid>
             <Footer />

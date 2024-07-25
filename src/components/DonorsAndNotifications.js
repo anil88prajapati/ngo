@@ -53,8 +53,8 @@ const DonorsAndNotifications = () => {
     return (
         <Box sx={{ maxWidth: '93%', mx: 'auto', p: 2, height: '520px', boxShadow: '3px 3px 13px rgba(0,0,0,0.40), -3px -3px 13px rgba(0,0,0,0.40)' }}>
             <Slider ref={sliderRef} {...settings}> 
-                <div>
-                    <YouTube videoId={"QqJYAIwEP6k"} />
+                <div className='slider'>
+                    <YouTube loading='eager' videoId={"QqJYAIwEP6k"} />
                 </div>
                 {/* <div>
                     <video width="100%" height="500" controls>
@@ -66,37 +66,37 @@ const DonorsAndNotifications = () => {
                         <source src={video2} type='video/mp4' />
                     </video>
                 </div> */}
-                <div>
-                   <YouTube width="100%" height="500" videoId={"c0kt34Rmccw"} />
+                <div className='slider'>
+                   <YouTube loading='eager' videoId={"c0kt34Rmccw"} />
                 </div>
                 {/* <div>
                     <video width="100%" height="500" controls>
                         <source src={testVideo} type='video/mp4' />
                     </video>
                 </div> */}
-                <div>
-                    <YouTube width="100%" height="500" videoId={"yY0ntA7Dc7g"} />
+                <div className='slider'>
+                    <YouTube loading='eager' videoId={"yY0ntA7Dc7g"} />
                 </div>
-                <div>
-                    <YouTube width="100%" height="500" videoId={"eRTBMCjv-JI"} />
+                <div className='slider'>
+                    <YouTube loading='eager' videoId={"eRTBMCjv-JI"} />
                 </div>
-                <div>
-                    <YouTube width="100%" height="500" videoId={"VrjPr1iTAgI"} />
+                <div className='slider'>
+                    <YouTube loading='eager' videoId={"VrjPr1iTAgI"} />
                 </div>
-                <div>
-                    <YouTube width="100%" height="500" videoId={"q7ytE3yK5YA"} />
+                <div className='slider'>
+                    <YouTube loading='eager' videoId={"q7ytE3yK5YA"} />
                 </div>
-                <div>
-                        <YouTube width="100%" height="500" videoId={"bHh98cGjIJs"} />
+                <div className='slider'>
+                        <YouTube loading='eager' videoId={"bHh98cGjIJs"} />
                 </div>
-                <div>
-                    <YouTube width="100%" height="500" videoId={"bHq-W3pAGTw"} />
+                <div className='slider'>
+                    <YouTube loading='eager' videoId={"bHq-W3pAGTw"} />
                 </div>
-                <div>
-                    <YouTube width="100%" height="500" videoId={"fhGNuSZzeH4"} />
+                <div className='slider'>
+                    <YouTube loading='eager' videoId={"fhGNuSZzeH4"} />
                 </div>
-                <div>
-                    <YouTube className='' width="100%" height="100%"  videoId={"tUIwxLUuywE"} />
+                <div className='slider'>
+                    <YouTube loading='eager' videoId={"tUIwxLUuywE"} />
                 </div>
                 {/* <div>
                     <video width="100%" height="500" controls>

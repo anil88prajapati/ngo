@@ -1,0 +1,6 @@
+.video-container {
+
+    width: 1000%;
+    height: 1000%;
+    padding-bottom: 5%; /* 16:9 aspect ratio (height: width) */
+  }

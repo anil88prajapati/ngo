@@ -3,21 +3,9 @@ import { Box } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import testVideo from '../assets/videos/testVideo.mp4';
-import video1 from '../assets/videos/video1.mp4';
-import video2 from '../assets/videos/video2.mp4';
-import video3 from '../assets/videos/video3.mp4';
-import video4 from '../assets/videos/video4.mp4';
-import video6 from '../assets/videos/video6.mp4';
-import video7 from '../assets/videos/video7.mp4';
-import video8 from '../assets/videos/video8.mp4';
-import video9 from '../assets/videos/video9.mp4';
-import video10 from '../assets/videos/video10.mp4';
-import video11 from '../assets/videos/video11.mp4';
-import video12 from '../assets/videos/video12.mp4';
-import video13 from '../assets/videos/video13.mp4';
-import video14 from '../assets/videos/video14.mp4';
-import video15 from '../assets/videos/video15.mp4';
+import YouTube from 'react-youtube';
+import './Videos.css';
+
 
 const DonorsAndNotifications = () => {
     const sliderRef = useRef(null);
@@ -64,82 +52,62 @@ const DonorsAndNotifications = () => {
 
     return (
         <Box sx={{ maxWidth: '93%', mx: 'auto', p: 2, height: '520px', boxShadow: '3px 3px 13px rgba(0,0,0,0.40), -3px -3px 13px rgba(0,0,0,0.40)' }}>
-            <Slider ref={sliderRef} {...settings}>
+            <Slider ref={sliderRef} {...settings}> 
                 <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video4} type='video/mp4' />
-                    </video>
+                    <YouTube videoId={"QqJYAIwEP6k"} />
                 </div>
-                <div>
+                {/* <div>
                     <video width="100%" height="500" controls>
                         <source src={video1} type='video/mp4' />
                     </video>
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                     <video width="100%" height="500" controls>
                         <source src={video2} type='video/mp4' />
                     </video>
-                </div>
+                </div> */}
                 <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video3} type='video/mp4' />
-                    </video>
+                   <YouTube width="100%" height="500" videoId={"c0kt34Rmccw"} />
                 </div>
-                <div>
+                {/* <div>
                     <video width="100%" height="500" controls>
                         <source src={testVideo} type='video/mp4' />
                     </video>
+                </div> */}
+                <div>
+                    <YouTube width="100%" height="500" videoId={"yY0ntA7Dc7g"} />
                 </div>
                 <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video6} type='video/mp4' />
-                    </video>
+                    <YouTube width="100%" height="500" videoId={"eRTBMCjv-JI"} />
                 </div>
                 <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video7} type='video/mp4' />
-                    </video>
+                    <YouTube width="100%" height="500" videoId={"VrjPr1iTAgI"} />
                 </div>
                 <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video8} type='video/mp4' />
-                    </video>
+                    <YouTube width="100%" height="500" videoId={"q7ytE3yK5YA"} />
                 </div>
                 <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video9} type='video/mp4' />
-                    </video>
+                        <YouTube width="100%" height="500" videoId={"bHh98cGjIJs"} />
                 </div>
                 <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video10} type='video/mp4' />
-                    </video>
+                    <YouTube width="100%" height="500" videoId={"bHq-W3pAGTw"} />
                 </div>
                 <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video11} type='video/mp4' />
-                    </video>
+                    <YouTube width="100%" height="500" videoId={"fhGNuSZzeH4"} />
                 </div>
                 <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video12} type='video/mp4' />
-                    </video>
+                    <YouTube className='' width="100%" height="100%"  videoId={"tUIwxLUuywE"} />
                 </div>
-                <div>
-                    <video width="100%" height="500" controls>
-                        <source src={video13} type='video/mp4' />
-                    </video>
-                </div>
-                <div>
+                {/* <div>
                     <video width="100%" height="500" controls>
                         <source src={video14} type='video/mp4' />
                     </video>
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                     <video width="100%" height="500" controls>
                         <source src={video15} type='video/mp4' />
                     </video>
-                </div>
+                </div> */}
             </Slider>
         </Box>
     );

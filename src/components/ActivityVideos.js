@@ -7,7 +7,7 @@ import YouTube from 'react-youtube';
 import './Videos.css';
 
 
-const DonorsAndNotifications = () => {
+const ActivityVideos = () => {
     const sliderRef = useRef(null);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
@@ -113,4 +113,4 @@ const DonorsAndNotifications = () => {
     );
 };
 
-export default DonorsAndNotifications;
+export default ActivityVideos;

@@ -8,14 +8,14 @@ import OtherWebsite from "../../components/OurCenters"
 import Footer from "../../global/Footer"
 
 import './Homepage.css'
-import DonorsAndNotifications from "../../components/DonorsAndNotifications"
+import ActivityVideos from "../../components/ActivityVideos"
 
 const Homepage = () => {
     return (<>
         <Header />
         <ImageCarousel/>
         <AboutUs />
-        <DonorsAndNotifications />
+        <ActivityVideos />
         <br></br>
         <Programs />
         <WhatsNew />

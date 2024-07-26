@@ -6,7 +6,7 @@ import Footer from '../../../global/Footer';
 import aboutusbg from '../../../assets/JoinUs.jpg';
 import emailjs from '@emailjs/browser';
 import HeadingGlobal from '../../../global/HeadingGlobal';
-import { EMAIL_ADDR } from '../../../constant';
+import {EMAIL_ADDR,EMAIL_PUBLIC_KEY,EMAIL_SERVICE_ID, EMAIL_VOLUNTEER_TEMPLATE} from '../../../constant';
 
 const JoinUs = () => {
     const form = useRef();
@@ -93,7 +93,7 @@ const JoinUs = () => {
             selectedAvailability,
         };
 
-        emailjs.send('service_7qxpor1', 'template_12umir8', formDataWithDetails, 'PmDLW4fe-z9seZ1Mf')
+        emailjs.send({EMAIL_SERVICE_ID}, {EMAIL_VOLUNTEER_TEMPLATE}, formDataWithDetails, {EMAIL_PUBLIC_KEY})
             .then(
                 (result) => {
                     console.log('SUCCESS!', result.text);

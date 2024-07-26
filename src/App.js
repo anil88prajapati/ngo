@@ -19,7 +19,7 @@ import Faq from "./components/Faq";
 import History from "./components/History";
 import Leadership from "./components/Leadership";
 import ScrollToTop from "./components/ScrollToTop";
-import DonorsAndNotifications from './components/DonorsAndNotifications';
+import ActivityVideos from './components/ActivityVideos';
 import Shiningstars from "./components/Shiningstars";
 import Donorlist from "./components/Donorlist";
 import Writetous from "./components/Writetous";
@@ -50,7 +50,7 @@ function App() {
                 <Route path="/Faq" element={<Faq />} />
                 <Route path="/History" element={<History />} />
                 <Route path="/Leadership" element={<Leadership />} />
-                <Route path='/DonorsAndNotifications' element={<DonorsAndNotifications />} />
+                <Route path='/ActivityVideos' element={<ActivityVideos />} />
                 <Route path="/Shiningstars" element={<Shiningstars />} />
                 <Route path="/Donorlist" element={<Donorlist/>}/>
                 <Route path="/Writetous" element={<Writetous/>}/>

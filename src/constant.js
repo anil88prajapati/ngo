@@ -16,3 +16,7 @@ export const ABOUT_US_CONTENT = "SEVA Srijan Foundation is started in 2020 by Mr
 export const ABOUT_US_CONTENT1 = "Their pursuit for the cause started way back in the Year 2000 by setting up a ‘Children’s Club’ at their Government residential complex at East of Kailash in Delhi. The club besides running the outdoor and indoor recreational activities for children used to train them for life skills too with a view to help them grow as “Good Citizens”"
 export const ABOUT_US_CONTENT2 = "Committed to work towards protection of the Fundamental Rights of vulnerable children and women through Rights’ education & advocacy and employability, SSF runs four programmes, namely, Good Citizenship, Aftercare, Skill Development and Talent Bank Development in 8 villages located near South Delhi. "
 export const ABOUT_US_CONTENT3 = "The holistic development model for underprivileged children evolved in the shape of four programmes, namely, Srijan Good Citizenship (SGC), Srijan Aftercare (SAP), Srijan Skill Development (SSD) and Srijan Talent Bank Development (STB) ensuring growth of kids into responsible, confident and self-dependent youth."
+export const EMAIL_SERVICE_ID = "service_hkq0exk"
+export const EMAIL_DONATION_TEMPLATE = "template_16qmylk"
+export const EMAIL_VOLUNTEER_TEMPLATE = "template_cxdrn0f"
+export const EMAIL_PUBLIC_KEY = "vPYoEFomIRTlIUbJZ"

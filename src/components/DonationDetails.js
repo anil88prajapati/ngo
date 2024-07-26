@@ -1,9 +1,9 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import donateQr from './../assets/donateqr.jpg';
 import './DonationDetails.css';
-import { EMAIL_SERVICE_ID,EMAIL_DONATION_TEMPLATE,EMAIL_PUBLIC_KEY} from '../constant';
+import { EMAIL_SERVICE_ID, EMAIL_DONATION_TEMPLATE, EMAIL_PUBLIC_KEY } from '../constant';
 
 function DonationDetails() {
     const location = useLocation();
@@ -23,7 +23,7 @@ function DonationDetails() {
     const handleDone = () => {
         if (formData && !isEmailSent) {
             setIsButtonDisabled(true);
-            emailjs.send({EMAIL_SERVICE_ID}, {EMAIL_DONATION_TEMPLATE}, formData, {EMAIL_PUBLIC_KEY})
+            emailjs.send(EMAIL_SERVICE_ID, EMAIL_DONATION_TEMPLATE, formData, EMAIL_PUBLIC_KEY)
                 .then(
                     (result) => {
                         console.log('SUCCESS!', result.text);

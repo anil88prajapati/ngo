@@ -6,7 +6,7 @@ import Footer from '../../../global/Footer';
 import aboutusbg from '../../../assets/JoinUs.jpg';
 import emailjs from '@emailjs/browser';
 import HeadingGlobal from '../../../global/HeadingGlobal';
-import {EMAIL_ADDR,EMAIL_PUBLIC_KEY,EMAIL_SERVICE_ID, EMAIL_VOLUNTEER_TEMPLATE} from '../../../constant';
+import { EMAIL_ADDR, EMAIL_PUBLIC_KEY, EMAIL_SERVICE_ID, EMAIL_VOLUNTEER_TEMPLATE } from '../../../constant';
 
 const JoinUs = () => {
     const form = useRef();
@@ -88,12 +88,15 @@ const JoinUs = () => {
             .join('; ');
 
         const formDataWithDetails = {
-            ...formData,
+            from_name: formData.from_name,
+            from_email: formData.from_email,
+            from_number: formData.from_number,
+            message: formData.message,
             selectedInterests,
             selectedAvailability,
         };
 
-        emailjs.send({EMAIL_SERVICE_ID}, {EMAIL_VOLUNTEER_TEMPLATE}, formDataWithDetails, {EMAIL_PUBLIC_KEY})
+        emailjs.send(EMAIL_SERVICE_ID, EMAIL_VOLUNTEER_TEMPLATE, formDataWithDetails, EMAIL_PUBLIC_KEY)
             .then(
                 (result) => {
                     console.log('SUCCESS!', result.text);
@@ -174,7 +177,7 @@ const JoinUs = () => {
                             <Grid item xs={12}>
                                 <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '20px', mb: '20px', borderRadius: '8px' }}>
                                     <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
-                                      Areas Of Interest
+                                        Areas Of Interest
                                     </Typography>
                                     <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px', opacity: 0.5 }} />
                                     <FormGroup>
@@ -200,7 +203,7 @@ const JoinUs = () => {
                             <Grid item xs={12}>
                                 <Box sx={{ boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '20px', mb: '20px', borderRadius: '8px' }}>
                                     <Typography variant="h6" sx={{ mt: '20px', fontWeight: 600 }}>
-                                      Day of Availability
+                                        Day of Availability
                                     </Typography>
                                     <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px', opacity: 0.5 }} />
                                     <FormGroup>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AppBar, Box, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemText } from "@mui/material";
 import { HEADER_BG_COLOR, LOGO_IMG, HEADER_TEXT_COLOR, HEADER_HOVER_COLOR } from "../constant";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './Master.css';
@@ -30,11 +30,11 @@ const navData = [
         navItem: 'JOIN US', data: [
             { title: 'Support Us', path: '/Donate' },
             { title: 'Volunteer Form', path: '/JoinUs' },
-            { title: 'Donors List', path: '/Donorlist' } // Added Donors List
+            { title: 'Donors List', path: '/Donorlist' }
         ]
     },
     {
-        navItem: 'CONTACT', data: [ // Added CONTACT dropdown
+        navItem: 'CONTACT', data: [
             { title: 'Reach Us', path: '/Contact' },
             { title: 'Write to Us', path: '/Writetous' }
         ]
@@ -115,6 +115,11 @@ const Header = ({ pageState }) => {
     const { state } = useScreenSize();
     const navigate = useNavigate();
     const [activeNav, setActiveNav] = useState(null);
+    const [drawerOpen, setDrawerOpen] = useState(false);
+
+    const toggleDrawer = (open) => () => {
+        setDrawerOpen(open);
+    };
 
     const navRouteHandler = (path) => {
         navigate(path);
@@ -135,9 +140,51 @@ const Header = ({ pageState }) => {
                         </div>
                     )}
                     {state.currentScreenSize < 990 && (
-                        <Box sx={{ p: '5px 6px', display: 'flex', alignItems: 'center' }}>
-                            <MenuIcon sx={{ color: HEADER_TEXT_COLOR }} />
-                        </Box>
+                        <>
+                            <IconButton
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                                onClick={toggleDrawer(true)}
+                                sx={{ color: HEADER_TEXT_COLOR }}
+                            >
+                                <MenuIcon />
+                            </IconButton>
+
+                            <Drawer
+                                anchor="right"
+                                open={drawerOpen}
+                                onClose={toggleDrawer(false)}
+                            >
+                                <List>
+                                    {['HOME', 'ABOUT US', 'PROGRAMMES', 'JOIN US', 'CONTACT'].map((navItem) => (
+                                        <ListItem
+                                            button
+                                            key={navItem}
+                                            onClick={() => {
+                                                switch (navItem){
+                                                    case 'HOME' : navRouteHandler('/')
+                                                        break;
+                                                        case 'ABOUT US' : navRouteHandler('/about')
+                                                        break;
+                                                        case 'PROGRAMMES' : navRouteHandler('/programs')
+                                                        break;
+                                                        case 'JOIN US' : navRouteHandler('/joinUs')
+                                                        break;
+                                                        case 'CONTACT' : navRouteHandler('/contact')
+                                                        break;
+                                                        //navRouteHandler(navItem === 'HOME' ? '/' : `/${navItem.replace(/\s+/g, '')}`);
+                                                }
+                                    
+                                                toggleDrawer(false)();
+                                            }}
+                                        >
+                                            <ListItemText primary={navItem} />
+                                        </ListItem>
+                                    ))}
+                                </List>
+                            </Drawer>
+                        </>
                     )}
                 </Toolbar>
             </AppBar>

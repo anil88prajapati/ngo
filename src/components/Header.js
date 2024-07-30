@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { AppBar, Box, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Toolbar, Typography, Drawer, List, ListItem, ListItemText } from "@mui/material";
 import { HEADER_BG_COLOR, LOGO_IMG, HEADER_TEXT_COLOR, HEADER_HOVER_COLOR } from "../constant";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import './Master.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import useScreenSize from "../utils/useScreenSize";
 import { useNavigate } from "react-router-dom";
+import './Master.css';
 
 const navData = [
     {
@@ -115,17 +115,50 @@ const Header = ({ pageState }) => {
     const { state } = useScreenSize();
     const navigate = useNavigate();
     const [activeNav, setActiveNav] = useState(null);
+    const [drawerOpen, setDrawerOpen] = useState(false);
 
     const navRouteHandler = (path) => {
         navigate(path);
+        setDrawerOpen(false); // Close drawer on navigation
     }
+
+    const toggleDrawer = (open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+            return;
+        }
+        setDrawerOpen(open);
+    }
+
+    const drawerList = () => (
+        <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={toggleDrawer(false)}
+            onKeyDown={toggleDrawer(false)}
+        >
+            <List>
+                {navData.map((item) => (
+                    <Box key={item.navItem}>
+                        <ListItem button onClick={() => setActiveNav(item.navItem)}>
+                            <ListItemText primary={item.navItem} />
+                        </ListItem>
+                        {item.navItem === activeNav && item.data.map((navs) => (
+                            <ListItem button key={navs.title} onClick={() => navRouteHandler(navs.path)}>
+                                <ListItemText primary={navs.title} sx={{ pl: 4 }} />
+                            </ListItem>
+                        ))}
+                    </Box>
+                ))}
+            </List>
+        </Box>
+    );
 
     return (
         <>
             <AppBar>
                 <Toolbar sx={{ bgcolor: HEADER_BG_COLOR, display: 'flex', justifyContent: state.currentScreenSize > 990 ? 'space-evenly' : 'space-between', alignItems: 'center' }}>
                     <img onClick={() => navigate('/')} src={LOGO_IMG} alt='logoImage' style={{ cursor: 'pointer' }} width={100} />
-                    {state.currentScreenSize > 990 && (
+                    {state.currentScreenSize > 990 ? (
                         <div style={{ display: 'flex', padding: '10px', alignItems: 'center', justifyContent: 'space-evenly', width: '53%' }}>
                             <MegaMenu nav="HOME" expanded={false} pageState={pageState} navRouteHandler={() => navigate('/')} activeNav={activeNav} setActiveNav={setActiveNav} />
                             <MegaMenu nav="ABOUT US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
@@ -133,15 +166,21 @@ const Header = ({ pageState }) => {
                             <MegaMenu nav="JOIN US" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
                             <MegaMenu nav="CONTACT" expanded={true} pageState={pageState} navRouteHandler={navRouteHandler} activeNav={activeNav} setActiveNav={setActiveNav} />
                         </div>
-                    )}
-                    {state.currentScreenSize < 990 && (
+                    ) : (
                         <Box sx={{ p: '5px 6px', display: 'flex', alignItems: 'center' }}>
-                            <MenuIcon sx={{ color: HEADER_TEXT_COLOR }} />
+                            <MenuIcon sx={{ color: HEADER_TEXT_COLOR }} onClick={toggleDrawer(true)} />
                         </Box>
                     )}
                 </Toolbar>
             </AppBar>
             <Toolbar />
+            <Drawer
+                anchor="left"
+                open={drawerOpen}
+                onClose={toggleDrawer(false)}
+            >
+                {drawerList()}
+            </Drawer>
         </>
     )
 }

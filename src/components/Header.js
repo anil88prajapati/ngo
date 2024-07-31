@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { AppBar, Box, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemText } from "@mui/material";
 import { HEADER_BG_COLOR, LOGO_IMG, HEADER_TEXT_COLOR, HEADER_HOVER_COLOR } from "../constant";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import './Master.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import useScreenSize from "../utils/useScreenSize";
 import { useNavigate } from "react-router-dom";
+import './Master.css';
 
 const navData = [
     {
@@ -123,7 +123,32 @@ const Header = ({ pageState }) => {
 
     const navRouteHandler = (path) => {
         navigate(path);
+        setDrawerOpen(false); 
     }
+
+    const drawerList = () => (
+        <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={toggleDrawer(false)}
+            onKeyDown={toggleDrawer(false)}
+        >
+            <List>
+                {navData.map((item) => (
+                    <Box key={item.navItem}>
+                        <ListItem button onClick={() => setActiveNav(item.navItem)}>
+                            <ListItemText primary={item.navItem} />
+                        </ListItem>
+                        {item.navItem === activeNav && item.data.map((navs) => (
+                            <ListItem button key={navs.title} onClick={() => navRouteHandler(navs.path)}>
+                                <ListItemText primary={navs.title} sx={{ pl: 4 }} />
+                            </ListItem>
+                        ))}
+                    </Box>
+                ))}
+            </List>
+        </Box>
+    );
 
     return (
         <>
@@ -157,30 +182,18 @@ const Header = ({ pageState }) => {
                                 onClose={toggleDrawer(false)}
                             >
                                 <List>
-                                    {['HOME', 'ABOUT US', 'PROGRAMMES', 'JOIN US', 'CONTACT'].map((navItem) => (
-                                        <ListItem
-                                            button
-                                            key={navItem}
-                                            onClick={() => {
-                                                switch (navItem){
-                                                    case 'HOME' : navRouteHandler('/')
-                                                        break;
-                                                        case 'ABOUT US' : navRouteHandler('/about')
-                                                        break;
-                                                        case 'PROGRAMMES' : navRouteHandler('/programs')
-                                                        break;
-                                                        case 'JOIN US' : navRouteHandler('/joinUs')
-                                                        break;
-                                                        case 'CONTACT' : navRouteHandler('/contact')
-                                                        break;
-                                                        //navRouteHandler(navItem === 'HOME' ? '/' : `/${navItem.replace(/\s+/g, '')}`);
-                                                }
-                                    
-                                                toggleDrawer(false)();
-                                            }}
-                                        >
-                                            <ListItemText primary={navItem} />
-                                        </ListItem>
+                                    {navData.map((item) => (
+                                        <div key={item.navItem}>
+                                            <ListItem button onClick={() => setActiveNav(item.navItem)}>
+                                                <ListItemText primary={item.navItem} />
+                                                {activeNav === item.navItem ? <ExpandMoreIcon /> : null}
+                                            </ListItem>
+                                            {item.navItem === activeNav && item.data.map((navs) => (
+                                                <ListItem button key={navs.title} onClick={() => { navRouteHandler(navs.path); setDrawerOpen(false); }}>
+                                                    <ListItemText primary={navs.title} sx={{ pl: 4 }} />
+                                                </ListItem>
+                                            ))}
+                                        </div>
                                     ))}
                                 </List>
                             </Drawer>

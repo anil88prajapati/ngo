@@ -42,13 +42,13 @@ const Programs = () => {
                 </Grid>
                 <Grid item lg={3.5} xs={12} sx={{ mr: '20px', mb: { xs: '20px', lg: '0px' }, ml: '20px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img width={'100%'} height={'100%'} src={vocational} alt="about us pic" />
-                    <Box sx={{ position: 'absolute', bottom: '23px', left: 0, bgcolor: '#306A2F', p: '5px 10px' }}>
+                    <Box sx={{ position: 'absolute', bottom: '23px', left: 0, bgcolor: '#FF7700', p: '5px 10px' }}>
                         <Typography variant='h4' sx={{ fontWeight: 'bold', fontSize: { lg: '18px', md: '15px', sm: '13px', xs: '10px' } }}>SKILL DEVELOPMENT</Typography>
                     </Box>
                 </Grid>
                 <Grid item lg={3.5} xs={12} sx={{ mr: '20px', mb: { xs: '20px', lg: '0px' }, ml: '20px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img width={'100%'} height={'100%'} src={reserch} alt="about us pic" />
-                    <Box sx={{ position: 'absolute', bottom: '23px', left: 0, bgcolor: '#FF7700', p: '5px 10px' }}>
+                    <Box sx={{ position: 'absolute', bottom: '23px', left: 0, bgcolor: '#00bfff', p: '5px 10px' }}>
                         <Typography variant='h4' sx={{ fontWeight: 'bold', fontSize: { lg: '18px', md: '15px', sm: '13px', xs: '10px' } }}>AFTERCARE PROGRAMME</Typography>
                     </Box>
                 </Grid>

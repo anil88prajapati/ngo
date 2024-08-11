@@ -83,6 +83,7 @@ const Leadership = () => {
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -118,6 +119,7 @@ const Leadership = () => {
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '20px', xs: '18px' }, 
                             fontWeight: 'bold',
                             color: textColor,
@@ -129,6 +131,7 @@ const Leadership = () => {
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -178,6 +181,7 @@ const Leadership = () => {
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -225,6 +229,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -271,6 +276,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -317,6 +323,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -363,6 +370,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -373,7 +381,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                 </Box>
             </Box>
             <h1 style={{ textAlign: 'center', fontFamily: 'initial', padding: 20, color: '#5b3c14' }}>
-                <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px' }} />Volunteer Leader's 
+                <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px' }} />Volunteer Leaders 
                 <Divider sx={{ border: '1px solid lightgray', width: '100%', m: '20px 0px' }} />
             </h1>
             <Box 
@@ -413,6 +421,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -458,6 +467,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -503,6 +513,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -548,6 +559,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -593,6 +605,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -638,6 +651,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -684,6 +698,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -729,6 +744,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -774,6 +790,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -819,6 +836,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor
@@ -864,6 +882,7 @@ His passion for social work has driven him in his dynamic involvement with many 
                     <Typography 
                         component="div" 
                         sx={{ 
+                            textAlign: { lg: 'justify', xs: 'justify' },
                             fontSize: { lg: '18px', xs: '16px' }, 
                             lineHeight: '1.6',
                             color: textColor

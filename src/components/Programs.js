@@ -6,7 +6,7 @@ import reserch from '../assets/juvenile.jpg';
 import vulne from '../assets/talentBank.jpg';
 import background from '../assets/blurredbackground.png';
 import { useNavigate } from "react-router-dom";
-import { ABOUT_US_CONTENT2 } from '../constant';
+import { ABOUT_US_CONTENT2,BROWN_COLOR} from '../constant';
 
 const Programs = () => {
     const handleClick = () => {
@@ -15,9 +15,8 @@ const Programs = () => {
     };
     
     const navigate = useNavigate();
-    const textColor = '#5b3c14'; 
     return (
-        <Box sx={{ m: { lg: '0px 40px', xs: '0px' }, p: { lg: '40px 40px', xs: '0px 20px' }, backgroundImage: `url(${background})`, color: textColor }}>
+        <Box sx={{ m: { lg: '0px 40px', xs: '0px' }, p: { lg: '40px 40px', xs: '0px 20px' }, backgroundImage: `url(${background})`, color: {BROWN_COLOR} }}>
             <HeadingGlobal title="PROGRAMMES" />
             <Grid container sx={{ mt: '20px', boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: { lg: '20px', xs: '0px' }, mb: '0px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Grid item lg={6} xs={12} sx={{ mb: '20px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -43,7 +42,7 @@ const Programs = () => {
                 </Grid>
                 <Grid item lg={3.5} xs={12} sx={{ mr: '20px', mb: { xs: '20px', lg: '0px' }, ml: '20px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img width={'100%'} height={'100%'} src={vocational} alt="about us pic" />
-                    <Box sx={{ position: 'absolute', bottom: '23px', left: 0, bgcolor: '#306A1D', p: '5px 10px' }}>
+                    <Box sx={{ position: 'absolute', bottom: '23px', left: 0, bgcolor: '#306A2F', p: '5px 10px' }}>
                         <Typography variant='h4' sx={{ fontWeight: 'bold', fontSize: { lg: '18px', md: '15px', sm: '13px', xs: '10px' } }}>SKILL DEVELOPMENT</Typography>
                     </Box>
                 </Grid>

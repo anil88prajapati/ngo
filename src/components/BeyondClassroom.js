@@ -10,6 +10,7 @@ import careerCounsil from '../assets/careerCounsil.jpeg';
 import library from '../assets/Library.jpg';
 import { BROWN_COLOR} from '../constant';
 
+
 const data = [
     { pic: computer, title: 'Computer Classes', para: 'Computer classes help to refine and discover new computing skills, such as networking or programming creating leeway for employment and livelihood. Computer courses offered by SSF are curated to provide the best benefits to the children who are covered under the Skill Development Programme.', path: '/about' },
     { pic: englishClass, title: 'Spoken English classes', para: 'Learning to speak English fluently aids in boosting confidence to communicate effectively and to articulate your thoughts and ideas precisely. The Spoken English classes, which comes under Skill Development Programme at SSF are designed to enhance employment opportunities for the youth.', path: '/' },
@@ -21,6 +22,7 @@ const data = [
 ];
 
 const runningEvents = [
+    'independence day 2024',
     'Summer Camp starts on July 5th!',
     'Art & Craft Exhibition on June 30th!',
     'Music & Dance Competition on July 20th!',
@@ -95,7 +97,6 @@ const WhatsNew = () => {
                                     position: 'absolute',
                                     width: '100%',
                                     height: '100%',
-                                    //animation: isHovered ? 'none' : 'scrollTopToBottom 20s linear infinite',
                                     animation: 'none',
                                     animationPlayState: isHovered ? 'paused' : 'running',
                                 }}
@@ -104,11 +105,13 @@ const WhatsNew = () => {
                             >
                                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                                     {runningEvents.map((event, index) => (
-                                        <a href="/notification" key={index} style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
-                                            <Typography sx={{ fontWeight: 'bold', color: 'inherit', textAlign: 'center' }}>
-                                                {event}
-                                            </Typography>
-                                        </a>
+                                        <a href={event === 'independence day 2024' ? '/IndependenceDayPage' : '/notification'} 
+                                        key={index} style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
+                                        <Typography sx={{ fontWeight: 'bold', color: 'inherit', textAlign: 'center' }}>
+                                            {event}
+                                        </Typography>
+                                     </a>
+                                     
                                     ))}
                                 </Box>
                             </Box>

@@ -24,6 +24,7 @@ import Shiningstars from "./components/Shiningstars";
 import Donorlist from "./components/Donorlist";
 import Writetous from "./components/Writetous";
 import Notification from "./components/Notification";
+import IndependenceDayPage from "./components/IndependenceDayPage";
 
 function App() {
     return (
@@ -52,9 +53,10 @@ function App() {
                 <Route path="/Leadership" element={<Leadership />} />
                 <Route path='/ActivityVideos' element={<ActivityVideos />} />
                 <Route path="/Shiningstars" element={<Shiningstars />} />
-                <Route path="/Donorlist" element={<Donorlist/>}/>
-                <Route path="/Writetous" element={<Writetous/>}/>
-                <Route path="/Notification" element={<Notification/>}/>
+                <Route path="/Donorlist" element={<Donorlist />} />
+                <Route path="/Writetous" element={<Writetous />} />
+                <Route path="/Notification" element={<Notification />} />
+                <Route path="/IndependenceDayPage" element={<IndependenceDayPage />} />
             </Routes>
         </Router>
     );

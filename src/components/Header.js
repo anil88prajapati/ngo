@@ -126,31 +126,7 @@ const Header = ({ pageState }) => {
         navigate(path);
         setDrawerOpen(false); 
     }
-
-    const drawerList = () => (
-        <Box
-            sx={{ width: 250 }}
-            role="presentation"
-            onClick={toggleDrawer(false)}
-            onKeyDown={toggleDrawer(false)}
-        >
-            <List>
-                {navData.map((item) => (
-                    <Box key={item.navItem}>
-                        <ListItem button onClick={() => setActiveNav(item.navItem)}>
-                            <ListItemText primary={item.navItem} />
-                        </ListItem>
-                        {item.navItem === activeNav && item.data.map((navs) => (
-                            <ListItem button key={navs.title} onClick={() => navRouteHandler(navs.path)}>
-                                <ListItemText primary={navs.title} sx={{ pl: 4 }} />
-                            </ListItem>
-                        ))}
-                    </Box>
-                ))}
-            </List>
-        </Box>
-    );
-
+    
     return (
         <>
             <AppBar>

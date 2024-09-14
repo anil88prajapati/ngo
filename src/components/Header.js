@@ -10,6 +10,7 @@ import './Master.css';
 const navData = [
     {
         navItem: 'ABOUT US', data: [
+            {title: 'About us', path: '/Aboutssf'},
             { title: 'Leadership', path: '/Leadership' },
             { title: 'Partners', path: '/Partners' },
             { title: 'Gallery', path: '/Gallery' },

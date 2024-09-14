@@ -20,3 +20,4 @@ export const EMAIL_SERVICE_ID = "service_hkq0exk"
 export const EMAIL_DONATION_TEMPLATE = "template_16qmylk"
 export const EMAIL_VOLUNTEER_TEMPLATE = "template_cxdrn0f"
 export const EMAIL_PUBLIC_KEY = "vPYoEFomIRTlIUbJZ"
+export const BROWN_COLOR = '#5b3c14';

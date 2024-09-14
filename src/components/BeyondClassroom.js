@@ -8,6 +8,7 @@ import tution from '../assets/tution.jpg';
 import englishClass from '../assets/englishClass.JPG';
 import careerCounsil from '../assets/careerCounsil.jpeg';
 import library from '../assets/Library.jpg';
+import { BROWN_COLOR} from '../constant';
 
 const data = [
     { pic: computer, title: 'Computer Classes', para: 'Computer classes help to refine and discover new computing skills, such as networking or programming creating leeway for employment and livelihood. Computer courses offered by SSF are curated to provide the best benefits to the children who are covered under the Skill Development Programme.', path: '/about' },
@@ -39,7 +40,7 @@ const WhatsNew = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' } }}>
+        <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' }, color: {BROWN_COLOR}  }}>
             <HeadingGlobal title="Learning Beyond Classroom" />
             <Grid container sx={{ mt: '20px', boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '10px', mb: '0px' }}>
                 <Grid item lg={8} xs={12} sx={{ pr: { lg: 2, xs: 0 } }}>
@@ -48,7 +49,7 @@ const WhatsNew = () => {
                             <Grid item lg={2} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <img width={"150px"} height={'150px'} src={item.pic} alt="schooldreams" />
                             </Grid>
-                            <Grid item lg={10} xs={12} sx={{ p: '0px 15px' }}>
+                            <Grid item lg={10} xs={12} sx={{ p: '10px 15px' }}>
                                 <Typography
                                     sx={{
                                         textAlign: { lg: 'left', xs: 'center' },
@@ -94,7 +95,8 @@ const WhatsNew = () => {
                                     position: 'absolute',
                                     width: '100%',
                                     height: '100%',
-                                    animation: isHovered ? 'none' : 'scrollTopToBottom 20s linear infinite',
+                                    //animation: isHovered ? 'none' : 'scrollTopToBottom 20s linear infinite',
+                                    animation: 'none',
                                     animationPlayState: isHovered ? 'paused' : 'running',
                                 }}
                                 onMouseEnter={() => setIsHovered(true)}

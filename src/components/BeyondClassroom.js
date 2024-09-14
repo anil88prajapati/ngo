@@ -8,8 +8,8 @@ import tution from '../assets/tution.jpg';
 import englishClass from '../assets/englishClass.JPG';
 import careerCounsil from '../assets/careerCounsil.jpeg';
 import library from '../assets/Library.jpg';
-import { BROWN_COLOR} from '../constant';
-
+import newGif from '../assets/new.gif'; 
+import { BROWN_COLOR } from '../constant';
 
 const data = [
     { pic: computer, title: 'Computer Classes', para: 'Computer classes help to refine and discover new computing skills, such as networking or programming creating leeway for employment and livelihood. Computer courses offered by SSF are curated to provide the best benefits to the children who are covered under the Skill Development Programme.', path: '/about' },
@@ -42,7 +42,7 @@ const WhatsNew = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' }, color: {BROWN_COLOR}  }}>
+        <Box sx={{ p: { lg: '40px 40px', xs: '40px 20px' }, color: { BROWN_COLOR } }}>
             <HeadingGlobal title="Learning Beyond Classroom" />
             <Grid container sx={{ mt: '20px', boxShadow: '1px 5px 13px -1px rgba(0,0,0,0.75)', p: '10px', mb: '0px' }}>
                 <Grid item lg={8} xs={12} sx={{ pr: { lg: 2, xs: 0 } }}>
@@ -105,13 +105,20 @@ const WhatsNew = () => {
                             >
                                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                                     {runningEvents.map((event, index) => (
-                                        <a href={event === 'independence day 2024' ? '/IndependenceDayPage' : '/notification'} 
-                                        key={index} style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
-                                        <Typography sx={{ fontWeight: 'bold', color: 'inherit', textAlign: 'center' }}>
-                                            {event}
-                                        </Typography>
-                                     </a>
-                                     
+                                        <a
+                                            href={event === 'independence day 2024' ? '/IndependenceDayPage' : '/notification'}
+                                            key={index}
+                                            style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <Typography sx={{ fontWeight: 'bold', color: 'inherit', textAlign: 'center' }}>
+                                                {event}
+                                            </Typography>
+                                            {event === 'independence day 2024' && (
+                                                <img src={newGif} alt="New" width="40px" style={{ marginLeft: '10px' }} />
+                                            )}
+                                        </a>
                                     ))}
                                 </Box>
                             </Box>

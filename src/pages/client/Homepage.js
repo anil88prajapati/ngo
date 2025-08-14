@@ -12,7 +12,7 @@ import './Homepage.css';
 import flashImage from '../../assets/flashimg.jpg';  
 
 const Homepage = () => {
-  const [isPopupVisible, setIsPopupVisible] = useState(true);  
+  const [isPopupVisible, setIsPopupVisible] = useState(false);  
   const navigate = useNavigate(); 
 
   const closePopup = () => {
